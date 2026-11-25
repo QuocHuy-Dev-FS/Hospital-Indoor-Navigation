@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+tools/.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
+
+# Secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+coverage/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Dữ liệu bệnh viện chưa được phép công bố
+assets/floorplans/*
+!assets/floorplans/.gitkeep
+assets/models/sample/
+data/sample/
+
+# Debug overlays (sinh bởi pipeline)
+assets/floorplans/_debug/
+
+# KHÔNG ignore skills tùy chỉnh
+!.claude/skills/
+
+# Cấu hình beacon thật — KHÔNG commit (chứa UUID/Major/Minor thật)
+data/beacon-map.local.json
+data/beacons.local.json
+data/beacons.local.json.bak-*
+data/beacons.local.json.tmp-*
+
+# Allowlist cầu nối BLE — KHÔNG commit (chứa UUID thật)
+tools/beacon_bridge/allowlist.json
+
+# Kết quả đo RSSI thực tế — KHÔNG commit
+bench/measurements/*.csv
+
+# File sao lưu cục bộ (không commit)
+*.bak-*
+
+# Sao lưu cục bộ do agent tạo (*.bak-YYYY-MM-DD...)
+*.bak-*
+
+# Dữ liệu/hình ảnh bệnh viện chưa được phép công bố (repo GitHub đang public)
+assets/models/*.glb
+data/survey/
+public/brand/*.jpg

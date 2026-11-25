@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quét Beacon – Hospital Indoor Navigation</title>
+  <style>
+    :root {
+      --clr-bg:      #f0f4f8;
+      --clr-card:    #ffffff;
+      --clr-border:  #d0dce8;
+      --clr-primary: #1565C0;
+      --clr-ok:      #2e7d32;
+      --clr-warn:    #e65100;
+      --clr-muted:   #607080;
+      font-family: system-ui, 'Segoe UI', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--clr-bg); color: #1a2a3a; padding: 20px; max-width: 520px; margin: 0 auto; }
+    h1 { font-size: 1.3rem; color: var(--clr-primary); margin-bottom: 6px; }
+    .subtitle { font-size: 0.85rem; color: var(--clr-muted); margin-bottom: 20px; }
+    .card { background: var(--clr-card); border: 1px solid var(--clr-border); border-radius: 10px; padding: 18px; margin-bottom: 14px; }
+    button {
+      padding: 11px 22px; border: none; border-radius: 8px;
+      font-size: 1rem; cursor: pointer; font-weight: 600;
+      background: var(--clr-primary); color: #fff; width: 100%;
+    }
+    button:hover { background: #1976d2; }
+    button:disabled { background: #90a4ae; cursor: not-allowed; }
+    #status { font-size: 0.95rem; color: var(--clr-muted); margin: 12px 0 4px; text-align: center; }
+    #result-box {
+      display: none; background: #e8f5e9; border: 1px solid #a5d6a7;
+      border-radius: 8px; padding: 14px; margin: 12px 0; text-align: center;
+    }
+    #result-box .room-name { font-size: 1.2rem; font-weight: 700; color: #1b5e20; }
+    #result-box .room-id   { font-size: 0.8rem; color: #607080; margin-top: 4px; }
+    #btn-goto { display: none; margin-top: 10px; }
+    .fallback { display: none; }
+    .fallback h2 { font-size: 1rem; color: var(--clr-warn); margin-bottom: 8px; }
+    .fallback p  { font-size: 0.88rem; line-height: 1.5; color: #1a2a3a; margin-bottom: 10px; }
+    .fallback .qr-tip { background: #fff3e0; border: 1px solid #ffe0b2; border-radius: 6px; padding: 12px; font-size: 0.85rem; }
+    a.back { display: inline-block; margin-top: 18px; font-size: 0.85rem; color: var(--clr-primary); text-decoration: none; }
+    a.back:hover { text-decoration: underline; }
+    #error-msg { color: #c62828; font-size: 0.85rem; margin-top: 8px; display: none; }
+  </style>
+</head>
+<body>
+  <h1>📡 Quét Beacon BLE</h1>
+  <p class="subtitle">Tự động xác định vị trí qua tín hiệu Bluetooth (Chrome Android / máy tính)</p>
+
+  <div id="scan-section" class="card">
+    <button id="btn-scan">Bắt đầu quét</button>
+    <p id="status">Nhấn để bắt đầu quét beacon BLE</p>
+    <p id="error-msg"></p>
+
+    <div id="result-box">
+      <div class="room-name" id="room-name-display">—</div>
+      <div class="room-id"   id="room-id-display">—</div>
+    </div>
+    <button id="btn-goto">Đi đến đây →</button>
+    <button id="btn-stop" style="display:none;background:#607080;margin-top:8px;">Dừng quét</button>
+  </div>
+
+  <div id="fallback-section" class="fallback card">
+    <h2>⚠️ Thiết bị không hỗ trợ quét Bluetooth</h2>
+    <p>iPhone, Safari và Firefox không hỗ trợ Web Bluetooth API.<br>
+    Hãy dùng <strong>QR code</strong> dán tại phòng để đặt vị trí xuất phát.</p>
+    <div class="qr-tip">
+      <strong>Cách dùng QR:</strong><br>
+      1. Tìm tờ QR code dán tại cửa phòng bạn đang đứng.<br>
+      2. Mở camera điện thoại và quét QR.<br>
+      3. Ứng dụng sẽ mở và tự đặt vị trí xuất phát.
+    </div>
+  </div>
+
+  <!-- ═══ Bridge relay mode (laptop → phone) ══════════════════════════════ -->
+  <div id="bridge-relay-section" class="card" style="margin-top:6px;">
+    <h2 style="font-size:1rem;color:var(--clr-primary);margin-bottom:8px;">📶 Cầu nối máy tính → Điện thoại</h2>
+    <p style="font-size:0.85rem;color:var(--clr-muted);margin-bottom:12px;">
+      Laptop quét BLE → gửi vị trí đến điện thoại. Kết nối bridge.py, nhận mã rồi nhập trên điện thoại.
+    </p>
+    <button id="btn-bridge-start" style="background:var(--clr-ok);margin-bottom:8px;">Kết nối cầu nối BLE</button>
+    <div id="bridge-pairing-code" style="display:none;text-align:center;padding:14px;background:#e8f5e9;border-radius:8px;margin:8px 0;">
+      <div style="font-size:0.8rem;color:var(--clr-muted);">Nhập mã này vào điện thoại:</div>
+      <div id="bridge-code-display" style="font-size:2.5rem;font-weight:800;letter-spacing:8px;color:var(--clr-ok);line-height:1.3;"></div>
+      <div style="font-size:0.75rem;color:var(--clr-muted);margin-top:4px;">Mở bản đồ → Vị trí → Cầu nối máy quét → nhập mã</div>
+    </div>
+    <div id="bridge-relay-status" style="font-size:0.85rem;color:var(--clr-muted);min-height:20px;"></div>
+    <div id="bridge-relay-room" style="display:none;background:#e8f5e9;border:1px solid #a5d6a7;border-radius:8px;padding:12px;margin-top:8px;text-align:center;">
+      <div style="font-size:0.8rem;color:var(--clr-muted);">Đang gửi vị trí:</div>
+      <div id="bridge-relay-room-name" style="font-size:1.1rem;font-weight:700;color:#1b5e20;"></div>
+    </div>
+    <button id="btn-bridge-stop" style="display:none;background:#607080;margin-top:8px;">Ngắt kết nối</button>
+  </div>
+
+  <a class="back" href="/">← Về trang bản đồ</a>
+
+  <script type="module">
+    import { RealSource, detectBluetooth } from '../bench/beacon-source.js';
+    import { RoomResolver }                from '../bench/room-resolver.js';
+
+    const btnScan = document.getElementById('btn-scan');
+    const btnStop = document.getElementById('btn-stop');
+    const btnGoto = document.getElementById('btn-goto');
+    const statusEl = document.getElementById('status');
+    const errorEl  = document.getElementById('error-msg');
+    const resultBox = document.getElementById('result-box');
+    const roomNameEl = document.getElementById('room-name-display');
+    const roomIdEl   = document.getElementById('room-id-display');
+
+    // Kiểm tra hỗ trợ trình duyệt
+    const { hasBluetooth } = detectBluetooth();
+    if (!hasBluetooth) {
+      document.getElementById('scan-section').style.display = 'none';
+      document.getElementById('fallback-section').style.display = 'block';
+    }
+
+    let realSrc  = null;
+    let resolver = null;
+    let beaconMap = [];
+    let lastRoomId = null;
+    let resolveTimer = null;
+
+    async function loadBeaconMap() {
+      try {
+        const res = await fetch('/data/beacon-map.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return await res.json();
+      } catch (e) {
+        console.warn('[scan] Không tải được beacon-map.json:', e.message);
+        return [];
+      }
+    }
+
+    btnScan.addEventListener('click', async () => {
+      errorEl.style.display = 'none';
+      btnScan.disabled = true;
+      statusEl.textContent = 'Đang tải bản đồ beacon…';
+
+      beaconMap = await loadBeaconMap();
+      if (beaconMap.length === 0) {
+        setError('Chưa có dữ liệu beacon (placeholder). Cập nhật data/beacon-map.json sau khi có Run in RAM.');
+        btnScan.disabled = false;
+        return;
+      }
+      resolver = new RoomResolver(beaconMap);
+
+      try {
+        realSrc = new RealSource();
+        await realSrc.start(onAdvertisement);
+        statusEl.textContent = '🔵 Đang quét BLE…';
+        btnStop.style.display = 'block';
+      } catch (e) {
+        setError(e.message ?? String(e));
+        btnScan.disabled = false;
+        realSrc = null;
+      }
+    });
+
+    btnStop.addEventListener('click', stopScan);
+
+    function stopScan() {
+      realSrc?.stop();
+      realSrc = null;
+      clearTimeout(resolveTimer);
+      btnScan.disabled = false;
+      btnStop.style.display = 'none';
+      statusEl.textContent = 'Đã dừng quét.';
+    }
+
+    function onAdvertisement(ev) {
+      resolver.addSample(ev.beaconKey, ev.rssi, ev.timestamp);
+      clearTimeout(resolveTimer);
+      resolveTimer = setTimeout(runResolve, 300);
+    }
+
+    function runResolve() {
+      if (!resolver) return;
+      const result = resolver.resolve();
+      if (result.status === 'near-room') {
+        const roomId   = result.roomId;
+        const roomName = result.roomName ?? roomId;
+        statusEl.textContent = '✅ Phát hiện vị trí';
+        resultBox.style.display = 'block';
+        roomNameEl.textContent = roomName;
+        roomIdEl.textContent   = roomId;
+        if (roomId !== lastRoomId) {
+          lastRoomId = roomId;
+          btnGoto.style.display = 'block';
+          btnGoto.onclick = () => {
+            stopScan();
+            location.href = `/?at=${encodeURIComponent(roomId)}`;
+          };
+        }
+      } else if (result.status === 'lost') {
+        statusEl.textContent = '📡 Mất tín hiệu — tiếp tục quét…';
+      } else {
+        statusEl.textContent = '🔵 Đang quét BLE… (chưa xác định phòng)';
+      }
+    }
+
+    function setError(msg) {
+      errorEl.textContent = '❌ ' + msg;
+      errorEl.style.display = 'block';
+      statusEl.textContent = 'Quét thất bại.';
+    }
+
+    // Link về trang chính
+    const backLink = document.querySelector('a.back');
+    if (backLink) backLink.href = document.referrer.includes(location.host) ? document.referrer : '/';
+
+    // ─── Bridge relay mode (laptop → điện thoại) ─────────────────────────────
+    // Laptop kết nối bridge.py WebSocket, xử lý beacons → room, push đến relay.
+    // RSSI filter + hysteresis để tránh nhảy phòng.
+    // Cần xác nhận: RSSI_THRESHOLD, HYSTERESIS_COUNT sau đo thực địa.
+    const RSSI_THRESHOLD    = -80;   // Cần xác nhận: bỏ qua tín hiệu yếu hơn ngưỡng này
+    const HYSTERESIS_COUNT  = 3;     // Cần xác nhận: phải thấy N lần liên tiếp mới đổi phòng
+    const PUSH_INTERVAL_MS  = 2000;  // Cần xác nhận: tần suất gửi
+    const WINDOW_SIZE       = 5;     // Số mẫu trong sliding window RSSI
+
+    const btnBridgeStart = document.getElementById('btn-bridge-start');
+    const btnBridgeStop  = document.getElementById('btn-bridge-stop');
+    const bridgeCodeBox  = document.getElementById('bridge-pairing-code');
+    const bridgeCodeEl   = document.getElementById('bridge-code-display');
+    const bridgeStatusEl = document.getElementById('bridge-relay-status');
+    const bridgeRoomBox  = document.getElementById('bridge-relay-room');
+    const bridgeRoomNameEl = document.getElementById('bridge-relay-room-name');
+
+    let _bridgeWs      = null;
+    let _bridgeCode    = null;
+    let _bridgePushTimer = null;
+    let _beaconMap     = [];
+    let _rssiWindows   = new Map(); // key → number[]
+    let _currentBridgeRoom = null;  // roomId đang gửi
+    let _candidateRoom     = null;
+    let _candidateCount    = 0;
+
+    btnBridgeStart.addEventListener('click', async () => {
+      btnBridgeStart.disabled = true;
+      bridgeStatusEl.textContent = 'Đang lấy mã ghép cặp…';
+      try {
+        // 1. Lấy mã ghép cặp từ relay
+        const codeRes = await fetch('/api/loc/new-code', { method: 'POST' });
+        if (!codeRes.ok) throw new Error(`Relay không phản hồi (HTTP ${codeRes.status}). Dev server đang chạy?`);
+        const { code } = await codeRes.json();
+        _bridgeCode = code;
+        bridgeCodeEl.textContent = code;
+        bridgeCodeBox.style.display = 'block';
+
+        // 2. Tải beacon map
+        try {
+          const mRes = await fetch('/data/beacon-map.json');
+          if (mRes.ok) _beaconMap = await mRes.json();
+        } catch {}
+
+        // 3. Kết nối bridge.py WebSocket
+        bridgeStatusEl.textContent = 'Kết nối bridge.py tại ws://127.0.0.1:8765…';
+        _connectBridgeWs();
+      } catch (e) {
+        bridgeStatusEl.textContent = '❌ ' + (e.message ?? e);
+        btnBridgeStart.disabled = false;
+      }
+    });
+
+    btnBridgeStop.addEventListener('click', _disconnectBridge);
+
+    function _connectBridgeWs() {
+      if (_bridgeWs) { _bridgeWs.close(); _bridgeWs = null; }
+      const ws = new WebSocket('ws://127.0.0.1:8765');
+      ws.onopen = () => {
+        bridgeStatusEl.textContent = '🟢 Đã kết nối bridge.py — đang nhận beacon…';
+        btnBridgeStop.style.display = 'block';
+        btnBridgeStart.style.display = 'none';
+        _bridgePushTimer = setInterval(_pushCurrentRoom, PUSH_INTERVAL_MS);
+      };
+      ws.onmessage = (ev) => {
+        try { _onBridgeMessage(JSON.parse(ev.data)); } catch {}
+      };
+      ws.onerror = () => {};
+      ws.onclose = () => {
+        bridgeStatusEl.textContent = '🔴 Bridge ngắt kết nối.';
+        clearInterval(_bridgePushTimer);
+      };
+      _bridgeWs = ws;
+    }
+
+    function _disconnectBridge() {
+      _bridgeWs?.close();
+      _bridgeWs = null;
+      clearInterval(_bridgePushTimer);
+      btnBridgeStop.style.display = 'none';
+      btnBridgeStart.style.display = 'block';
+      btnBridgeStart.disabled = false;
+      bridgeStatusEl.textContent = 'Đã ngắt kết nối.';
+      bridgeRoomBox.style.display = 'none';
+    }
+
+    function _onBridgeMessage({ key, rssi }) {
+      if (!key || rssi == null || rssi < RSSI_THRESHOLD) return;
+      // Cập nhật sliding window RSSI
+      if (!_rssiWindows.has(key)) _rssiWindows.set(key, []);
+      const win = _rssiWindows.get(key);
+      win.push(rssi);
+      if (win.length > WINDOW_SIZE) win.shift();
+
+      // Tìm beacon mạnh nhất
+      let bestKey = null, bestAvg = -Infinity;
+      for (const [k, w] of _rssiWindows) {
+        const avg = w.reduce((a, b) => a + b, 0) / w.length;
+        if (avg > bestAvg) { bestAvg = avg; bestKey = k; }
+      }
+      if (!bestKey) return;
+
+      // Map key → roomId
+      const entry = _beaconMap.find(e => e.beaconKey === bestKey);
+      if (!entry) return;
+      const newRoom = entry.roomId;
+
+      // Hysteresis: phải thấy N lần liên tiếp mới đổi
+      if (newRoom !== _currentBridgeRoom) {
+        if (newRoom === _candidateRoom) {
+          _candidateCount++;
+          if (_candidateCount >= HYSTERESIS_COUNT) {
+            _currentBridgeRoom = newRoom;
+            _candidateRoom = null; _candidateCount = 0;
+            bridgeRoomNameEl.textContent = entry.roomName ?? newRoom;
+            bridgeRoomBox.style.display = 'block';
+          }
+        } else {
+          _candidateRoom = newRoom;
+          _candidateCount = 1;
+        }
+      }
+    }
+
+    async function _pushCurrentRoom() {
+      if (!_bridgeCode || !_currentBridgeRoom) return;
+      const entry = _beaconMap.find(e => e.roomId === _currentBridgeRoom);
+      try {
+        await fetch('/api/loc/push', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            code:       _bridgeCode,
+            roomId:     _currentBridgeRoom,
+            floorId:    _currentBridgeRoom.split('_')[0],
+            confidence: 1,
+            timestamp:  Date.now(),
+          }),
+        });
+      } catch {}
+    }
+  </script>
+</body>
+</html>

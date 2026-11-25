@@ -1,0 +1,39 @@
+[
+  {
+    "_comment": "Sao chép file này → data/beacons.local.json, điền UUID/Major/Minor thật của từng beacon.",
+    "_comment2": "Chỉ cần ghi đè các trường uuid, major, minor (và tọa độ x/z nếu đã đo thực tế).",
+    "_comment3": "File này (example) được commit; beacons.local.json được gitignore."
+  },
+  {
+    "id": "F1_B01",
+    "floorId": "F1",
+    "x": 8.26,
+    "z": 7.5,
+    "y": 2.5,
+    "height_m": 2.5,
+    "protocol": "iBeacon",
+    "uuid": "00000000-0000-0000-0000-000000000000",
+    "major": 1,
+    "minor": 1,
+    "txPower_dBm": null,
+    "rssiAt1m": null,
+    "status": "planned",
+    "_note": "Thay uuid/major/minor bằng giá trị đọc từ nRF Connect sau Run-in-RAM"
+  },
+  {
+    "id": "F1_B02",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 15.8,
+    "y": 2.5,
+    "height_m": 2.5,
+    "protocol": "iBeacon",
+    "uuid": "00000000-0000-0000-0000-000000000000",
+    "major": 1,
+    "minor": 2,
+    "txPower_dBm": null,
+    "rssiAt1m": null,
+    "status": "planned",
+    "_note": "Thay uuid/major/minor bằng giá trị đọc từ nRF Connect sau Run-in-RAM"
+  }
+]

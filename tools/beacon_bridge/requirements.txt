@@ -1,0 +1,7 @@
+# Cầu nối BLE beacon → WebSocket
+# Phiên bản được khóa để tái tạo môi trường nhất quán.
+# Kiểm tra phiên bản mới nhất ổn định tại thời điểm cài:
+#   pip index versions bleak
+#   pip index versions websockets
+bleak==0.22.3
+websockets==13.1

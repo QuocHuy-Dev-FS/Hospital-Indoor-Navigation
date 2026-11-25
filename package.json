@@ -1,0 +1,24 @@
+{
+  "name": "hospital-indoor-navigation",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "validate": "node tools/validate_data.mjs",
+    "test": "node --test --test-force-exit tests/nav.test.mjs tests/map2d.test.mjs tests/bench.test.mjs tests/ui.test.mjs tests/hospital.test.mjs tests/ble_adapter.test.mjs tests/beacon_admin.test.mjs tests/map_flow.test.mjs tests/geofence_position.test.mjs tests/beacon_placement.test.mjs tests/mobile_beacon_demo.test.mjs tests/visit_plan.test.mjs",
+    "start": "vite",
+    "dev:lan": "node tools/dev-lan.mjs"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.21"
+  }
+}

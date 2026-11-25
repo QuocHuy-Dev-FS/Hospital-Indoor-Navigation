@@ -1,0 +1,5978 @@
+[
+  {
+    "id": "F1_N001",
+    "floorId": "F1",
+    "x": 8.26,
+    "z": 7.5,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N002",
+    "floorId": "F1",
+    "x": 13.14,
+    "z": 7.5,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N003",
+    "floorId": "F1",
+    "x": 16.32,
+    "z": 7.5,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N004",
+    "floorId": "F1",
+    "x": 19.54,
+    "z": 7.5,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N005",
+    "floorId": "F1",
+    "x": 22.7,
+    "z": 7.5,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N006",
+    "floorId": "F1",
+    "x": 25.9,
+    "z": 7.5,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N007",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N008",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 8.86,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N009",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 11.98,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N010",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 14.94,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N011",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 15.8,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N012",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 18,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N013",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 20.84,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N014",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 23.94,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N015",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 25.7,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N016",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 26.94,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N017",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 29.94,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N018",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 33.9,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N019",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 41.2,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N020",
+    "floorId": "F1",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N021",
+    "floorId": "F1",
+    "x": 18.96,
+    "z": 15.8,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N022",
+    "floorId": "F1",
+    "x": 16.4,
+    "z": 15.8,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N023",
+    "floorId": "F1",
+    "x": 13.14,
+    "z": 15.8,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N024",
+    "floorId": "F1",
+    "x": 10,
+    "z": 15.8,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N025",
+    "floorId": "F1",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N026",
+    "floorId": "F1",
+    "x": 22.7,
+    "z": 25.7,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N027",
+    "floorId": "F1",
+    "x": 19.64,
+    "z": 25.7,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N028",
+    "floorId": "F1",
+    "x": 16.44,
+    "z": 25.7,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N029",
+    "floorId": "F1",
+    "x": 13.24,
+    "z": 25.7,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N030",
+    "floorId": "F1",
+    "x": 10,
+    "z": 25.7,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N031",
+    "floorId": "F1",
+    "x": 8.26,
+    "z": 25.7,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N032",
+    "floorId": "F1",
+    "x": 8.26,
+    "z": 29.94,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N033",
+    "floorId": "F1",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N034",
+    "floorId": "F1",
+    "x": 4,
+    "z": 33.9,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N035",
+    "floorId": "F1",
+    "x": 0.4,
+    "z": 33.9,
+    "y": 0,
+    "kind": "corridor"
+  },
+  {
+    "id": "F1_N036",
+    "floorId": "F1",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 0,
+    "kind": "elev_door"
+  },
+  {
+    "id": "F1_N037",
+    "floorId": "F1",
+    "x": 14.44,
+    "z": 20.56,
+    "y": 0,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F1_N038",
+    "floorId": "F1",
+    "x": 32.4,
+    "z": 3.14,
+    "y": 0,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F1_N039",
+    "floorId": "F1",
+    "x": 33.2,
+    "z": 38.76,
+    "y": 0,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F1_N040",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_N041",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 0,
+    "kind": "junction"
+  },
+  {
+    "id": "F1_D001",
+    "floorId": "F1",
+    "x": 3.38,
+    "z": 7.5,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D002",
+    "floorId": "F1",
+    "x": 8.28,
+    "z": 7.5,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D003",
+    "floorId": "F1",
+    "x": 11.46,
+    "z": 7.5,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D004",
+    "floorId": "F1",
+    "x": 14.72,
+    "z": 7.5,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D005",
+    "floorId": "F1",
+    "x": 17.92,
+    "z": 7.5,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D006",
+    "floorId": "F1",
+    "x": 21.12,
+    "z": 7.5,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D007",
+    "floorId": "F1",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D008",
+    "floorId": "F1",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D009",
+    "floorId": "F1",
+    "x": 14.74,
+    "z": 15.8,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D010",
+    "floorId": "F1",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D011",
+    "floorId": "F1",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D012",
+    "floorId": "F1",
+    "x": 14.44,
+    "z": 15.8,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D013",
+    "floorId": "F1",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D014",
+    "floorId": "F1",
+    "x": 11.62,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D015",
+    "floorId": "F1",
+    "x": 14.84,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D016",
+    "floorId": "F1",
+    "x": 18.04,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D017",
+    "floorId": "F1",
+    "x": 21.18,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D018",
+    "floorId": "F1",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D019",
+    "floorId": "F1",
+    "x": 11.6,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D020",
+    "floorId": "F1",
+    "x": 14.78,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D021",
+    "floorId": "F1",
+    "x": 17.9,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D022",
+    "floorId": "F1",
+    "x": 21.08,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D023",
+    "floorId": "F1",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D024",
+    "floorId": "F1",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D025",
+    "floorId": "F1",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D026",
+    "floorId": "F1",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D027",
+    "floorId": "F1",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D028",
+    "floorId": "F1",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D029",
+    "floorId": "F1",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D030",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D031",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 10.42,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D032",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 13.46,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D033",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 16.46,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D034",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 19.42,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D035",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 22.4,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D036",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 25.44,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D037",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 28.44,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D038",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 32.76,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D039",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D040",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D041",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F1_D042",
+    "floorId": "F1",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 0,
+    "kind": "door"
+  },
+  {
+    "id": "F2_N001",
+    "floorId": "F2",
+    "x": 8.26,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N002",
+    "floorId": "F2",
+    "x": 13.14,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N003",
+    "floorId": "F2",
+    "x": 16.32,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N004",
+    "floorId": "F2",
+    "x": 19.54,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N005",
+    "floorId": "F2",
+    "x": 22.7,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N006",
+    "floorId": "F2",
+    "x": 25.9,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N007",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N008",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 8.86,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N009",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 11.98,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N010",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 14.94,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N011",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 15.8,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N012",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 18,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N013",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 20.84,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N014",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 23.94,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N015",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N016",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 26.94,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N017",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 29.94,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N018",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 33.9,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N019",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 41.2,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N020",
+    "floorId": "F2",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N021",
+    "floorId": "F2",
+    "x": 18.96,
+    "z": 15.8,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N022",
+    "floorId": "F2",
+    "x": 16.4,
+    "z": 15.8,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N023",
+    "floorId": "F2",
+    "x": 13.14,
+    "z": 15.8,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N024",
+    "floorId": "F2",
+    "x": 10,
+    "z": 15.8,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N025",
+    "floorId": "F2",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N026",
+    "floorId": "F2",
+    "x": 22.7,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N027",
+    "floorId": "F2",
+    "x": 19.64,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N028",
+    "floorId": "F2",
+    "x": 16.44,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N029",
+    "floorId": "F2",
+    "x": 13.24,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N030",
+    "floorId": "F2",
+    "x": 10,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N031",
+    "floorId": "F2",
+    "x": 8.26,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N032",
+    "floorId": "F2",
+    "x": 8.26,
+    "z": 29.94,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N033",
+    "floorId": "F2",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N034",
+    "floorId": "F2",
+    "x": 4,
+    "z": 33.9,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N035",
+    "floorId": "F2",
+    "x": 0.4,
+    "z": 33.9,
+    "y": 3.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F2_N036",
+    "floorId": "F2",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 3.6,
+    "kind": "elev_door"
+  },
+  {
+    "id": "F2_N037",
+    "floorId": "F2",
+    "x": 14.44,
+    "z": 20.56,
+    "y": 3.6,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F2_N038",
+    "floorId": "F2",
+    "x": 32.4,
+    "z": 3.14,
+    "y": 3.6,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F2_N039",
+    "floorId": "F2",
+    "x": 33.2,
+    "z": 38.76,
+    "y": 3.6,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F2_N040",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_N041",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 3.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F2_D001",
+    "floorId": "F2",
+    "x": 3.38,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D002",
+    "floorId": "F2",
+    "x": 8.28,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D003",
+    "floorId": "F2",
+    "x": 11.46,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D004",
+    "floorId": "F2",
+    "x": 14.72,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D005",
+    "floorId": "F2",
+    "x": 17.92,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D006",
+    "floorId": "F2",
+    "x": 21.12,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D007",
+    "floorId": "F2",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D008",
+    "floorId": "F2",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D009",
+    "floorId": "F2",
+    "x": 14.74,
+    "z": 15.8,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D010",
+    "floorId": "F2",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D011",
+    "floorId": "F2",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D012",
+    "floorId": "F2",
+    "x": 14.44,
+    "z": 15.8,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D013",
+    "floorId": "F2",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D014",
+    "floorId": "F2",
+    "x": 11.62,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D015",
+    "floorId": "F2",
+    "x": 14.84,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D016",
+    "floorId": "F2",
+    "x": 18.04,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D017",
+    "floorId": "F2",
+    "x": 21.18,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D018",
+    "floorId": "F2",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D019",
+    "floorId": "F2",
+    "x": 11.6,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D020",
+    "floorId": "F2",
+    "x": 14.78,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D021",
+    "floorId": "F2",
+    "x": 17.9,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D022",
+    "floorId": "F2",
+    "x": 21.08,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D023",
+    "floorId": "F2",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D024",
+    "floorId": "F2",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D025",
+    "floorId": "F2",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D026",
+    "floorId": "F2",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D027",
+    "floorId": "F2",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D028",
+    "floorId": "F2",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D029",
+    "floorId": "F2",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D030",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D031",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 10.42,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D032",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 13.46,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D033",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 16.46,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D034",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 19.42,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D035",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 22.4,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D036",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 25.44,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D037",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 28.44,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D038",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 32.76,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D039",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D040",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D041",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F2_D042",
+    "floorId": "F2",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 3.6,
+    "kind": "door"
+  },
+  {
+    "id": "F3_N001",
+    "floorId": "F3",
+    "x": 8.26,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N002",
+    "floorId": "F3",
+    "x": 13.14,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N003",
+    "floorId": "F3",
+    "x": 16.32,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N004",
+    "floorId": "F3",
+    "x": 19.54,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N005",
+    "floorId": "F3",
+    "x": 22.7,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N006",
+    "floorId": "F3",
+    "x": 25.9,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N007",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N008",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 8.86,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N009",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 11.98,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N010",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 14.94,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N011",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 15.8,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N012",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 18,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N013",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 20.84,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N014",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 23.94,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N015",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N016",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 26.94,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N017",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 29.94,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N018",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 33.9,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N019",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 41.2,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N020",
+    "floorId": "F3",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N021",
+    "floorId": "F3",
+    "x": 18.96,
+    "z": 15.8,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N022",
+    "floorId": "F3",
+    "x": 16.4,
+    "z": 15.8,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N023",
+    "floorId": "F3",
+    "x": 13.14,
+    "z": 15.8,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N024",
+    "floorId": "F3",
+    "x": 10,
+    "z": 15.8,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N025",
+    "floorId": "F3",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N026",
+    "floorId": "F3",
+    "x": 22.7,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N027",
+    "floorId": "F3",
+    "x": 19.64,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N028",
+    "floorId": "F3",
+    "x": 16.44,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N029",
+    "floorId": "F3",
+    "x": 13.24,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N030",
+    "floorId": "F3",
+    "x": 10,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N031",
+    "floorId": "F3",
+    "x": 8.26,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N032",
+    "floorId": "F3",
+    "x": 8.26,
+    "z": 29.94,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N033",
+    "floorId": "F3",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N034",
+    "floorId": "F3",
+    "x": 4,
+    "z": 33.9,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N035",
+    "floorId": "F3",
+    "x": 0.4,
+    "z": 33.9,
+    "y": 7.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F3_N036",
+    "floorId": "F3",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 7.2,
+    "kind": "elev_door"
+  },
+  {
+    "id": "F3_N037",
+    "floorId": "F3",
+    "x": 14.44,
+    "z": 20.56,
+    "y": 7.2,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F3_N038",
+    "floorId": "F3",
+    "x": 32.4,
+    "z": 3.14,
+    "y": 7.2,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F3_N039",
+    "floorId": "F3",
+    "x": 33.2,
+    "z": 38.76,
+    "y": 7.2,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F3_N040",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_N041",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 7.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F3_D001",
+    "floorId": "F3",
+    "x": 3.38,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D002",
+    "floorId": "F3",
+    "x": 8.28,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D003",
+    "floorId": "F3",
+    "x": 11.46,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D004",
+    "floorId": "F3",
+    "x": 14.72,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D005",
+    "floorId": "F3",
+    "x": 17.92,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D006",
+    "floorId": "F3",
+    "x": 21.12,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D007",
+    "floorId": "F3",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D008",
+    "floorId": "F3",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D009",
+    "floorId": "F3",
+    "x": 14.74,
+    "z": 15.8,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D010",
+    "floorId": "F3",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D011",
+    "floorId": "F3",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D012",
+    "floorId": "F3",
+    "x": 14.44,
+    "z": 15.8,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D013",
+    "floorId": "F3",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D014",
+    "floorId": "F3",
+    "x": 11.62,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D015",
+    "floorId": "F3",
+    "x": 14.84,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D016",
+    "floorId": "F3",
+    "x": 18.04,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D017",
+    "floorId": "F3",
+    "x": 21.18,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D018",
+    "floorId": "F3",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D019",
+    "floorId": "F3",
+    "x": 11.6,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D020",
+    "floorId": "F3",
+    "x": 14.78,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D021",
+    "floorId": "F3",
+    "x": 17.9,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D022",
+    "floorId": "F3",
+    "x": 21.08,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D023",
+    "floorId": "F3",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D024",
+    "floorId": "F3",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D025",
+    "floorId": "F3",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D026",
+    "floorId": "F3",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D027",
+    "floorId": "F3",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D028",
+    "floorId": "F3",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D029",
+    "floorId": "F3",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D030",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D031",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 10.42,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D032",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 13.46,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D033",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 16.46,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D034",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 19.42,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D035",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 22.4,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D036",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 25.44,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D037",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 28.44,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D038",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 32.76,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D039",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D040",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D041",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F3_D042",
+    "floorId": "F3",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 7.2,
+    "kind": "door"
+  },
+  {
+    "id": "F4_N001",
+    "floorId": "F4",
+    "x": 8.26,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N002",
+    "floorId": "F4",
+    "x": 13.14,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N003",
+    "floorId": "F4",
+    "x": 16.32,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N004",
+    "floorId": "F4",
+    "x": 19.54,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N005",
+    "floorId": "F4",
+    "x": 22.7,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N006",
+    "floorId": "F4",
+    "x": 25.9,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N007",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N008",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 8.86,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N009",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 11.98,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N010",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 14.94,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N011",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 15.8,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N012",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 18,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N013",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 20.84,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N014",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 23.94,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N015",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N016",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 26.94,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N017",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 29.94,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N018",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 33.9,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N019",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 41.2,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N020",
+    "floorId": "F4",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N021",
+    "floorId": "F4",
+    "x": 18.96,
+    "z": 15.8,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N022",
+    "floorId": "F4",
+    "x": 16.4,
+    "z": 15.8,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N023",
+    "floorId": "F4",
+    "x": 13.14,
+    "z": 15.8,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N024",
+    "floorId": "F4",
+    "x": 10,
+    "z": 15.8,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N025",
+    "floorId": "F4",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N026",
+    "floorId": "F4",
+    "x": 22.7,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N027",
+    "floorId": "F4",
+    "x": 19.64,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N028",
+    "floorId": "F4",
+    "x": 16.44,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N029",
+    "floorId": "F4",
+    "x": 13.24,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N030",
+    "floorId": "F4",
+    "x": 10,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N031",
+    "floorId": "F4",
+    "x": 8.26,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N032",
+    "floorId": "F4",
+    "x": 8.26,
+    "z": 29.94,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N033",
+    "floorId": "F4",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N034",
+    "floorId": "F4",
+    "x": 4,
+    "z": 33.9,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N035",
+    "floorId": "F4",
+    "x": 0.4,
+    "z": 33.9,
+    "y": 10.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F4_N036",
+    "floorId": "F4",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 10.8,
+    "kind": "elev_door"
+  },
+  {
+    "id": "F4_N037",
+    "floorId": "F4",
+    "x": 14.44,
+    "z": 20.56,
+    "y": 10.8,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F4_N038",
+    "floorId": "F4",
+    "x": 32.4,
+    "z": 3.14,
+    "y": 10.8,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F4_N039",
+    "floorId": "F4",
+    "x": 33.2,
+    "z": 38.76,
+    "y": 10.8,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F4_N040",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_N041",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 10.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F4_D001",
+    "floorId": "F4",
+    "x": 3.38,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D002",
+    "floorId": "F4",
+    "x": 8.28,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D003",
+    "floorId": "F4",
+    "x": 11.46,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D004",
+    "floorId": "F4",
+    "x": 14.72,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D005",
+    "floorId": "F4",
+    "x": 17.92,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D006",
+    "floorId": "F4",
+    "x": 21.12,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D007",
+    "floorId": "F4",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D008",
+    "floorId": "F4",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D009",
+    "floorId": "F4",
+    "x": 14.74,
+    "z": 15.8,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D010",
+    "floorId": "F4",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D011",
+    "floorId": "F4",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D012",
+    "floorId": "F4",
+    "x": 14.44,
+    "z": 15.8,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D013",
+    "floorId": "F4",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D014",
+    "floorId": "F4",
+    "x": 11.62,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D015",
+    "floorId": "F4",
+    "x": 14.84,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D016",
+    "floorId": "F4",
+    "x": 18.04,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D017",
+    "floorId": "F4",
+    "x": 21.18,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D018",
+    "floorId": "F4",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D019",
+    "floorId": "F4",
+    "x": 11.6,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D020",
+    "floorId": "F4",
+    "x": 14.78,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D021",
+    "floorId": "F4",
+    "x": 17.9,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D022",
+    "floorId": "F4",
+    "x": 21.08,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D023",
+    "floorId": "F4",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D024",
+    "floorId": "F4",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D025",
+    "floorId": "F4",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D026",
+    "floorId": "F4",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D027",
+    "floorId": "F4",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D028",
+    "floorId": "F4",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D029",
+    "floorId": "F4",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D030",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D031",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 10.42,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D032",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 13.46,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D033",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 16.46,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D034",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 19.42,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D035",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 22.4,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D036",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 25.44,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D037",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 28.44,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D038",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 32.76,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D039",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D040",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D041",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F4_D042",
+    "floorId": "F4",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 10.8,
+    "kind": "door"
+  },
+  {
+    "id": "F5_N001",
+    "floorId": "F5",
+    "x": 8.26,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N002",
+    "floorId": "F5",
+    "x": 13.14,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N003",
+    "floorId": "F5",
+    "x": 16.32,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N004",
+    "floorId": "F5",
+    "x": 19.54,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N005",
+    "floorId": "F5",
+    "x": 22.7,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N006",
+    "floorId": "F5",
+    "x": 25.9,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N007",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N008",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 8.86,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N009",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 11.98,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N010",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 14.94,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N011",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 15.8,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N012",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 18,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N013",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 20.84,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N014",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 23.94,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N015",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N016",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 26.94,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N017",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 29.94,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N018",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 33.9,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N019",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 41.2,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N020",
+    "floorId": "F5",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N021",
+    "floorId": "F5",
+    "x": 18.96,
+    "z": 15.8,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N022",
+    "floorId": "F5",
+    "x": 16.4,
+    "z": 15.8,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N023",
+    "floorId": "F5",
+    "x": 13.14,
+    "z": 15.8,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N024",
+    "floorId": "F5",
+    "x": 10,
+    "z": 15.8,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N025",
+    "floorId": "F5",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N026",
+    "floorId": "F5",
+    "x": 22.7,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N027",
+    "floorId": "F5",
+    "x": 19.64,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N028",
+    "floorId": "F5",
+    "x": 16.44,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N029",
+    "floorId": "F5",
+    "x": 13.24,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N030",
+    "floorId": "F5",
+    "x": 10,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N031",
+    "floorId": "F5",
+    "x": 8.26,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N032",
+    "floorId": "F5",
+    "x": 8.26,
+    "z": 29.94,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N033",
+    "floorId": "F5",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N034",
+    "floorId": "F5",
+    "x": 4,
+    "z": 33.9,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N035",
+    "floorId": "F5",
+    "x": 0.4,
+    "z": 33.9,
+    "y": 14.4,
+    "kind": "corridor"
+  },
+  {
+    "id": "F5_N036",
+    "floorId": "F5",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 14.4,
+    "kind": "elev_door"
+  },
+  {
+    "id": "F5_N037",
+    "floorId": "F5",
+    "x": 14.44,
+    "z": 20.56,
+    "y": 14.4,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F5_N038",
+    "floorId": "F5",
+    "x": 32.4,
+    "z": 3.14,
+    "y": 14.4,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F5_N039",
+    "floorId": "F5",
+    "x": 33.2,
+    "z": 38.76,
+    "y": 14.4,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F5_N040",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_N041",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 14.4,
+    "kind": "junction"
+  },
+  {
+    "id": "F5_D001",
+    "floorId": "F5",
+    "x": 3.38,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D002",
+    "floorId": "F5",
+    "x": 8.28,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D003",
+    "floorId": "F5",
+    "x": 11.46,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D004",
+    "floorId": "F5",
+    "x": 14.72,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D005",
+    "floorId": "F5",
+    "x": 17.92,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D006",
+    "floorId": "F5",
+    "x": 21.12,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D007",
+    "floorId": "F5",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D008",
+    "floorId": "F5",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D009",
+    "floorId": "F5",
+    "x": 14.74,
+    "z": 15.8,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D010",
+    "floorId": "F5",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D011",
+    "floorId": "F5",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D012",
+    "floorId": "F5",
+    "x": 14.44,
+    "z": 15.8,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D013",
+    "floorId": "F5",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D014",
+    "floorId": "F5",
+    "x": 11.62,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D015",
+    "floorId": "F5",
+    "x": 14.84,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D016",
+    "floorId": "F5",
+    "x": 18.04,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D017",
+    "floorId": "F5",
+    "x": 21.18,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D018",
+    "floorId": "F5",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D019",
+    "floorId": "F5",
+    "x": 11.6,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D020",
+    "floorId": "F5",
+    "x": 14.78,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D021",
+    "floorId": "F5",
+    "x": 17.9,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D022",
+    "floorId": "F5",
+    "x": 21.08,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D023",
+    "floorId": "F5",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D024",
+    "floorId": "F5",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D025",
+    "floorId": "F5",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D026",
+    "floorId": "F5",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D027",
+    "floorId": "F5",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D028",
+    "floorId": "F5",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D029",
+    "floorId": "F5",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D030",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D031",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 10.42,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D032",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 13.46,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D033",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 16.46,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D034",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 19.42,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D035",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 22.4,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D036",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 25.44,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D037",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 28.44,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D038",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 32.76,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D039",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D040",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D041",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F5_D042",
+    "floorId": "F5",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 14.4,
+    "kind": "door"
+  },
+  {
+    "id": "F6_N001",
+    "floorId": "F6",
+    "x": 8.26,
+    "z": 7.5,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N002",
+    "floorId": "F6",
+    "x": 13.14,
+    "z": 7.5,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N003",
+    "floorId": "F6",
+    "x": 16.32,
+    "z": 7.5,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N004",
+    "floorId": "F6",
+    "x": 19.54,
+    "z": 7.5,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N005",
+    "floorId": "F6",
+    "x": 22.7,
+    "z": 7.5,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N006",
+    "floorId": "F6",
+    "x": 25.9,
+    "z": 7.5,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N007",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N008",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 8.86,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N009",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 11.98,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N010",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 14.94,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N011",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 15.8,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N012",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 18,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N013",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 20.84,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N014",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 23.94,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N015",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 25.7,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N016",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 26.94,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N017",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 29.94,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N018",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 33.9,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N019",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 41.2,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N020",
+    "floorId": "F6",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N021",
+    "floorId": "F6",
+    "x": 18.96,
+    "z": 15.8,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N022",
+    "floorId": "F6",
+    "x": 16.4,
+    "z": 15.8,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N023",
+    "floorId": "F6",
+    "x": 13.14,
+    "z": 15.8,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N024",
+    "floorId": "F6",
+    "x": 10,
+    "z": 15.8,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N025",
+    "floorId": "F6",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N026",
+    "floorId": "F6",
+    "x": 22.7,
+    "z": 25.7,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N027",
+    "floorId": "F6",
+    "x": 19.64,
+    "z": 25.7,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N028",
+    "floorId": "F6",
+    "x": 16.44,
+    "z": 25.7,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N029",
+    "floorId": "F6",
+    "x": 13.24,
+    "z": 25.7,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N030",
+    "floorId": "F6",
+    "x": 10,
+    "z": 25.7,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N031",
+    "floorId": "F6",
+    "x": 8.26,
+    "z": 25.7,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N032",
+    "floorId": "F6",
+    "x": 8.26,
+    "z": 29.94,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N033",
+    "floorId": "F6",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N034",
+    "floorId": "F6",
+    "x": 4,
+    "z": 33.9,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N035",
+    "floorId": "F6",
+    "x": 0.4,
+    "z": 33.9,
+    "y": 18,
+    "kind": "corridor"
+  },
+  {
+    "id": "F6_N036",
+    "floorId": "F6",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 18,
+    "kind": "elev_door"
+  },
+  {
+    "id": "F6_N037",
+    "floorId": "F6",
+    "x": 14.44,
+    "z": 20.56,
+    "y": 18,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F6_N038",
+    "floorId": "F6",
+    "x": 32.4,
+    "z": 3.14,
+    "y": 18,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F6_N039",
+    "floorId": "F6",
+    "x": 33.2,
+    "z": 38.76,
+    "y": 18,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F6_N040",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_N041",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 18,
+    "kind": "junction"
+  },
+  {
+    "id": "F6_D001",
+    "floorId": "F6",
+    "x": 3.38,
+    "z": 7.5,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D002",
+    "floorId": "F6",
+    "x": 8.28,
+    "z": 7.5,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D003",
+    "floorId": "F6",
+    "x": 11.46,
+    "z": 7.5,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D004",
+    "floorId": "F6",
+    "x": 14.72,
+    "z": 7.5,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D005",
+    "floorId": "F6",
+    "x": 17.92,
+    "z": 7.5,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D006",
+    "floorId": "F6",
+    "x": 21.12,
+    "z": 7.5,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D007",
+    "floorId": "F6",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D008",
+    "floorId": "F6",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D009",
+    "floorId": "F6",
+    "x": 14.74,
+    "z": 15.8,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D010",
+    "floorId": "F6",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D011",
+    "floorId": "F6",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D012",
+    "floorId": "F6",
+    "x": 14.44,
+    "z": 15.8,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D013",
+    "floorId": "F6",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D014",
+    "floorId": "F6",
+    "x": 11.62,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D015",
+    "floorId": "F6",
+    "x": 14.84,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D016",
+    "floorId": "F6",
+    "x": 18.04,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D017",
+    "floorId": "F6",
+    "x": 21.18,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D018",
+    "floorId": "F6",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D019",
+    "floorId": "F6",
+    "x": 11.6,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D020",
+    "floorId": "F6",
+    "x": 14.78,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D021",
+    "floorId": "F6",
+    "x": 17.9,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D022",
+    "floorId": "F6",
+    "x": 21.08,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D023",
+    "floorId": "F6",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D024",
+    "floorId": "F6",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D025",
+    "floorId": "F6",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D026",
+    "floorId": "F6",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D027",
+    "floorId": "F6",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D028",
+    "floorId": "F6",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D029",
+    "floorId": "F6",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D030",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D031",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 10.42,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D032",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 13.46,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D033",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 16.46,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D034",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 19.42,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D035",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 22.4,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D036",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 25.44,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D037",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 28.44,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D038",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 32.76,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D039",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D040",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D041",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F6_D042",
+    "floorId": "F6",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 18,
+    "kind": "door"
+  },
+  {
+    "id": "F7_N001",
+    "floorId": "F7",
+    "x": 8.26,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N002",
+    "floorId": "F7",
+    "x": 13.14,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N003",
+    "floorId": "F7",
+    "x": 16.32,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N004",
+    "floorId": "F7",
+    "x": 19.54,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N005",
+    "floorId": "F7",
+    "x": 22.7,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N006",
+    "floorId": "F7",
+    "x": 25.9,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N007",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N008",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 8.86,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N009",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 11.98,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N010",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 14.94,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N011",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 15.8,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N012",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 18,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N013",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 20.84,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N014",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 23.94,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N015",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N016",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 26.94,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N017",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 29.94,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N018",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 33.9,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N019",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 41.2,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N020",
+    "floorId": "F7",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N021",
+    "floorId": "F7",
+    "x": 18.96,
+    "z": 15.8,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N022",
+    "floorId": "F7",
+    "x": 16.4,
+    "z": 15.8,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N023",
+    "floorId": "F7",
+    "x": 13.14,
+    "z": 15.8,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N024",
+    "floorId": "F7",
+    "x": 10,
+    "z": 15.8,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N025",
+    "floorId": "F7",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N026",
+    "floorId": "F7",
+    "x": 22.7,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N027",
+    "floorId": "F7",
+    "x": 19.64,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N028",
+    "floorId": "F7",
+    "x": 16.44,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N029",
+    "floorId": "F7",
+    "x": 13.24,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N030",
+    "floorId": "F7",
+    "x": 10,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N031",
+    "floorId": "F7",
+    "x": 8.26,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N032",
+    "floorId": "F7",
+    "x": 8.26,
+    "z": 29.94,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N033",
+    "floorId": "F7",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N034",
+    "floorId": "F7",
+    "x": 4,
+    "z": 33.9,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N035",
+    "floorId": "F7",
+    "x": 0.4,
+    "z": 33.9,
+    "y": 21.6,
+    "kind": "corridor"
+  },
+  {
+    "id": "F7_N036",
+    "floorId": "F7",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 21.6,
+    "kind": "elev_door"
+  },
+  {
+    "id": "F7_N037",
+    "floorId": "F7",
+    "x": 14.44,
+    "z": 20.56,
+    "y": 21.6,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F7_N038",
+    "floorId": "F7",
+    "x": 32.4,
+    "z": 3.14,
+    "y": 21.6,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F7_N039",
+    "floorId": "F7",
+    "x": 33.2,
+    "z": 38.76,
+    "y": 21.6,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F7_N040",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_N041",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 21.6,
+    "kind": "junction"
+  },
+  {
+    "id": "F7_D001",
+    "floorId": "F7",
+    "x": 3.38,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D002",
+    "floorId": "F7",
+    "x": 8.28,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D003",
+    "floorId": "F7",
+    "x": 11.46,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D004",
+    "floorId": "F7",
+    "x": 14.72,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D005",
+    "floorId": "F7",
+    "x": 17.92,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D006",
+    "floorId": "F7",
+    "x": 21.12,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D007",
+    "floorId": "F7",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D008",
+    "floorId": "F7",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D009",
+    "floorId": "F7",
+    "x": 14.74,
+    "z": 15.8,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D010",
+    "floorId": "F7",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D011",
+    "floorId": "F7",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D012",
+    "floorId": "F7",
+    "x": 14.44,
+    "z": 15.8,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D013",
+    "floorId": "F7",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D014",
+    "floorId": "F7",
+    "x": 11.62,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D015",
+    "floorId": "F7",
+    "x": 14.84,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D016",
+    "floorId": "F7",
+    "x": 18.04,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D017",
+    "floorId": "F7",
+    "x": 21.18,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D018",
+    "floorId": "F7",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D019",
+    "floorId": "F7",
+    "x": 11.6,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D020",
+    "floorId": "F7",
+    "x": 14.78,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D021",
+    "floorId": "F7",
+    "x": 17.9,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D022",
+    "floorId": "F7",
+    "x": 21.08,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D023",
+    "floorId": "F7",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D024",
+    "floorId": "F7",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D025",
+    "floorId": "F7",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D026",
+    "floorId": "F7",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D027",
+    "floorId": "F7",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D028",
+    "floorId": "F7",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D029",
+    "floorId": "F7",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D030",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D031",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 10.42,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D032",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 13.46,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D033",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 16.46,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D034",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 19.42,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D035",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 22.4,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D036",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 25.44,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D037",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 28.44,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D038",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 32.76,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D039",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D040",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D041",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F7_D042",
+    "floorId": "F7",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 21.6,
+    "kind": "door"
+  },
+  {
+    "id": "F8_N001",
+    "floorId": "F8",
+    "x": 8.26,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N002",
+    "floorId": "F8",
+    "x": 13.14,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N003",
+    "floorId": "F8",
+    "x": 16.32,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N004",
+    "floorId": "F8",
+    "x": 19.54,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N005",
+    "floorId": "F8",
+    "x": 22.7,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N006",
+    "floorId": "F8",
+    "x": 25.9,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N007",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N008",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 8.86,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N009",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 11.98,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N010",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 14.94,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N011",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 15.8,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N012",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 18,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N013",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 20.84,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N014",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 23.94,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N015",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N016",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 26.94,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N017",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 29.94,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N018",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 33.9,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N019",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 41.2,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N020",
+    "floorId": "F8",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N021",
+    "floorId": "F8",
+    "x": 18.96,
+    "z": 15.8,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N022",
+    "floorId": "F8",
+    "x": 16.4,
+    "z": 15.8,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N023",
+    "floorId": "F8",
+    "x": 13.14,
+    "z": 15.8,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N024",
+    "floorId": "F8",
+    "x": 10,
+    "z": 15.8,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N025",
+    "floorId": "F8",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N026",
+    "floorId": "F8",
+    "x": 22.7,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N027",
+    "floorId": "F8",
+    "x": 19.64,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N028",
+    "floorId": "F8",
+    "x": 16.44,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N029",
+    "floorId": "F8",
+    "x": 13.24,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N030",
+    "floorId": "F8",
+    "x": 10,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N031",
+    "floorId": "F8",
+    "x": 8.26,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N032",
+    "floorId": "F8",
+    "x": 8.26,
+    "z": 29.94,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N033",
+    "floorId": "F8",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N034",
+    "floorId": "F8",
+    "x": 4,
+    "z": 33.9,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N035",
+    "floorId": "F8",
+    "x": 0.4,
+    "z": 33.9,
+    "y": 25.2,
+    "kind": "corridor"
+  },
+  {
+    "id": "F8_N036",
+    "floorId": "F8",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 25.2,
+    "kind": "elev_door"
+  },
+  {
+    "id": "F8_N037",
+    "floorId": "F8",
+    "x": 14.44,
+    "z": 20.56,
+    "y": 25.2,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F8_N038",
+    "floorId": "F8",
+    "x": 32.4,
+    "z": 3.14,
+    "y": 25.2,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F8_N039",
+    "floorId": "F8",
+    "x": 33.2,
+    "z": 38.76,
+    "y": 25.2,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F8_N040",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_N041",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 25.2,
+    "kind": "junction"
+  },
+  {
+    "id": "F8_D001",
+    "floorId": "F8",
+    "x": 3.38,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D002",
+    "floorId": "F8",
+    "x": 8.28,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D003",
+    "floorId": "F8",
+    "x": 11.46,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D004",
+    "floorId": "F8",
+    "x": 14.72,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D005",
+    "floorId": "F8",
+    "x": 17.92,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D006",
+    "floorId": "F8",
+    "x": 21.12,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D007",
+    "floorId": "F8",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D008",
+    "floorId": "F8",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D009",
+    "floorId": "F8",
+    "x": 14.74,
+    "z": 15.8,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D010",
+    "floorId": "F8",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D011",
+    "floorId": "F8",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D012",
+    "floorId": "F8",
+    "x": 14.44,
+    "z": 15.8,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D013",
+    "floorId": "F8",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D014",
+    "floorId": "F8",
+    "x": 11.62,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D015",
+    "floorId": "F8",
+    "x": 14.84,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D016",
+    "floorId": "F8",
+    "x": 18.04,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D017",
+    "floorId": "F8",
+    "x": 21.18,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D018",
+    "floorId": "F8",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D019",
+    "floorId": "F8",
+    "x": 11.6,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D020",
+    "floorId": "F8",
+    "x": 14.78,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D021",
+    "floorId": "F8",
+    "x": 17.9,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D022",
+    "floorId": "F8",
+    "x": 21.08,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D023",
+    "floorId": "F8",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D024",
+    "floorId": "F8",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D025",
+    "floorId": "F8",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D026",
+    "floorId": "F8",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D027",
+    "floorId": "F8",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D028",
+    "floorId": "F8",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D029",
+    "floorId": "F8",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D030",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D031",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 10.42,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D032",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 13.46,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D033",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 16.46,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D034",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 19.42,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D035",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 22.4,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D036",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 25.44,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D037",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 28.44,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D038",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 32.76,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D039",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D040",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D041",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F8_D042",
+    "floorId": "F8",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 25.2,
+    "kind": "door"
+  },
+  {
+    "id": "F9_N001",
+    "floorId": "F9",
+    "x": 8.26,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N002",
+    "floorId": "F9",
+    "x": 13.14,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N003",
+    "floorId": "F9",
+    "x": 16.32,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N004",
+    "floorId": "F9",
+    "x": 19.54,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N005",
+    "floorId": "F9",
+    "x": 22.7,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N006",
+    "floorId": "F9",
+    "x": 25.9,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N007",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N008",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 8.86,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N009",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 11.98,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N010",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 14.94,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N011",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 15.8,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N012",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 18,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N013",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 20.84,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N014",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 23.94,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N015",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N016",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 26.94,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N017",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 29.94,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N018",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 33.9,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N019",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 41.2,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N020",
+    "floorId": "F9",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N021",
+    "floorId": "F9",
+    "x": 18.96,
+    "z": 15.8,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N022",
+    "floorId": "F9",
+    "x": 16.4,
+    "z": 15.8,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N023",
+    "floorId": "F9",
+    "x": 13.14,
+    "z": 15.8,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N024",
+    "floorId": "F9",
+    "x": 10,
+    "z": 15.8,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N025",
+    "floorId": "F9",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N026",
+    "floorId": "F9",
+    "x": 22.7,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N027",
+    "floorId": "F9",
+    "x": 19.64,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N028",
+    "floorId": "F9",
+    "x": 16.44,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N029",
+    "floorId": "F9",
+    "x": 13.24,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N030",
+    "floorId": "F9",
+    "x": 10,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N031",
+    "floorId": "F9",
+    "x": 8.26,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N032",
+    "floorId": "F9",
+    "x": 8.26,
+    "z": 29.94,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N033",
+    "floorId": "F9",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N034",
+    "floorId": "F9",
+    "x": 4,
+    "z": 33.9,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N035",
+    "floorId": "F9",
+    "x": 0.4,
+    "z": 33.9,
+    "y": 28.8,
+    "kind": "corridor"
+  },
+  {
+    "id": "F9_N036",
+    "floorId": "F9",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 28.8,
+    "kind": "elev_door"
+  },
+  {
+    "id": "F9_N037",
+    "floorId": "F9",
+    "x": 14.44,
+    "z": 20.56,
+    "y": 28.8,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F9_N038",
+    "floorId": "F9",
+    "x": 32.4,
+    "z": 3.14,
+    "y": 28.8,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F9_N039",
+    "floorId": "F9",
+    "x": 33.2,
+    "z": 38.76,
+    "y": 28.8,
+    "kind": "stair_end"
+  },
+  {
+    "id": "F9_N040",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_N041",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 28.8,
+    "kind": "junction"
+  },
+  {
+    "id": "F9_D001",
+    "floorId": "F9",
+    "x": 3.38,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D002",
+    "floorId": "F9",
+    "x": 8.28,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D003",
+    "floorId": "F9",
+    "x": 11.46,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D004",
+    "floorId": "F9",
+    "x": 14.72,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D005",
+    "floorId": "F9",
+    "x": 17.92,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D006",
+    "floorId": "F9",
+    "x": 21.12,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D007",
+    "floorId": "F9",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D008",
+    "floorId": "F9",
+    "x": 24.3,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D009",
+    "floorId": "F9",
+    "x": 14.74,
+    "z": 15.8,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D010",
+    "floorId": "F9",
+    "x": 22.7,
+    "z": 15.8,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D011",
+    "floorId": "F9",
+    "x": 8.26,
+    "z": 15.8,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D012",
+    "floorId": "F9",
+    "x": 14.44,
+    "z": 15.8,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D013",
+    "floorId": "F9",
+    "x": 22.7,
+    "z": 20.56,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D014",
+    "floorId": "F9",
+    "x": 11.62,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D015",
+    "floorId": "F9",
+    "x": 14.84,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D016",
+    "floorId": "F9",
+    "x": 18.04,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D017",
+    "floorId": "F9",
+    "x": 21.18,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D018",
+    "floorId": "F9",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D019",
+    "floorId": "F9",
+    "x": 11.6,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D020",
+    "floorId": "F9",
+    "x": 14.78,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D021",
+    "floorId": "F9",
+    "x": 17.9,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D022",
+    "floorId": "F9",
+    "x": 21.08,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D023",
+    "floorId": "F9",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D024",
+    "floorId": "F9",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D025",
+    "floorId": "F9",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D026",
+    "floorId": "F9",
+    "x": 24.28,
+    "z": 25.7,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D027",
+    "floorId": "F9",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D028",
+    "floorId": "F9",
+    "x": 8.26,
+    "z": 33.9,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D029",
+    "floorId": "F9",
+    "x": 3.44,
+    "z": 33.9,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D030",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 7.5,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D031",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 10.42,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D032",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 13.46,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D033",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 16.46,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D034",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 19.42,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D035",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 22.4,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D036",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 25.44,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D037",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 28.44,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D038",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 32.76,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D039",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D040",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 1.6,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D041",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 28.8,
+    "kind": "door"
+  },
+  {
+    "id": "F9_D042",
+    "floorId": "F9",
+    "x": 27.3,
+    "z": 35.6,
+    "y": 28.8,
+    "kind": "door"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "_note": "Bản thử nghiệm. Chưa có tọa độ khuôn viên BV Quân y 7A – Cần xác nhận. Khi status khác 'configured', app bỏ qua kiểm tra GPS.",
+  "status": "unconfigured",
+  "type": null,
+  "polygon": null,
+  "center": null,
+  "radius_m": null
+}

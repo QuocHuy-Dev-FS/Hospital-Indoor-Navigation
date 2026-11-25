@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>WebGL Check – Hospital Nav</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; background: #f5f7fa; color: #222; }
+  h1 { font-size: 1.3em; margin-bottom: 4px; }
+  .subtitle { color: #666; font-size: 0.9em; margin-bottom: 24px; }
+  .card { background: #fff; border-radius: 8px; padding: 16px 20px; margin-bottom: 14px; box-shadow: 0 1px 4px rgba(0,0,0,.10); }
+  .row { display: flex; justify-content: space-between; align-items: center; padding: 5px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.92em; }
+  .row:last-child { border-bottom: none; }
+  .label { color: #555; }
+  .val { font-weight: 600; }
+  .ok   { color: #1a7a2a; }
+  .warn { color: #c07800; }
+  .fail { color: #c0001a; }
+  #copy-btn { margin-top: 14px; padding: 8px 18px; background: #3a5cc4; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9em; }
+  #copy-btn:hover { background: #2a4ab4; }
+  #raw { display: none; }
+  canvas { display: none; }
+</style>
+</head>
+<body>
+<h1>WebGL Check</h1>
+<p class="subtitle">Kiểm tra hỗ trợ WebGL trên trình duyệt này (Hospital Indoor Navigation)</p>
+
+<div class="card" id="results-card">
+  <div class="row"><span class="label">Trạng thái</span><span class="val" id="r-status">Đang kiểm tra…</span></div>
+  <div class="row"><span class="label">WebGL 2</span><span class="val" id="r-webgl2">—</span></div>
+  <div class="row"><span class="label">WebGL 1</span><span class="val" id="r-webgl1">—</span></div>
+  <div class="row"><span class="label">Renderer (GPU)</span><span class="val" id="r-renderer">—</span></div>
+  <div class="row"><span class="label">Vendor</span><span class="val" id="r-vendor">—</span></div>
+  <div class="row"><span class="label">Max Texture Size</span><span class="val" id="r-texsize">—</span></div>
+  <div class="row"><span class="label">Max Vertex Attribs</span><span class="val" id="r-vattrib">—</span></div>
+  <div class="row"><span class="label">Tăng tốc phần cứng</span><span class="val" id="r-hwaccel">—</span></div>
+  <div class="row"><span class="label">User-Agent</span><span class="val" id="r-ua" style="font-size:0.78em;max-width:320px;word-break:break-all">—</span></div>
+</div>
+
+<button id="copy-btn">📋 Sao chép kết quả</button>
+<pre id="raw"></pre>
+<canvas id="gl-canvas" width="1" height="1"></canvas>
+
+<script>
+(function() {
+  function set(id, text, cls) {
+    var el = document.getElementById(id);
+    el.textContent = text;
+    if (cls) el.className = 'val ' + cls;
+  }
+
+  var info = {
+    webgl2: false, webgl1: false,
+    renderer: 'N/A', vendor: 'N/A',
+    maxTex: 'N/A', maxAttrib: 'N/A',
+    hwAccel: 'Không xác định',
+    ua: navigator.userAgent
+  };
+
+  var canvas = document.getElementById('gl-canvas');
+
+  // WebGL 2
+  var gl2 = null;
+  try { gl2 = canvas.getContext('webgl2') || canvas.getContext('experimental-webgl2'); } catch(e) {}
+  if (gl2) {
+    info.webgl2 = true;
+    try {
+      var dbg = gl2.getExtension('WEBGL_debug_renderer_info');
+      if (dbg) {
+        info.renderer = gl2.getParameter(dbg.UNMASKED_RENDERER_WEBGL) || 'N/A';
+        info.vendor   = gl2.getParameter(dbg.UNMASKED_VENDOR_WEBGL)   || 'N/A';
+      }
+      info.maxTex    = gl2.getParameter(gl2.MAX_TEXTURE_SIZE);
+      info.maxAttrib = gl2.getParameter(gl2.MAX_VERTEX_ATTRIBS);
+    } catch(e) {}
+    // Detect software renderer
+    var r = info.renderer.toLowerCase();
+    if (r.indexOf('swiftshader') >= 0 || r.indexOf('software') >= 0 || r.indexOf('llvmpipe') >= 0 || r.indexOf('microsoft basic') >= 0) {
+      info.hwAccel = 'Không – Software Renderer';
+    } else if (info.renderer !== 'N/A') {
+      info.hwAccel = 'Có';
+    }
+  }
+
+  // WebGL 1 (fallback)
+  var gl1 = null;
+  if (!gl2) {
+    try { gl1 = canvas.getContext('webgl') || canvas.getContext('experimental-webgl'); } catch(e) {}
+    if (gl1) {
+      info.webgl1 = true;
+      try {
+        var dbg1 = gl1.getExtension('WEBGL_debug_renderer_info');
+        if (dbg1) {
+          info.renderer = gl1.getParameter(dbg1.UNMASKED_RENDERER_WEBGL) || 'N/A';
+          info.vendor   = gl1.getParameter(dbg1.UNMASKED_VENDOR_WEBGL)   || 'N/A';
+        }
+        info.maxTex    = gl1.getParameter(gl1.MAX_TEXTURE_SIZE);
+        info.maxAttrib = gl1.getParameter(gl1.MAX_VERTEX_ATTRIBS);
+      } catch(e) {}
+      var r1 = info.renderer.toLowerCase();
+      if (r1.indexOf('swiftshader') >= 0 || r1.indexOf('software') >= 0 || r1.indexOf('llvmpipe') >= 0) {
+        info.hwAccel = 'Không – Software Renderer';
+      } else if (info.renderer !== 'N/A') {
+        info.hwAccel = 'Có';
+      }
+    }
+  }
+
+  // Render results
+  if (info.webgl2) {
+    set('r-status',  '✓ WebGL 2 hỗ trợ', 'ok');
+    set('r-webgl2',  '✓ Có', 'ok');
+    set('r-webgl1',  'N/A (dùng WebGL2)', '');
+  } else if (info.webgl1) {
+    set('r-status',  '⚠ Chỉ WebGL 1 (Three.js r150+ cần WebGL2)', 'warn');
+    set('r-webgl2',  '✗ Không hỗ trợ', 'fail');
+    set('r-webgl1',  '✓ Có', 'warn');
+  } else {
+    set('r-status',  '✗ Không hỗ trợ WebGL', 'fail');
+    set('r-webgl2',  '✗ Không', 'fail');
+    set('r-webgl1',  '✗ Không', 'fail');
+  }
+
+  set('r-renderer', info.renderer);
+  set('r-vendor',   info.vendor);
+  set('r-texsize',  info.maxTex !== 'N/A' ? info.maxTex + ' px' : 'N/A');
+  set('r-vattrib',  String(info.maxAttrib));
+
+  var hwCls = info.hwAccel === 'Có' ? 'ok' : (info.hwAccel.indexOf('Không –') === 0 ? 'warn' : '');
+  set('r-hwaccel',  info.hwAccel, hwCls);
+  set('r-ua',       info.ua.substring(0, 120) + (info.ua.length > 120 ? '…' : ''));
+
+  // Copy button
+  var raw = [
+    'WebGL2: ' + (info.webgl2 ? 'YES' : 'NO'),
+    'WebGL1: ' + (info.webgl1 ? 'YES' : 'NO'),
+    'Renderer: ' + info.renderer,
+    'Vendor:   ' + info.vendor,
+    'MaxTex:   ' + info.maxTex,
+    'MaxAttrib: ' + info.maxAttrib,
+    'HW Accel: ' + info.hwAccel,
+    'UA: ' + info.ua,
+    'Time: ' + new Date().toISOString()
+  ].join('\n');
+
+  document.getElementById('raw').textContent = raw;
+
+  document.getElementById('copy-btn').addEventListener('click', function() {
+    var btn = this;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(raw).then(function() {
+        btn.textContent = '✓ Đã sao chép';
+        setTimeout(function() { btn.textContent = '📋 Sao chép kết quả'; }, 2000);
+      });
+    } else {
+      // Fallback: select pre text
+      var pre = document.getElementById('raw');
+      pre.style.display = 'block';
+      var range = document.createRange();
+      range.selectNodeContents(pre);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      btn.textContent = '✓ Đã chọn văn bản (Ctrl+C để sao chép)';
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,8318 @@
+[
+  {
+    "id": "F1_R001",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-1",
+    "nameAscii": "phong chua dat ten f1-1",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D001",
+    "centroid": {
+      "x": 3.38,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 0,
+      "x2": 6.76,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R002",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-2",
+    "nameAscii": "phong chua dat ten f1-2",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D002",
+    "centroid": {
+      "x": 8.28,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 6.76,
+      "z1": 0,
+      "x2": 9.8,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R003",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-3",
+    "nameAscii": "phong chua dat ten f1-3",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D003",
+    "centroid": {
+      "x": 11.47,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 9.8,
+      "z1": 0,
+      "x2": 13.14,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R004",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-4",
+    "nameAscii": "phong chua dat ten f1-4",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D004",
+    "centroid": {
+      "x": 14.73,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 13.14,
+      "z1": 0,
+      "x2": 16.32,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R005",
+    "floorId": "F1",
+    "name": "Phòng Trưởng ban",
+    "nameAscii": "phong truong ban",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F1_D005",
+    "centroid": {
+      "x": 17.93,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 0,
+      "x2": 19.54,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F1_R006",
+    "floorId": "F1",
+    "name": "Phòng kỹ thuật",
+    "nameAscii": "phong ky thuat",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F1_D006",
+    "centroid": {
+      "x": 21.12,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 19.54,
+      "z1": 0,
+      "x2": 22.7,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F1_R007",
+    "floorId": "F1",
+    "name": "WC Nam",
+    "nameAscii": "wc nam",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F1_D007",
+    "centroid": {
+      "x": 24.3,
+      "z": 1.57
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 0,
+      "x2": 25.9,
+      "z2": 3.14
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F1_R008",
+    "floorId": "F1",
+    "name": "WC Nữ",
+    "nameAscii": "wc nu",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F1_D008",
+    "centroid": {
+      "x": 24.3,
+      "z": 4.72
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 3.14,
+      "x2": 25.9,
+      "z2": 6.3
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F1_R009",
+    "floorId": "F1",
+    "name": "Phòng Hành chính",
+    "nameAscii": "phong hanh chinh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F1_D009",
+    "centroid": {
+      "x": 14.75,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 8.84,
+      "x2": 19.5,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F1_R010",
+    "floorId": "F1",
+    "name": "Phòng Điều hành",
+    "nameAscii": "phong dieu hanh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F1_D010",
+    "centroid": {
+      "x": 22.7,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 8.84,
+      "x2": 25.9,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F1_R011",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-11",
+    "nameAscii": "phong chua dat ten f1-11",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D011",
+    "centroid": {
+      "x": 3.55,
+      "z": 20.86
+    },
+    "bounds": {
+      "x1": 0.44,
+      "z1": 8.92,
+      "x2": 6.66,
+      "z2": 32.8
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R012",
+    "floorId": "F1",
+    "name": "Cầu thang giữa",
+    "nameAscii": "cau thang giua",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F1_D012",
+    "centroid": {
+      "x": 14.45,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 16.92,
+      "x2": 18.96,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F1_R013",
+    "floorId": "F1",
+    "name": "Thang máy / Giếng trời",
+    "nameAscii": "thang may / gieng troi",
+    "type": "elevator",
+    "accessible": true,
+    "doorNodeId": "F1_D013",
+    "centroid": {
+      "x": 22.68,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 18.96,
+      "z1": 16.92,
+      "x2": 26.4,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F1_R014",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-14",
+    "nameAscii": "phong chua dat ten f1-14",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D014",
+    "centroid": {
+      "x": 11.62,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 26.98,
+      "x2": 13.24,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R015",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-15",
+    "nameAscii": "phong chua dat ten f1-15",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D015",
+    "centroid": {
+      "x": 14.84,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 13.24,
+      "z1": 26.98,
+      "x2": 16.44,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R016",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-16",
+    "nameAscii": "phong chua dat ten f1-16",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D016",
+    "centroid": {
+      "x": 18.04,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 16.44,
+      "z1": 26.98,
+      "x2": 19.64,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R017",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-17",
+    "nameAscii": "phong chua dat ten f1-17",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D017",
+    "centroid": {
+      "x": 21.19,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 19.64,
+      "z1": 26.98,
+      "x2": 22.74,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R018",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-18",
+    "nameAscii": "phong chua dat ten f1-18",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D018",
+    "centroid": {
+      "x": 24.28,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 22.74,
+      "z1": 26.98,
+      "x2": 25.82,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R019",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-19",
+    "nameAscii": "phong chua dat ten f1-19",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D019",
+    "centroid": {
+      "x": 11.6,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 31.64,
+      "x2": 13.26,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R020",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-20",
+    "nameAscii": "phong chua dat ten f1-20",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D020",
+    "centroid": {
+      "x": 14.79,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 13.26,
+      "z1": 31.64,
+      "x2": 16.32,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R021",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-21",
+    "nameAscii": "phong chua dat ten f1-21",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D021",
+    "centroid": {
+      "x": 17.91,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 31.64,
+      "x2": 19.5,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R022",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-22",
+    "nameAscii": "phong chua dat ten f1-22",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D022",
+    "centroid": {
+      "x": 21.08,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 31.64,
+      "x2": 22.66,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R023",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-23",
+    "nameAscii": "phong chua dat ten f1-23",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D023",
+    "centroid": {
+      "x": 24.28,
+      "z": 31.2
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 29.94,
+      "x2": 25.9,
+      "z2": 32.46
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R024",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-24",
+    "nameAscii": "phong chua dat ten f1-24",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D024",
+    "centroid": {
+      "x": 24.28,
+      "z": 33.72
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 32.46,
+      "x2": 25.9,
+      "z2": 34.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R025",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-25",
+    "nameAscii": "phong chua dat ten f1-25",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D025",
+    "centroid": {
+      "x": 24.28,
+      "z": 36.24
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 34.98,
+      "x2": 25.9,
+      "z2": 37.5
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R026",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-26",
+    "nameAscii": "phong chua dat ten f1-26",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D026",
+    "centroid": {
+      "x": 24.28,
+      "z": 38.75
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 37.5,
+      "x2": 25.9,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R027",
+    "floorId": "F1",
+    "name": "Trung Tâm dữ liệu",
+    "nameAscii": "trung tam du lieu",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F1_D027",
+    "centroid": {
+      "x": 3.43,
+      "z": 36.68
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 35.7,
+      "x2": 6.86,
+      "z2": 37.66
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F1_R028",
+    "floorId": "F1",
+    "name": "Kho",
+    "nameAscii": "kho",
+    "type": "storage",
+    "accessible": true,
+    "doorNodeId": "F1_D028",
+    "centroid": {
+      "x": 8.39,
+      "z": 38.81
+    },
+    "bounds": {
+      "x1": 6.86,
+      "z1": 35.7,
+      "x2": 9.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F1_R029",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-29",
+    "nameAscii": "phong chua dat ten f1-29",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D029",
+    "centroid": {
+      "x": 3.43,
+      "z": 39.79
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 37.66,
+      "x2": 6.86,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R030",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-30",
+    "nameAscii": "phong chua dat ten f1-30",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D030",
+    "centroid": {
+      "x": 31.71,
+      "z": 7.56
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 6.26,
+      "x2": 34.92,
+      "z2": 8.86
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R031",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-31",
+    "nameAscii": "phong chua dat ten f1-31",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D031",
+    "centroid": {
+      "x": 31.71,
+      "z": 10.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 8.86,
+      "x2": 34.92,
+      "z2": 11.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R032",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-32",
+    "nameAscii": "phong chua dat ten f1-32",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D032",
+    "centroid": {
+      "x": 31.71,
+      "z": 13.46
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 11.98,
+      "x2": 34.92,
+      "z2": 14.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R033",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-33",
+    "nameAscii": "phong chua dat ten f1-33",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D033",
+    "centroid": {
+      "x": 31.71,
+      "z": 16.47
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 14.94,
+      "x2": 34.92,
+      "z2": 18
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R034",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-34",
+    "nameAscii": "phong chua dat ten f1-34",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D034",
+    "centroid": {
+      "x": 31.71,
+      "z": 19.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 18,
+      "x2": 34.92,
+      "z2": 20.84
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R035",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-35",
+    "nameAscii": "phong chua dat ten f1-35",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D035",
+    "centroid": {
+      "x": 31.71,
+      "z": 22.39
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 20.84,
+      "x2": 34.92,
+      "z2": 23.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R036",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-36",
+    "nameAscii": "phong chua dat ten f1-36",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D036",
+    "centroid": {
+      "x": 31.71,
+      "z": 25.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 23.94,
+      "x2": 34.92,
+      "z2": 26.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R037",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-37",
+    "nameAscii": "phong chua dat ten f1-37",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D037",
+    "centroid": {
+      "x": 31.71,
+      "z": 28.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 26.94,
+      "x2": 34.92,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R038",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-38",
+    "nameAscii": "phong chua dat ten f1-38",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D038",
+    "centroid": {
+      "x": 31.71,
+      "z": 32.77
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 29.94,
+      "x2": 34.92,
+      "z2": 35.6
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R039",
+    "floorId": "F1",
+    "name": "Cầu thang Đông-Bắc",
+    "nameAscii": "cau thang dong-bac",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F1_D039",
+    "centroid": {
+      "x": 33.31,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 31.7,
+      "z1": 0,
+      "x2": 34.92,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F1_R040",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-40",
+    "nameAscii": "phong chua dat ten f1-40",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D040",
+    "centroid": {
+      "x": 30.1,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 0,
+      "x2": 31.7,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F1_R041",
+    "floorId": "F1",
+    "name": "Cầu thang Đông-Nam",
+    "nameAscii": "cau thang dong-nam",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F1_D041",
+    "centroid": {
+      "x": 33.28,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 31.64,
+      "z1": 35.6,
+      "x2": 34.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F1_R042",
+    "floorId": "F1",
+    "name": "Phòng chưa đặt tên F1-42",
+    "nameAscii": "phong chua dat ten f1-42",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F1_D042",
+    "centroid": {
+      "x": 30.07,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 35.6,
+      "x2": 31.64,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R001",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-1",
+    "nameAscii": "phong chua dat ten f2-1",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D001",
+    "centroid": {
+      "x": 3.38,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 0,
+      "x2": 6.76,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R002",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-2",
+    "nameAscii": "phong chua dat ten f2-2",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D002",
+    "centroid": {
+      "x": 8.28,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 6.76,
+      "z1": 0,
+      "x2": 9.8,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R003",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-3",
+    "nameAscii": "phong chua dat ten f2-3",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D003",
+    "centroid": {
+      "x": 11.47,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 9.8,
+      "z1": 0,
+      "x2": 13.14,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R004",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-4",
+    "nameAscii": "phong chua dat ten f2-4",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D004",
+    "centroid": {
+      "x": 14.73,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 13.14,
+      "z1": 0,
+      "x2": 16.32,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R005",
+    "floorId": "F2",
+    "name": "Phòng Trưởng ban",
+    "nameAscii": "phong truong ban",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F2_D005",
+    "centroid": {
+      "x": 17.93,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 0,
+      "x2": 19.54,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F2_R006",
+    "floorId": "F2",
+    "name": "Phòng kỹ thuật",
+    "nameAscii": "phong ky thuat",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F2_D006",
+    "centroid": {
+      "x": 21.12,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 19.54,
+      "z1": 0,
+      "x2": 22.7,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F2_R007",
+    "floorId": "F2",
+    "name": "WC Nam",
+    "nameAscii": "wc nam",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F2_D007",
+    "centroid": {
+      "x": 24.3,
+      "z": 1.57
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 0,
+      "x2": 25.9,
+      "z2": 3.14
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F2_R008",
+    "floorId": "F2",
+    "name": "WC Nữ",
+    "nameAscii": "wc nu",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F2_D008",
+    "centroid": {
+      "x": 24.3,
+      "z": 4.72
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 3.14,
+      "x2": 25.9,
+      "z2": 6.3
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F2_R009",
+    "floorId": "F2",
+    "name": "Phòng Hành chính",
+    "nameAscii": "phong hanh chinh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F2_D009",
+    "centroid": {
+      "x": 14.75,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 8.84,
+      "x2": 19.5,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F2_R010",
+    "floorId": "F2",
+    "name": "Phòng Điều hành",
+    "nameAscii": "phong dieu hanh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F2_D010",
+    "centroid": {
+      "x": 22.7,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 8.84,
+      "x2": 25.9,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F2_R011",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-11",
+    "nameAscii": "phong chua dat ten f2-11",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D011",
+    "centroid": {
+      "x": 3.55,
+      "z": 20.86
+    },
+    "bounds": {
+      "x1": 0.44,
+      "z1": 8.92,
+      "x2": 6.66,
+      "z2": 32.8
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R012",
+    "floorId": "F2",
+    "name": "Cầu thang giữa",
+    "nameAscii": "cau thang giua",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F2_D012",
+    "centroid": {
+      "x": 14.45,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 16.92,
+      "x2": 18.96,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F2_R013",
+    "floorId": "F2",
+    "name": "Thang máy / Giếng trời",
+    "nameAscii": "thang may / gieng troi",
+    "type": "elevator",
+    "accessible": true,
+    "doorNodeId": "F2_D013",
+    "centroid": {
+      "x": 22.68,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 18.96,
+      "z1": 16.92,
+      "x2": 26.4,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F2_R014",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-14",
+    "nameAscii": "phong chua dat ten f2-14",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D014",
+    "centroid": {
+      "x": 11.62,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 26.98,
+      "x2": 13.24,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R015",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-15",
+    "nameAscii": "phong chua dat ten f2-15",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D015",
+    "centroid": {
+      "x": 14.84,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 13.24,
+      "z1": 26.98,
+      "x2": 16.44,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R016",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-16",
+    "nameAscii": "phong chua dat ten f2-16",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D016",
+    "centroid": {
+      "x": 18.04,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 16.44,
+      "z1": 26.98,
+      "x2": 19.64,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R017",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-17",
+    "nameAscii": "phong chua dat ten f2-17",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D017",
+    "centroid": {
+      "x": 21.19,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 19.64,
+      "z1": 26.98,
+      "x2": 22.74,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R018",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-18",
+    "nameAscii": "phong chua dat ten f2-18",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D018",
+    "centroid": {
+      "x": 24.28,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 22.74,
+      "z1": 26.98,
+      "x2": 25.82,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R019",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-19",
+    "nameAscii": "phong chua dat ten f2-19",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D019",
+    "centroid": {
+      "x": 11.6,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 31.64,
+      "x2": 13.26,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R020",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-20",
+    "nameAscii": "phong chua dat ten f2-20",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D020",
+    "centroid": {
+      "x": 14.79,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 13.26,
+      "z1": 31.64,
+      "x2": 16.32,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R021",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-21",
+    "nameAscii": "phong chua dat ten f2-21",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D021",
+    "centroid": {
+      "x": 17.91,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 31.64,
+      "x2": 19.5,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R022",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-22",
+    "nameAscii": "phong chua dat ten f2-22",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D022",
+    "centroid": {
+      "x": 21.08,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 31.64,
+      "x2": 22.66,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R023",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-23",
+    "nameAscii": "phong chua dat ten f2-23",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D023",
+    "centroid": {
+      "x": 24.28,
+      "z": 31.2
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 29.94,
+      "x2": 25.9,
+      "z2": 32.46
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R024",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-24",
+    "nameAscii": "phong chua dat ten f2-24",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D024",
+    "centroid": {
+      "x": 24.28,
+      "z": 33.72
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 32.46,
+      "x2": 25.9,
+      "z2": 34.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R025",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-25",
+    "nameAscii": "phong chua dat ten f2-25",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D025",
+    "centroid": {
+      "x": 24.28,
+      "z": 36.24
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 34.98,
+      "x2": 25.9,
+      "z2": 37.5
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R026",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-26",
+    "nameAscii": "phong chua dat ten f2-26",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D026",
+    "centroid": {
+      "x": 24.28,
+      "z": 38.75
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 37.5,
+      "x2": 25.9,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R027",
+    "floorId": "F2",
+    "name": "Trung Tâm dữ liệu",
+    "nameAscii": "trung tam du lieu",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F2_D027",
+    "centroid": {
+      "x": 3.43,
+      "z": 36.68
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 35.7,
+      "x2": 6.86,
+      "z2": 37.66
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F2_R028",
+    "floorId": "F2",
+    "name": "Kho",
+    "nameAscii": "kho",
+    "type": "storage",
+    "accessible": true,
+    "doorNodeId": "F2_D028",
+    "centroid": {
+      "x": 8.39,
+      "z": 38.81
+    },
+    "bounds": {
+      "x1": 6.86,
+      "z1": 35.7,
+      "x2": 9.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F2_R029",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-29",
+    "nameAscii": "phong chua dat ten f2-29",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D029",
+    "centroid": {
+      "x": 3.43,
+      "z": 39.79
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 37.66,
+      "x2": 6.86,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R030",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-30",
+    "nameAscii": "phong chua dat ten f2-30",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D030",
+    "centroid": {
+      "x": 31.71,
+      "z": 7.56
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 6.26,
+      "x2": 34.92,
+      "z2": 8.86
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R031",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-31",
+    "nameAscii": "phong chua dat ten f2-31",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D031",
+    "centroid": {
+      "x": 31.71,
+      "z": 10.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 8.86,
+      "x2": 34.92,
+      "z2": 11.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R032",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-32",
+    "nameAscii": "phong chua dat ten f2-32",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D032",
+    "centroid": {
+      "x": 31.71,
+      "z": 13.46
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 11.98,
+      "x2": 34.92,
+      "z2": 14.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R033",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-33",
+    "nameAscii": "phong chua dat ten f2-33",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D033",
+    "centroid": {
+      "x": 31.71,
+      "z": 16.47
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 14.94,
+      "x2": 34.92,
+      "z2": 18
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R034",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-34",
+    "nameAscii": "phong chua dat ten f2-34",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D034",
+    "centroid": {
+      "x": 31.71,
+      "z": 19.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 18,
+      "x2": 34.92,
+      "z2": 20.84
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R035",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-35",
+    "nameAscii": "phong chua dat ten f2-35",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D035",
+    "centroid": {
+      "x": 31.71,
+      "z": 22.39
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 20.84,
+      "x2": 34.92,
+      "z2": 23.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R036",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-36",
+    "nameAscii": "phong chua dat ten f2-36",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D036",
+    "centroid": {
+      "x": 31.71,
+      "z": 25.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 23.94,
+      "x2": 34.92,
+      "z2": 26.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R037",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-37",
+    "nameAscii": "phong chua dat ten f2-37",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D037",
+    "centroid": {
+      "x": 31.71,
+      "z": 28.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 26.94,
+      "x2": 34.92,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R038",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-38",
+    "nameAscii": "phong chua dat ten f2-38",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D038",
+    "centroid": {
+      "x": 31.71,
+      "z": 32.77
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 29.94,
+      "x2": 34.92,
+      "z2": 35.6
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R039",
+    "floorId": "F2",
+    "name": "Cầu thang Đông-Bắc",
+    "nameAscii": "cau thang dong-bac",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F2_D039",
+    "centroid": {
+      "x": 33.31,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 31.7,
+      "z1": 0,
+      "x2": 34.92,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F2_R040",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-40",
+    "nameAscii": "phong chua dat ten f2-40",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D040",
+    "centroid": {
+      "x": 30.1,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 0,
+      "x2": 31.7,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F2_R041",
+    "floorId": "F2",
+    "name": "Cầu thang Đông-Nam",
+    "nameAscii": "cau thang dong-nam",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F2_D041",
+    "centroid": {
+      "x": 33.28,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 31.64,
+      "z1": 35.6,
+      "x2": 34.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F2_R042",
+    "floorId": "F2",
+    "name": "Phòng chưa đặt tên F2-42",
+    "nameAscii": "phong chua dat ten f2-42",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F2_D042",
+    "centroid": {
+      "x": 30.07,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 35.6,
+      "x2": 31.64,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R001",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-1",
+    "nameAscii": "phong chua dat ten f3-1",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D001",
+    "centroid": {
+      "x": 3.38,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 0,
+      "x2": 6.76,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R002",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-2",
+    "nameAscii": "phong chua dat ten f3-2",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D002",
+    "centroid": {
+      "x": 8.28,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 6.76,
+      "z1": 0,
+      "x2": 9.8,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R003",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-3",
+    "nameAscii": "phong chua dat ten f3-3",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D003",
+    "centroid": {
+      "x": 11.47,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 9.8,
+      "z1": 0,
+      "x2": 13.14,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R004",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-4",
+    "nameAscii": "phong chua dat ten f3-4",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D004",
+    "centroid": {
+      "x": 14.73,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 13.14,
+      "z1": 0,
+      "x2": 16.32,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R005",
+    "floorId": "F3",
+    "name": "Phòng Trưởng ban",
+    "nameAscii": "phong truong ban",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F3_D005",
+    "centroid": {
+      "x": 17.93,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 0,
+      "x2": 19.54,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F3_R006",
+    "floorId": "F3",
+    "name": "Phòng kỹ thuật",
+    "nameAscii": "phong ky thuat",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F3_D006",
+    "centroid": {
+      "x": 21.12,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 19.54,
+      "z1": 0,
+      "x2": 22.7,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F3_R007",
+    "floorId": "F3",
+    "name": "WC Nam",
+    "nameAscii": "wc nam",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F3_D007",
+    "centroid": {
+      "x": 24.3,
+      "z": 1.57
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 0,
+      "x2": 25.9,
+      "z2": 3.14
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F3_R008",
+    "floorId": "F3",
+    "name": "WC Nữ",
+    "nameAscii": "wc nu",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F3_D008",
+    "centroid": {
+      "x": 24.3,
+      "z": 4.72
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 3.14,
+      "x2": 25.9,
+      "z2": 6.3
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F3_R009",
+    "floorId": "F3",
+    "name": "Phòng Hành chính",
+    "nameAscii": "phong hanh chinh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F3_D009",
+    "centroid": {
+      "x": 14.75,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 8.84,
+      "x2": 19.5,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F3_R010",
+    "floorId": "F3",
+    "name": "Phòng Điều hành",
+    "nameAscii": "phong dieu hanh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F3_D010",
+    "centroid": {
+      "x": 22.7,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 8.84,
+      "x2": 25.9,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F3_R011",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-11",
+    "nameAscii": "phong chua dat ten f3-11",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D011",
+    "centroid": {
+      "x": 3.55,
+      "z": 20.86
+    },
+    "bounds": {
+      "x1": 0.44,
+      "z1": 8.92,
+      "x2": 6.66,
+      "z2": 32.8
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R012",
+    "floorId": "F3",
+    "name": "Cầu thang giữa",
+    "nameAscii": "cau thang giua",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F3_D012",
+    "centroid": {
+      "x": 14.45,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 16.92,
+      "x2": 18.96,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F3_R013",
+    "floorId": "F3",
+    "name": "Thang máy / Giếng trời",
+    "nameAscii": "thang may / gieng troi",
+    "type": "elevator",
+    "accessible": true,
+    "doorNodeId": "F3_D013",
+    "centroid": {
+      "x": 22.68,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 18.96,
+      "z1": 16.92,
+      "x2": 26.4,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F3_R014",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-14",
+    "nameAscii": "phong chua dat ten f3-14",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D014",
+    "centroid": {
+      "x": 11.62,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 26.98,
+      "x2": 13.24,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R015",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-15",
+    "nameAscii": "phong chua dat ten f3-15",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D015",
+    "centroid": {
+      "x": 14.84,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 13.24,
+      "z1": 26.98,
+      "x2": 16.44,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R016",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-16",
+    "nameAscii": "phong chua dat ten f3-16",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D016",
+    "centroid": {
+      "x": 18.04,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 16.44,
+      "z1": 26.98,
+      "x2": 19.64,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R017",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-17",
+    "nameAscii": "phong chua dat ten f3-17",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D017",
+    "centroid": {
+      "x": 21.19,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 19.64,
+      "z1": 26.98,
+      "x2": 22.74,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R018",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-18",
+    "nameAscii": "phong chua dat ten f3-18",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D018",
+    "centroid": {
+      "x": 24.28,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 22.74,
+      "z1": 26.98,
+      "x2": 25.82,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R019",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-19",
+    "nameAscii": "phong chua dat ten f3-19",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D019",
+    "centroid": {
+      "x": 11.6,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 31.64,
+      "x2": 13.26,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R020",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-20",
+    "nameAscii": "phong chua dat ten f3-20",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D020",
+    "centroid": {
+      "x": 14.79,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 13.26,
+      "z1": 31.64,
+      "x2": 16.32,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R021",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-21",
+    "nameAscii": "phong chua dat ten f3-21",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D021",
+    "centroid": {
+      "x": 17.91,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 31.64,
+      "x2": 19.5,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R022",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-22",
+    "nameAscii": "phong chua dat ten f3-22",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D022",
+    "centroid": {
+      "x": 21.08,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 31.64,
+      "x2": 22.66,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R023",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-23",
+    "nameAscii": "phong chua dat ten f3-23",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D023",
+    "centroid": {
+      "x": 24.28,
+      "z": 31.2
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 29.94,
+      "x2": 25.9,
+      "z2": 32.46
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R024",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-24",
+    "nameAscii": "phong chua dat ten f3-24",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D024",
+    "centroid": {
+      "x": 24.28,
+      "z": 33.72
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 32.46,
+      "x2": 25.9,
+      "z2": 34.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R025",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-25",
+    "nameAscii": "phong chua dat ten f3-25",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D025",
+    "centroid": {
+      "x": 24.28,
+      "z": 36.24
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 34.98,
+      "x2": 25.9,
+      "z2": 37.5
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R026",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-26",
+    "nameAscii": "phong chua dat ten f3-26",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D026",
+    "centroid": {
+      "x": 24.28,
+      "z": 38.75
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 37.5,
+      "x2": 25.9,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R027",
+    "floorId": "F3",
+    "name": "Trung Tâm dữ liệu",
+    "nameAscii": "trung tam du lieu",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F3_D027",
+    "centroid": {
+      "x": 3.43,
+      "z": 36.68
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 35.7,
+      "x2": 6.86,
+      "z2": 37.66
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F3_R028",
+    "floorId": "F3",
+    "name": "Kho",
+    "nameAscii": "kho",
+    "type": "storage",
+    "accessible": true,
+    "doorNodeId": "F3_D028",
+    "centroid": {
+      "x": 8.39,
+      "z": 38.81
+    },
+    "bounds": {
+      "x1": 6.86,
+      "z1": 35.7,
+      "x2": 9.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F3_R029",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-29",
+    "nameAscii": "phong chua dat ten f3-29",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D029",
+    "centroid": {
+      "x": 3.43,
+      "z": 39.79
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 37.66,
+      "x2": 6.86,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R030",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-30",
+    "nameAscii": "phong chua dat ten f3-30",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D030",
+    "centroid": {
+      "x": 31.71,
+      "z": 7.56
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 6.26,
+      "x2": 34.92,
+      "z2": 8.86
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R031",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-31",
+    "nameAscii": "phong chua dat ten f3-31",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D031",
+    "centroid": {
+      "x": 31.71,
+      "z": 10.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 8.86,
+      "x2": 34.92,
+      "z2": 11.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R032",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-32",
+    "nameAscii": "phong chua dat ten f3-32",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D032",
+    "centroid": {
+      "x": 31.71,
+      "z": 13.46
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 11.98,
+      "x2": 34.92,
+      "z2": 14.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R033",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-33",
+    "nameAscii": "phong chua dat ten f3-33",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D033",
+    "centroid": {
+      "x": 31.71,
+      "z": 16.47
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 14.94,
+      "x2": 34.92,
+      "z2": 18
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R034",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-34",
+    "nameAscii": "phong chua dat ten f3-34",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D034",
+    "centroid": {
+      "x": 31.71,
+      "z": 19.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 18,
+      "x2": 34.92,
+      "z2": 20.84
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R035",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-35",
+    "nameAscii": "phong chua dat ten f3-35",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D035",
+    "centroid": {
+      "x": 31.71,
+      "z": 22.39
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 20.84,
+      "x2": 34.92,
+      "z2": 23.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R036",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-36",
+    "nameAscii": "phong chua dat ten f3-36",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D036",
+    "centroid": {
+      "x": 31.71,
+      "z": 25.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 23.94,
+      "x2": 34.92,
+      "z2": 26.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R037",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-37",
+    "nameAscii": "phong chua dat ten f3-37",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D037",
+    "centroid": {
+      "x": 31.71,
+      "z": 28.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 26.94,
+      "x2": 34.92,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R038",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-38",
+    "nameAscii": "phong chua dat ten f3-38",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D038",
+    "centroid": {
+      "x": 31.71,
+      "z": 32.77
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 29.94,
+      "x2": 34.92,
+      "z2": 35.6
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R039",
+    "floorId": "F3",
+    "name": "Cầu thang Đông-Bắc",
+    "nameAscii": "cau thang dong-bac",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F3_D039",
+    "centroid": {
+      "x": 33.31,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 31.7,
+      "z1": 0,
+      "x2": 34.92,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F3_R040",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-40",
+    "nameAscii": "phong chua dat ten f3-40",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D040",
+    "centroid": {
+      "x": 30.1,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 0,
+      "x2": 31.7,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F3_R041",
+    "floorId": "F3",
+    "name": "Cầu thang Đông-Nam",
+    "nameAscii": "cau thang dong-nam",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F3_D041",
+    "centroid": {
+      "x": 33.28,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 31.64,
+      "z1": 35.6,
+      "x2": 34.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F3_R042",
+    "floorId": "F3",
+    "name": "Phòng chưa đặt tên F3-42",
+    "nameAscii": "phong chua dat ten f3-42",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F3_D042",
+    "centroid": {
+      "x": 30.07,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 35.6,
+      "x2": 31.64,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R001",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-1",
+    "nameAscii": "phong chua dat ten f4-1",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D001",
+    "centroid": {
+      "x": 3.38,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 0,
+      "x2": 6.76,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R002",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-2",
+    "nameAscii": "phong chua dat ten f4-2",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D002",
+    "centroid": {
+      "x": 8.28,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 6.76,
+      "z1": 0,
+      "x2": 9.8,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R003",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-3",
+    "nameAscii": "phong chua dat ten f4-3",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D003",
+    "centroid": {
+      "x": 11.47,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 9.8,
+      "z1": 0,
+      "x2": 13.14,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R004",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-4",
+    "nameAscii": "phong chua dat ten f4-4",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D004",
+    "centroid": {
+      "x": 14.73,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 13.14,
+      "z1": 0,
+      "x2": 16.32,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R005",
+    "floorId": "F4",
+    "name": "Phòng Trưởng ban",
+    "nameAscii": "phong truong ban",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F4_D005",
+    "centroid": {
+      "x": 17.93,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 0,
+      "x2": 19.54,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F4_R006",
+    "floorId": "F4",
+    "name": "Phòng kỹ thuật",
+    "nameAscii": "phong ky thuat",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F4_D006",
+    "centroid": {
+      "x": 21.12,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 19.54,
+      "z1": 0,
+      "x2": 22.7,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F4_R007",
+    "floorId": "F4",
+    "name": "WC Nam",
+    "nameAscii": "wc nam",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F4_D007",
+    "centroid": {
+      "x": 24.3,
+      "z": 1.57
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 0,
+      "x2": 25.9,
+      "z2": 3.14
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F4_R008",
+    "floorId": "F4",
+    "name": "WC Nữ",
+    "nameAscii": "wc nu",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F4_D008",
+    "centroid": {
+      "x": 24.3,
+      "z": 4.72
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 3.14,
+      "x2": 25.9,
+      "z2": 6.3
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F4_R009",
+    "floorId": "F4",
+    "name": "Phòng Hành chính",
+    "nameAscii": "phong hanh chinh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F4_D009",
+    "centroid": {
+      "x": 14.75,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 8.84,
+      "x2": 19.5,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F4_R010",
+    "floorId": "F4",
+    "name": "Phòng Điều hành",
+    "nameAscii": "phong dieu hanh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F4_D010",
+    "centroid": {
+      "x": 22.7,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 8.84,
+      "x2": 25.9,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F4_R011",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-11",
+    "nameAscii": "phong chua dat ten f4-11",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D011",
+    "centroid": {
+      "x": 3.55,
+      "z": 20.86
+    },
+    "bounds": {
+      "x1": 0.44,
+      "z1": 8.92,
+      "x2": 6.66,
+      "z2": 32.8
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R012",
+    "floorId": "F4",
+    "name": "Cầu thang giữa",
+    "nameAscii": "cau thang giua",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F4_D012",
+    "centroid": {
+      "x": 14.45,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 16.92,
+      "x2": 18.96,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F4_R013",
+    "floorId": "F4",
+    "name": "Thang máy / Giếng trời",
+    "nameAscii": "thang may / gieng troi",
+    "type": "elevator",
+    "accessible": true,
+    "doorNodeId": "F4_D013",
+    "centroid": {
+      "x": 22.68,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 18.96,
+      "z1": 16.92,
+      "x2": 26.4,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F4_R014",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-14",
+    "nameAscii": "phong chua dat ten f4-14",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D014",
+    "centroid": {
+      "x": 11.62,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 26.98,
+      "x2": 13.24,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R015",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-15",
+    "nameAscii": "phong chua dat ten f4-15",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D015",
+    "centroid": {
+      "x": 14.84,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 13.24,
+      "z1": 26.98,
+      "x2": 16.44,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R016",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-16",
+    "nameAscii": "phong chua dat ten f4-16",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D016",
+    "centroid": {
+      "x": 18.04,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 16.44,
+      "z1": 26.98,
+      "x2": 19.64,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R017",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-17",
+    "nameAscii": "phong chua dat ten f4-17",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D017",
+    "centroid": {
+      "x": 21.19,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 19.64,
+      "z1": 26.98,
+      "x2": 22.74,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R018",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-18",
+    "nameAscii": "phong chua dat ten f4-18",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D018",
+    "centroid": {
+      "x": 24.28,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 22.74,
+      "z1": 26.98,
+      "x2": 25.82,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R019",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-19",
+    "nameAscii": "phong chua dat ten f4-19",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D019",
+    "centroid": {
+      "x": 11.6,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 31.64,
+      "x2": 13.26,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R020",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-20",
+    "nameAscii": "phong chua dat ten f4-20",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D020",
+    "centroid": {
+      "x": 14.79,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 13.26,
+      "z1": 31.64,
+      "x2": 16.32,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R021",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-21",
+    "nameAscii": "phong chua dat ten f4-21",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D021",
+    "centroid": {
+      "x": 17.91,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 31.64,
+      "x2": 19.5,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R022",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-22",
+    "nameAscii": "phong chua dat ten f4-22",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D022",
+    "centroid": {
+      "x": 21.08,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 31.64,
+      "x2": 22.66,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R023",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-23",
+    "nameAscii": "phong chua dat ten f4-23",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D023",
+    "centroid": {
+      "x": 24.28,
+      "z": 31.2
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 29.94,
+      "x2": 25.9,
+      "z2": 32.46
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R024",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-24",
+    "nameAscii": "phong chua dat ten f4-24",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D024",
+    "centroid": {
+      "x": 24.28,
+      "z": 33.72
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 32.46,
+      "x2": 25.9,
+      "z2": 34.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R025",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-25",
+    "nameAscii": "phong chua dat ten f4-25",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D025",
+    "centroid": {
+      "x": 24.28,
+      "z": 36.24
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 34.98,
+      "x2": 25.9,
+      "z2": 37.5
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R026",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-26",
+    "nameAscii": "phong chua dat ten f4-26",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D026",
+    "centroid": {
+      "x": 24.28,
+      "z": 38.75
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 37.5,
+      "x2": 25.9,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R027",
+    "floorId": "F4",
+    "name": "Trung Tâm dữ liệu",
+    "nameAscii": "trung tam du lieu",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F4_D027",
+    "centroid": {
+      "x": 3.43,
+      "z": 36.68
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 35.7,
+      "x2": 6.86,
+      "z2": 37.66
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F4_R028",
+    "floorId": "F4",
+    "name": "Kho",
+    "nameAscii": "kho",
+    "type": "storage",
+    "accessible": true,
+    "doorNodeId": "F4_D028",
+    "centroid": {
+      "x": 8.39,
+      "z": 38.81
+    },
+    "bounds": {
+      "x1": 6.86,
+      "z1": 35.7,
+      "x2": 9.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F4_R029",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-29",
+    "nameAscii": "phong chua dat ten f4-29",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D029",
+    "centroid": {
+      "x": 3.43,
+      "z": 39.79
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 37.66,
+      "x2": 6.86,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R030",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-30",
+    "nameAscii": "phong chua dat ten f4-30",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D030",
+    "centroid": {
+      "x": 31.71,
+      "z": 7.56
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 6.26,
+      "x2": 34.92,
+      "z2": 8.86
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R031",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-31",
+    "nameAscii": "phong chua dat ten f4-31",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D031",
+    "centroid": {
+      "x": 31.71,
+      "z": 10.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 8.86,
+      "x2": 34.92,
+      "z2": 11.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R032",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-32",
+    "nameAscii": "phong chua dat ten f4-32",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D032",
+    "centroid": {
+      "x": 31.71,
+      "z": 13.46
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 11.98,
+      "x2": 34.92,
+      "z2": 14.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R033",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-33",
+    "nameAscii": "phong chua dat ten f4-33",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D033",
+    "centroid": {
+      "x": 31.71,
+      "z": 16.47
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 14.94,
+      "x2": 34.92,
+      "z2": 18
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R034",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-34",
+    "nameAscii": "phong chua dat ten f4-34",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D034",
+    "centroid": {
+      "x": 31.71,
+      "z": 19.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 18,
+      "x2": 34.92,
+      "z2": 20.84
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R035",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-35",
+    "nameAscii": "phong chua dat ten f4-35",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D035",
+    "centroid": {
+      "x": 31.71,
+      "z": 22.39
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 20.84,
+      "x2": 34.92,
+      "z2": 23.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R036",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-36",
+    "nameAscii": "phong chua dat ten f4-36",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D036",
+    "centroid": {
+      "x": 31.71,
+      "z": 25.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 23.94,
+      "x2": 34.92,
+      "z2": 26.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R037",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-37",
+    "nameAscii": "phong chua dat ten f4-37",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D037",
+    "centroid": {
+      "x": 31.71,
+      "z": 28.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 26.94,
+      "x2": 34.92,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R038",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-38",
+    "nameAscii": "phong chua dat ten f4-38",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D038",
+    "centroid": {
+      "x": 31.71,
+      "z": 32.77
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 29.94,
+      "x2": 34.92,
+      "z2": 35.6
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R039",
+    "floorId": "F4",
+    "name": "Cầu thang Đông-Bắc",
+    "nameAscii": "cau thang dong-bac",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F4_D039",
+    "centroid": {
+      "x": 33.31,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 31.7,
+      "z1": 0,
+      "x2": 34.92,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F4_R040",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-40",
+    "nameAscii": "phong chua dat ten f4-40",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D040",
+    "centroid": {
+      "x": 30.1,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 0,
+      "x2": 31.7,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F4_R041",
+    "floorId": "F4",
+    "name": "Cầu thang Đông-Nam",
+    "nameAscii": "cau thang dong-nam",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F4_D041",
+    "centroid": {
+      "x": 33.28,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 31.64,
+      "z1": 35.6,
+      "x2": 34.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F4_R042",
+    "floorId": "F4",
+    "name": "Phòng chưa đặt tên F4-42",
+    "nameAscii": "phong chua dat ten f4-42",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F4_D042",
+    "centroid": {
+      "x": 30.07,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 35.6,
+      "x2": 31.64,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R001",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-1",
+    "nameAscii": "phong chua dat ten f5-1",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D001",
+    "centroid": {
+      "x": 3.38,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 0,
+      "x2": 6.76,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R002",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-2",
+    "nameAscii": "phong chua dat ten f5-2",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D002",
+    "centroid": {
+      "x": 8.28,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 6.76,
+      "z1": 0,
+      "x2": 9.8,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R003",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-3",
+    "nameAscii": "phong chua dat ten f5-3",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D003",
+    "centroid": {
+      "x": 11.47,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 9.8,
+      "z1": 0,
+      "x2": 13.14,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R004",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-4",
+    "nameAscii": "phong chua dat ten f5-4",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D004",
+    "centroid": {
+      "x": 14.73,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 13.14,
+      "z1": 0,
+      "x2": 16.32,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R005",
+    "floorId": "F5",
+    "name": "Phòng Trưởng ban",
+    "nameAscii": "phong truong ban",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F5_D005",
+    "centroid": {
+      "x": 17.93,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 0,
+      "x2": 19.54,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F5_R006",
+    "floorId": "F5",
+    "name": "Phòng kỹ thuật",
+    "nameAscii": "phong ky thuat",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F5_D006",
+    "centroid": {
+      "x": 21.12,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 19.54,
+      "z1": 0,
+      "x2": 22.7,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F5_R007",
+    "floorId": "F5",
+    "name": "WC Nam",
+    "nameAscii": "wc nam",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F5_D007",
+    "centroid": {
+      "x": 24.3,
+      "z": 1.57
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 0,
+      "x2": 25.9,
+      "z2": 3.14
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F5_R008",
+    "floorId": "F5",
+    "name": "WC Nữ",
+    "nameAscii": "wc nu",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F5_D008",
+    "centroid": {
+      "x": 24.3,
+      "z": 4.72
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 3.14,
+      "x2": 25.9,
+      "z2": 6.3
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F5_R009",
+    "floorId": "F5",
+    "name": "Phòng Hành chính",
+    "nameAscii": "phong hanh chinh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F5_D009",
+    "centroid": {
+      "x": 14.75,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 8.84,
+      "x2": 19.5,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F5_R010",
+    "floorId": "F5",
+    "name": "Phòng Điều hành",
+    "nameAscii": "phong dieu hanh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F5_D010",
+    "centroid": {
+      "x": 22.7,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 8.84,
+      "x2": 25.9,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F5_R011",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-11",
+    "nameAscii": "phong chua dat ten f5-11",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D011",
+    "centroid": {
+      "x": 3.55,
+      "z": 20.86
+    },
+    "bounds": {
+      "x1": 0.44,
+      "z1": 8.92,
+      "x2": 6.66,
+      "z2": 32.8
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R012",
+    "floorId": "F5",
+    "name": "Cầu thang giữa",
+    "nameAscii": "cau thang giua",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F5_D012",
+    "centroid": {
+      "x": 14.45,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 16.92,
+      "x2": 18.96,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F5_R013",
+    "floorId": "F5",
+    "name": "Thang máy / Giếng trời",
+    "nameAscii": "thang may / gieng troi",
+    "type": "elevator",
+    "accessible": true,
+    "doorNodeId": "F5_D013",
+    "centroid": {
+      "x": 22.68,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 18.96,
+      "z1": 16.92,
+      "x2": 26.4,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F5_R014",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-14",
+    "nameAscii": "phong chua dat ten f5-14",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D014",
+    "centroid": {
+      "x": 11.62,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 26.98,
+      "x2": 13.24,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R015",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-15",
+    "nameAscii": "phong chua dat ten f5-15",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D015",
+    "centroid": {
+      "x": 14.84,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 13.24,
+      "z1": 26.98,
+      "x2": 16.44,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R016",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-16",
+    "nameAscii": "phong chua dat ten f5-16",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D016",
+    "centroid": {
+      "x": 18.04,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 16.44,
+      "z1": 26.98,
+      "x2": 19.64,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R017",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-17",
+    "nameAscii": "phong chua dat ten f5-17",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D017",
+    "centroid": {
+      "x": 21.19,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 19.64,
+      "z1": 26.98,
+      "x2": 22.74,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R018",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-18",
+    "nameAscii": "phong chua dat ten f5-18",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D018",
+    "centroid": {
+      "x": 24.28,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 22.74,
+      "z1": 26.98,
+      "x2": 25.82,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R019",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-19",
+    "nameAscii": "phong chua dat ten f5-19",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D019",
+    "centroid": {
+      "x": 11.6,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 31.64,
+      "x2": 13.26,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R020",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-20",
+    "nameAscii": "phong chua dat ten f5-20",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D020",
+    "centroid": {
+      "x": 14.79,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 13.26,
+      "z1": 31.64,
+      "x2": 16.32,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R021",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-21",
+    "nameAscii": "phong chua dat ten f5-21",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D021",
+    "centroid": {
+      "x": 17.91,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 31.64,
+      "x2": 19.5,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R022",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-22",
+    "nameAscii": "phong chua dat ten f5-22",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D022",
+    "centroid": {
+      "x": 21.08,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 31.64,
+      "x2": 22.66,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R023",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-23",
+    "nameAscii": "phong chua dat ten f5-23",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D023",
+    "centroid": {
+      "x": 24.28,
+      "z": 31.2
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 29.94,
+      "x2": 25.9,
+      "z2": 32.46
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R024",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-24",
+    "nameAscii": "phong chua dat ten f5-24",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D024",
+    "centroid": {
+      "x": 24.28,
+      "z": 33.72
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 32.46,
+      "x2": 25.9,
+      "z2": 34.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R025",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-25",
+    "nameAscii": "phong chua dat ten f5-25",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D025",
+    "centroid": {
+      "x": 24.28,
+      "z": 36.24
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 34.98,
+      "x2": 25.9,
+      "z2": 37.5
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R026",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-26",
+    "nameAscii": "phong chua dat ten f5-26",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D026",
+    "centroid": {
+      "x": 24.28,
+      "z": 38.75
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 37.5,
+      "x2": 25.9,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R027",
+    "floorId": "F5",
+    "name": "Trung Tâm dữ liệu",
+    "nameAscii": "trung tam du lieu",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F5_D027",
+    "centroid": {
+      "x": 3.43,
+      "z": 36.68
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 35.7,
+      "x2": 6.86,
+      "z2": 37.66
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F5_R028",
+    "floorId": "F5",
+    "name": "Kho",
+    "nameAscii": "kho",
+    "type": "storage",
+    "accessible": true,
+    "doorNodeId": "F5_D028",
+    "centroid": {
+      "x": 8.39,
+      "z": 38.81
+    },
+    "bounds": {
+      "x1": 6.86,
+      "z1": 35.7,
+      "x2": 9.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F5_R029",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-29",
+    "nameAscii": "phong chua dat ten f5-29",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D029",
+    "centroid": {
+      "x": 3.43,
+      "z": 39.79
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 37.66,
+      "x2": 6.86,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R030",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-30",
+    "nameAscii": "phong chua dat ten f5-30",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D030",
+    "centroid": {
+      "x": 31.71,
+      "z": 7.56
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 6.26,
+      "x2": 34.92,
+      "z2": 8.86
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R031",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-31",
+    "nameAscii": "phong chua dat ten f5-31",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D031",
+    "centroid": {
+      "x": 31.71,
+      "z": 10.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 8.86,
+      "x2": 34.92,
+      "z2": 11.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R032",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-32",
+    "nameAscii": "phong chua dat ten f5-32",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D032",
+    "centroid": {
+      "x": 31.71,
+      "z": 13.46
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 11.98,
+      "x2": 34.92,
+      "z2": 14.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R033",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-33",
+    "nameAscii": "phong chua dat ten f5-33",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D033",
+    "centroid": {
+      "x": 31.71,
+      "z": 16.47
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 14.94,
+      "x2": 34.92,
+      "z2": 18
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R034",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-34",
+    "nameAscii": "phong chua dat ten f5-34",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D034",
+    "centroid": {
+      "x": 31.71,
+      "z": 19.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 18,
+      "x2": 34.92,
+      "z2": 20.84
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R035",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-35",
+    "nameAscii": "phong chua dat ten f5-35",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D035",
+    "centroid": {
+      "x": 31.71,
+      "z": 22.39
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 20.84,
+      "x2": 34.92,
+      "z2": 23.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R036",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-36",
+    "nameAscii": "phong chua dat ten f5-36",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D036",
+    "centroid": {
+      "x": 31.71,
+      "z": 25.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 23.94,
+      "x2": 34.92,
+      "z2": 26.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R037",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-37",
+    "nameAscii": "phong chua dat ten f5-37",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D037",
+    "centroid": {
+      "x": 31.71,
+      "z": 28.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 26.94,
+      "x2": 34.92,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R038",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-38",
+    "nameAscii": "phong chua dat ten f5-38",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D038",
+    "centroid": {
+      "x": 31.71,
+      "z": 32.77
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 29.94,
+      "x2": 34.92,
+      "z2": 35.6
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R039",
+    "floorId": "F5",
+    "name": "Cầu thang Đông-Bắc",
+    "nameAscii": "cau thang dong-bac",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F5_D039",
+    "centroid": {
+      "x": 33.31,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 31.7,
+      "z1": 0,
+      "x2": 34.92,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F5_R040",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-40",
+    "nameAscii": "phong chua dat ten f5-40",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D040",
+    "centroid": {
+      "x": 30.1,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 0,
+      "x2": 31.7,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F5_R041",
+    "floorId": "F5",
+    "name": "Cầu thang Đông-Nam",
+    "nameAscii": "cau thang dong-nam",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F5_D041",
+    "centroid": {
+      "x": 33.28,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 31.64,
+      "z1": 35.6,
+      "x2": 34.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F5_R042",
+    "floorId": "F5",
+    "name": "Phòng chưa đặt tên F5-42",
+    "nameAscii": "phong chua dat ten f5-42",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F5_D042",
+    "centroid": {
+      "x": 30.07,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 35.6,
+      "x2": 31.64,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R001",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-1",
+    "nameAscii": "phong chua dat ten f6-1",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D001",
+    "centroid": {
+      "x": 3.38,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 0,
+      "x2": 6.76,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R002",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-2",
+    "nameAscii": "phong chua dat ten f6-2",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D002",
+    "centroid": {
+      "x": 8.28,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 6.76,
+      "z1": 0,
+      "x2": 9.8,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R003",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-3",
+    "nameAscii": "phong chua dat ten f6-3",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D003",
+    "centroid": {
+      "x": 11.47,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 9.8,
+      "z1": 0,
+      "x2": 13.14,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R004",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-4",
+    "nameAscii": "phong chua dat ten f6-4",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D004",
+    "centroid": {
+      "x": 14.73,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 13.14,
+      "z1": 0,
+      "x2": 16.32,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R005",
+    "floorId": "F6",
+    "name": "Phòng Trưởng ban",
+    "nameAscii": "phong truong ban",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F6_D005",
+    "centroid": {
+      "x": 17.93,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 0,
+      "x2": 19.54,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F6_R006",
+    "floorId": "F6",
+    "name": "Phòng kỹ thuật",
+    "nameAscii": "phong ky thuat",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F6_D006",
+    "centroid": {
+      "x": 21.12,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 19.54,
+      "z1": 0,
+      "x2": 22.7,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F6_R007",
+    "floorId": "F6",
+    "name": "WC Nam",
+    "nameAscii": "wc nam",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F6_D007",
+    "centroid": {
+      "x": 24.3,
+      "z": 1.57
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 0,
+      "x2": 25.9,
+      "z2": 3.14
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F6_R008",
+    "floorId": "F6",
+    "name": "WC Nữ",
+    "nameAscii": "wc nu",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F6_D008",
+    "centroid": {
+      "x": 24.3,
+      "z": 4.72
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 3.14,
+      "x2": 25.9,
+      "z2": 6.3
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F6_R009",
+    "floorId": "F6",
+    "name": "Phòng Hành chính",
+    "nameAscii": "phong hanh chinh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F6_D009",
+    "centroid": {
+      "x": 14.75,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 8.84,
+      "x2": 19.5,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F6_R010",
+    "floorId": "F6",
+    "name": "Phòng Điều hành",
+    "nameAscii": "phong dieu hanh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F6_D010",
+    "centroid": {
+      "x": 22.7,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 8.84,
+      "x2": 25.9,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F6_R011",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-11",
+    "nameAscii": "phong chua dat ten f6-11",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D011",
+    "centroid": {
+      "x": 3.55,
+      "z": 20.86
+    },
+    "bounds": {
+      "x1": 0.44,
+      "z1": 8.92,
+      "x2": 6.66,
+      "z2": 32.8
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R012",
+    "floorId": "F6",
+    "name": "Cầu thang giữa",
+    "nameAscii": "cau thang giua",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F6_D012",
+    "centroid": {
+      "x": 14.45,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 16.92,
+      "x2": 18.96,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F6_R013",
+    "floorId": "F6",
+    "name": "Thang máy / Giếng trời",
+    "nameAscii": "thang may / gieng troi",
+    "type": "elevator",
+    "accessible": true,
+    "doorNodeId": "F6_D013",
+    "centroid": {
+      "x": 22.68,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 18.96,
+      "z1": 16.92,
+      "x2": 26.4,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F6_R014",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-14",
+    "nameAscii": "phong chua dat ten f6-14",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D014",
+    "centroid": {
+      "x": 11.62,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 26.98,
+      "x2": 13.24,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R015",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-15",
+    "nameAscii": "phong chua dat ten f6-15",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D015",
+    "centroid": {
+      "x": 14.84,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 13.24,
+      "z1": 26.98,
+      "x2": 16.44,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R016",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-16",
+    "nameAscii": "phong chua dat ten f6-16",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D016",
+    "centroid": {
+      "x": 18.04,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 16.44,
+      "z1": 26.98,
+      "x2": 19.64,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R017",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-17",
+    "nameAscii": "phong chua dat ten f6-17",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D017",
+    "centroid": {
+      "x": 21.19,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 19.64,
+      "z1": 26.98,
+      "x2": 22.74,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R018",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-18",
+    "nameAscii": "phong chua dat ten f6-18",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D018",
+    "centroid": {
+      "x": 24.28,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 22.74,
+      "z1": 26.98,
+      "x2": 25.82,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R019",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-19",
+    "nameAscii": "phong chua dat ten f6-19",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D019",
+    "centroid": {
+      "x": 11.6,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 31.64,
+      "x2": 13.26,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R020",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-20",
+    "nameAscii": "phong chua dat ten f6-20",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D020",
+    "centroid": {
+      "x": 14.79,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 13.26,
+      "z1": 31.64,
+      "x2": 16.32,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R021",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-21",
+    "nameAscii": "phong chua dat ten f6-21",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D021",
+    "centroid": {
+      "x": 17.91,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 31.64,
+      "x2": 19.5,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R022",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-22",
+    "nameAscii": "phong chua dat ten f6-22",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D022",
+    "centroid": {
+      "x": 21.08,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 31.64,
+      "x2": 22.66,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R023",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-23",
+    "nameAscii": "phong chua dat ten f6-23",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D023",
+    "centroid": {
+      "x": 24.28,
+      "z": 31.2
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 29.94,
+      "x2": 25.9,
+      "z2": 32.46
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R024",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-24",
+    "nameAscii": "phong chua dat ten f6-24",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D024",
+    "centroid": {
+      "x": 24.28,
+      "z": 33.72
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 32.46,
+      "x2": 25.9,
+      "z2": 34.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R025",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-25",
+    "nameAscii": "phong chua dat ten f6-25",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D025",
+    "centroid": {
+      "x": 24.28,
+      "z": 36.24
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 34.98,
+      "x2": 25.9,
+      "z2": 37.5
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R026",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-26",
+    "nameAscii": "phong chua dat ten f6-26",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D026",
+    "centroid": {
+      "x": 24.28,
+      "z": 38.75
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 37.5,
+      "x2": 25.9,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R027",
+    "floorId": "F6",
+    "name": "Trung Tâm dữ liệu",
+    "nameAscii": "trung tam du lieu",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F6_D027",
+    "centroid": {
+      "x": 3.43,
+      "z": 36.68
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 35.7,
+      "x2": 6.86,
+      "z2": 37.66
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F6_R028",
+    "floorId": "F6",
+    "name": "Kho",
+    "nameAscii": "kho",
+    "type": "storage",
+    "accessible": true,
+    "doorNodeId": "F6_D028",
+    "centroid": {
+      "x": 8.39,
+      "z": 38.81
+    },
+    "bounds": {
+      "x1": 6.86,
+      "z1": 35.7,
+      "x2": 9.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F6_R029",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-29",
+    "nameAscii": "phong chua dat ten f6-29",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D029",
+    "centroid": {
+      "x": 3.43,
+      "z": 39.79
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 37.66,
+      "x2": 6.86,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R030",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-30",
+    "nameAscii": "phong chua dat ten f6-30",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D030",
+    "centroid": {
+      "x": 31.71,
+      "z": 7.56
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 6.26,
+      "x2": 34.92,
+      "z2": 8.86
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R031",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-31",
+    "nameAscii": "phong chua dat ten f6-31",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D031",
+    "centroid": {
+      "x": 31.71,
+      "z": 10.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 8.86,
+      "x2": 34.92,
+      "z2": 11.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R032",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-32",
+    "nameAscii": "phong chua dat ten f6-32",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D032",
+    "centroid": {
+      "x": 31.71,
+      "z": 13.46
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 11.98,
+      "x2": 34.92,
+      "z2": 14.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R033",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-33",
+    "nameAscii": "phong chua dat ten f6-33",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D033",
+    "centroid": {
+      "x": 31.71,
+      "z": 16.47
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 14.94,
+      "x2": 34.92,
+      "z2": 18
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R034",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-34",
+    "nameAscii": "phong chua dat ten f6-34",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D034",
+    "centroid": {
+      "x": 31.71,
+      "z": 19.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 18,
+      "x2": 34.92,
+      "z2": 20.84
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R035",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-35",
+    "nameAscii": "phong chua dat ten f6-35",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D035",
+    "centroid": {
+      "x": 31.71,
+      "z": 22.39
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 20.84,
+      "x2": 34.92,
+      "z2": 23.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R036",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-36",
+    "nameAscii": "phong chua dat ten f6-36",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D036",
+    "centroid": {
+      "x": 31.71,
+      "z": 25.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 23.94,
+      "x2": 34.92,
+      "z2": 26.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R037",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-37",
+    "nameAscii": "phong chua dat ten f6-37",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D037",
+    "centroid": {
+      "x": 31.71,
+      "z": 28.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 26.94,
+      "x2": 34.92,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R038",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-38",
+    "nameAscii": "phong chua dat ten f6-38",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D038",
+    "centroid": {
+      "x": 31.71,
+      "z": 32.77
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 29.94,
+      "x2": 34.92,
+      "z2": 35.6
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R039",
+    "floorId": "F6",
+    "name": "Cầu thang Đông-Bắc",
+    "nameAscii": "cau thang dong-bac",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F6_D039",
+    "centroid": {
+      "x": 33.31,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 31.7,
+      "z1": 0,
+      "x2": 34.92,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F6_R040",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-40",
+    "nameAscii": "phong chua dat ten f6-40",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D040",
+    "centroid": {
+      "x": 30.1,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 0,
+      "x2": 31.7,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F6_R041",
+    "floorId": "F6",
+    "name": "Cầu thang Đông-Nam",
+    "nameAscii": "cau thang dong-nam",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F6_D041",
+    "centroid": {
+      "x": 33.28,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 31.64,
+      "z1": 35.6,
+      "x2": 34.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F6_R042",
+    "floorId": "F6",
+    "name": "Phòng chưa đặt tên F6-42",
+    "nameAscii": "phong chua dat ten f6-42",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F6_D042",
+    "centroid": {
+      "x": 30.07,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 35.6,
+      "x2": 31.64,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R001",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-1",
+    "nameAscii": "phong chua dat ten f7-1",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D001",
+    "centroid": {
+      "x": 3.38,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 0,
+      "x2": 6.76,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R002",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-2",
+    "nameAscii": "phong chua dat ten f7-2",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D002",
+    "centroid": {
+      "x": 8.28,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 6.76,
+      "z1": 0,
+      "x2": 9.8,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R003",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-3",
+    "nameAscii": "phong chua dat ten f7-3",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D003",
+    "centroid": {
+      "x": 11.47,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 9.8,
+      "z1": 0,
+      "x2": 13.14,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R004",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-4",
+    "nameAscii": "phong chua dat ten f7-4",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D004",
+    "centroid": {
+      "x": 14.73,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 13.14,
+      "z1": 0,
+      "x2": 16.32,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R005",
+    "floorId": "F7",
+    "name": "Phòng Trưởng ban",
+    "nameAscii": "phong truong ban",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F7_D005",
+    "centroid": {
+      "x": 17.93,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 0,
+      "x2": 19.54,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F7_R006",
+    "floorId": "F7",
+    "name": "Phòng kỹ thuật",
+    "nameAscii": "phong ky thuat",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F7_D006",
+    "centroid": {
+      "x": 21.12,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 19.54,
+      "z1": 0,
+      "x2": 22.7,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F7_R007",
+    "floorId": "F7",
+    "name": "WC Nam",
+    "nameAscii": "wc nam",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F7_D007",
+    "centroid": {
+      "x": 24.3,
+      "z": 1.57
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 0,
+      "x2": 25.9,
+      "z2": 3.14
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F7_R008",
+    "floorId": "F7",
+    "name": "WC Nữ",
+    "nameAscii": "wc nu",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F7_D008",
+    "centroid": {
+      "x": 24.3,
+      "z": 4.72
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 3.14,
+      "x2": 25.9,
+      "z2": 6.3
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F7_R009",
+    "floorId": "F7",
+    "name": "Phòng Hành chính",
+    "nameAscii": "phong hanh chinh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F7_D009",
+    "centroid": {
+      "x": 14.75,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 8.84,
+      "x2": 19.5,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F7_R010",
+    "floorId": "F7",
+    "name": "Phòng Điều hành",
+    "nameAscii": "phong dieu hanh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F7_D010",
+    "centroid": {
+      "x": 22.7,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 8.84,
+      "x2": 25.9,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F7_R011",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-11",
+    "nameAscii": "phong chua dat ten f7-11",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D011",
+    "centroid": {
+      "x": 3.55,
+      "z": 20.86
+    },
+    "bounds": {
+      "x1": 0.44,
+      "z1": 8.92,
+      "x2": 6.66,
+      "z2": 32.8
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R012",
+    "floorId": "F7",
+    "name": "Cầu thang giữa",
+    "nameAscii": "cau thang giua",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F7_D012",
+    "centroid": {
+      "x": 14.45,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 16.92,
+      "x2": 18.96,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F7_R013",
+    "floorId": "F7",
+    "name": "Thang máy / Giếng trời",
+    "nameAscii": "thang may / gieng troi",
+    "type": "elevator",
+    "accessible": true,
+    "doorNodeId": "F7_D013",
+    "centroid": {
+      "x": 22.68,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 18.96,
+      "z1": 16.92,
+      "x2": 26.4,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F7_R014",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-14",
+    "nameAscii": "phong chua dat ten f7-14",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D014",
+    "centroid": {
+      "x": 11.62,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 26.98,
+      "x2": 13.24,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R015",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-15",
+    "nameAscii": "phong chua dat ten f7-15",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D015",
+    "centroid": {
+      "x": 14.84,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 13.24,
+      "z1": 26.98,
+      "x2": 16.44,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R016",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-16",
+    "nameAscii": "phong chua dat ten f7-16",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D016",
+    "centroid": {
+      "x": 18.04,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 16.44,
+      "z1": 26.98,
+      "x2": 19.64,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R017",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-17",
+    "nameAscii": "phong chua dat ten f7-17",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D017",
+    "centroid": {
+      "x": 21.19,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 19.64,
+      "z1": 26.98,
+      "x2": 22.74,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R018",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-18",
+    "nameAscii": "phong chua dat ten f7-18",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D018",
+    "centroid": {
+      "x": 24.28,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 22.74,
+      "z1": 26.98,
+      "x2": 25.82,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R019",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-19",
+    "nameAscii": "phong chua dat ten f7-19",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D019",
+    "centroid": {
+      "x": 11.6,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 31.64,
+      "x2": 13.26,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R020",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-20",
+    "nameAscii": "phong chua dat ten f7-20",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D020",
+    "centroid": {
+      "x": 14.79,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 13.26,
+      "z1": 31.64,
+      "x2": 16.32,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R021",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-21",
+    "nameAscii": "phong chua dat ten f7-21",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D021",
+    "centroid": {
+      "x": 17.91,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 31.64,
+      "x2": 19.5,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R022",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-22",
+    "nameAscii": "phong chua dat ten f7-22",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D022",
+    "centroid": {
+      "x": 21.08,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 31.64,
+      "x2": 22.66,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R023",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-23",
+    "nameAscii": "phong chua dat ten f7-23",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D023",
+    "centroid": {
+      "x": 24.28,
+      "z": 31.2
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 29.94,
+      "x2": 25.9,
+      "z2": 32.46
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R024",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-24",
+    "nameAscii": "phong chua dat ten f7-24",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D024",
+    "centroid": {
+      "x": 24.28,
+      "z": 33.72
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 32.46,
+      "x2": 25.9,
+      "z2": 34.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R025",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-25",
+    "nameAscii": "phong chua dat ten f7-25",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D025",
+    "centroid": {
+      "x": 24.28,
+      "z": 36.24
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 34.98,
+      "x2": 25.9,
+      "z2": 37.5
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R026",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-26",
+    "nameAscii": "phong chua dat ten f7-26",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D026",
+    "centroid": {
+      "x": 24.28,
+      "z": 38.75
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 37.5,
+      "x2": 25.9,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R027",
+    "floorId": "F7",
+    "name": "Trung Tâm dữ liệu",
+    "nameAscii": "trung tam du lieu",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F7_D027",
+    "centroid": {
+      "x": 3.43,
+      "z": 36.68
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 35.7,
+      "x2": 6.86,
+      "z2": 37.66
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F7_R028",
+    "floorId": "F7",
+    "name": "Kho",
+    "nameAscii": "kho",
+    "type": "storage",
+    "accessible": true,
+    "doorNodeId": "F7_D028",
+    "centroid": {
+      "x": 8.39,
+      "z": 38.81
+    },
+    "bounds": {
+      "x1": 6.86,
+      "z1": 35.7,
+      "x2": 9.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F7_R029",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-29",
+    "nameAscii": "phong chua dat ten f7-29",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D029",
+    "centroid": {
+      "x": 3.43,
+      "z": 39.79
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 37.66,
+      "x2": 6.86,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R030",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-30",
+    "nameAscii": "phong chua dat ten f7-30",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D030",
+    "centroid": {
+      "x": 31.71,
+      "z": 7.56
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 6.26,
+      "x2": 34.92,
+      "z2": 8.86
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R031",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-31",
+    "nameAscii": "phong chua dat ten f7-31",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D031",
+    "centroid": {
+      "x": 31.71,
+      "z": 10.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 8.86,
+      "x2": 34.92,
+      "z2": 11.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R032",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-32",
+    "nameAscii": "phong chua dat ten f7-32",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D032",
+    "centroid": {
+      "x": 31.71,
+      "z": 13.46
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 11.98,
+      "x2": 34.92,
+      "z2": 14.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R033",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-33",
+    "nameAscii": "phong chua dat ten f7-33",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D033",
+    "centroid": {
+      "x": 31.71,
+      "z": 16.47
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 14.94,
+      "x2": 34.92,
+      "z2": 18
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R034",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-34",
+    "nameAscii": "phong chua dat ten f7-34",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D034",
+    "centroid": {
+      "x": 31.71,
+      "z": 19.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 18,
+      "x2": 34.92,
+      "z2": 20.84
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R035",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-35",
+    "nameAscii": "phong chua dat ten f7-35",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D035",
+    "centroid": {
+      "x": 31.71,
+      "z": 22.39
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 20.84,
+      "x2": 34.92,
+      "z2": 23.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R036",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-36",
+    "nameAscii": "phong chua dat ten f7-36",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D036",
+    "centroid": {
+      "x": 31.71,
+      "z": 25.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 23.94,
+      "x2": 34.92,
+      "z2": 26.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R037",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-37",
+    "nameAscii": "phong chua dat ten f7-37",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D037",
+    "centroid": {
+      "x": 31.71,
+      "z": 28.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 26.94,
+      "x2": 34.92,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R038",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-38",
+    "nameAscii": "phong chua dat ten f7-38",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D038",
+    "centroid": {
+      "x": 31.71,
+      "z": 32.77
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 29.94,
+      "x2": 34.92,
+      "z2": 35.6
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R039",
+    "floorId": "F7",
+    "name": "Cầu thang Đông-Bắc",
+    "nameAscii": "cau thang dong-bac",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F7_D039",
+    "centroid": {
+      "x": 33.31,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 31.7,
+      "z1": 0,
+      "x2": 34.92,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F7_R040",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-40",
+    "nameAscii": "phong chua dat ten f7-40",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D040",
+    "centroid": {
+      "x": 30.1,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 0,
+      "x2": 31.7,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F7_R041",
+    "floorId": "F7",
+    "name": "Cầu thang Đông-Nam",
+    "nameAscii": "cau thang dong-nam",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F7_D041",
+    "centroid": {
+      "x": 33.28,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 31.64,
+      "z1": 35.6,
+      "x2": 34.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F7_R042",
+    "floorId": "F7",
+    "name": "Phòng chưa đặt tên F7-42",
+    "nameAscii": "phong chua dat ten f7-42",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F7_D042",
+    "centroid": {
+      "x": 30.07,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 35.6,
+      "x2": 31.64,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R001",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-1",
+    "nameAscii": "phong chua dat ten f8-1",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D001",
+    "centroid": {
+      "x": 3.38,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 0,
+      "x2": 6.76,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R002",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-2",
+    "nameAscii": "phong chua dat ten f8-2",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D002",
+    "centroid": {
+      "x": 8.28,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 6.76,
+      "z1": 0,
+      "x2": 9.8,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R003",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-3",
+    "nameAscii": "phong chua dat ten f8-3",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D003",
+    "centroid": {
+      "x": 11.47,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 9.8,
+      "z1": 0,
+      "x2": 13.14,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R004",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-4",
+    "nameAscii": "phong chua dat ten f8-4",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D004",
+    "centroid": {
+      "x": 14.73,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 13.14,
+      "z1": 0,
+      "x2": 16.32,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R005",
+    "floorId": "F8",
+    "name": "Phòng Trưởng ban",
+    "nameAscii": "phong truong ban",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F8_D005",
+    "centroid": {
+      "x": 17.93,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 0,
+      "x2": 19.54,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F8_R006",
+    "floorId": "F8",
+    "name": "Phòng kỹ thuật",
+    "nameAscii": "phong ky thuat",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F8_D006",
+    "centroid": {
+      "x": 21.12,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 19.54,
+      "z1": 0,
+      "x2": 22.7,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F8_R007",
+    "floorId": "F8",
+    "name": "WC Nam",
+    "nameAscii": "wc nam",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F8_D007",
+    "centroid": {
+      "x": 24.3,
+      "z": 1.57
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 0,
+      "x2": 25.9,
+      "z2": 3.14
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F8_R008",
+    "floorId": "F8",
+    "name": "WC Nữ",
+    "nameAscii": "wc nu",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F8_D008",
+    "centroid": {
+      "x": 24.3,
+      "z": 4.72
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 3.14,
+      "x2": 25.9,
+      "z2": 6.3
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F8_R009",
+    "floorId": "F8",
+    "name": "Phòng Hành chính",
+    "nameAscii": "phong hanh chinh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F8_D009",
+    "centroid": {
+      "x": 14.75,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 8.84,
+      "x2": 19.5,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F8_R010",
+    "floorId": "F8",
+    "name": "Phòng Điều hành",
+    "nameAscii": "phong dieu hanh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F8_D010",
+    "centroid": {
+      "x": 22.7,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 8.84,
+      "x2": 25.9,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F8_R011",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-11",
+    "nameAscii": "phong chua dat ten f8-11",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D011",
+    "centroid": {
+      "x": 3.55,
+      "z": 20.86
+    },
+    "bounds": {
+      "x1": 0.44,
+      "z1": 8.92,
+      "x2": 6.66,
+      "z2": 32.8
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R012",
+    "floorId": "F8",
+    "name": "Cầu thang giữa",
+    "nameAscii": "cau thang giua",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F8_D012",
+    "centroid": {
+      "x": 14.45,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 16.92,
+      "x2": 18.96,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F8_R013",
+    "floorId": "F8",
+    "name": "Thang máy / Giếng trời",
+    "nameAscii": "thang may / gieng troi",
+    "type": "elevator",
+    "accessible": true,
+    "doorNodeId": "F8_D013",
+    "centroid": {
+      "x": 22.68,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 18.96,
+      "z1": 16.92,
+      "x2": 26.4,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F8_R014",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-14",
+    "nameAscii": "phong chua dat ten f8-14",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D014",
+    "centroid": {
+      "x": 11.62,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 26.98,
+      "x2": 13.24,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R015",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-15",
+    "nameAscii": "phong chua dat ten f8-15",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D015",
+    "centroid": {
+      "x": 14.84,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 13.24,
+      "z1": 26.98,
+      "x2": 16.44,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R016",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-16",
+    "nameAscii": "phong chua dat ten f8-16",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D016",
+    "centroid": {
+      "x": 18.04,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 16.44,
+      "z1": 26.98,
+      "x2": 19.64,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R017",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-17",
+    "nameAscii": "phong chua dat ten f8-17",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D017",
+    "centroid": {
+      "x": 21.19,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 19.64,
+      "z1": 26.98,
+      "x2": 22.74,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R018",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-18",
+    "nameAscii": "phong chua dat ten f8-18",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D018",
+    "centroid": {
+      "x": 24.28,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 22.74,
+      "z1": 26.98,
+      "x2": 25.82,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R019",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-19",
+    "nameAscii": "phong chua dat ten f8-19",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D019",
+    "centroid": {
+      "x": 11.6,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 31.64,
+      "x2": 13.26,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R020",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-20",
+    "nameAscii": "phong chua dat ten f8-20",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D020",
+    "centroid": {
+      "x": 14.79,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 13.26,
+      "z1": 31.64,
+      "x2": 16.32,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R021",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-21",
+    "nameAscii": "phong chua dat ten f8-21",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D021",
+    "centroid": {
+      "x": 17.91,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 31.64,
+      "x2": 19.5,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R022",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-22",
+    "nameAscii": "phong chua dat ten f8-22",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D022",
+    "centroid": {
+      "x": 21.08,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 31.64,
+      "x2": 22.66,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R023",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-23",
+    "nameAscii": "phong chua dat ten f8-23",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D023",
+    "centroid": {
+      "x": 24.28,
+      "z": 31.2
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 29.94,
+      "x2": 25.9,
+      "z2": 32.46
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R024",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-24",
+    "nameAscii": "phong chua dat ten f8-24",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D024",
+    "centroid": {
+      "x": 24.28,
+      "z": 33.72
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 32.46,
+      "x2": 25.9,
+      "z2": 34.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R025",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-25",
+    "nameAscii": "phong chua dat ten f8-25",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D025",
+    "centroid": {
+      "x": 24.28,
+      "z": 36.24
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 34.98,
+      "x2": 25.9,
+      "z2": 37.5
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R026",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-26",
+    "nameAscii": "phong chua dat ten f8-26",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D026",
+    "centroid": {
+      "x": 24.28,
+      "z": 38.75
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 37.5,
+      "x2": 25.9,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R027",
+    "floorId": "F8",
+    "name": "Trung Tâm dữ liệu",
+    "nameAscii": "trung tam du lieu",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F8_D027",
+    "centroid": {
+      "x": 3.43,
+      "z": 36.68
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 35.7,
+      "x2": 6.86,
+      "z2": 37.66
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F8_R028",
+    "floorId": "F8",
+    "name": "Kho",
+    "nameAscii": "kho",
+    "type": "storage",
+    "accessible": true,
+    "doorNodeId": "F8_D028",
+    "centroid": {
+      "x": 8.39,
+      "z": 38.81
+    },
+    "bounds": {
+      "x1": 6.86,
+      "z1": 35.7,
+      "x2": 9.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F8_R029",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-29",
+    "nameAscii": "phong chua dat ten f8-29",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D029",
+    "centroid": {
+      "x": 3.43,
+      "z": 39.79
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 37.66,
+      "x2": 6.86,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R030",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-30",
+    "nameAscii": "phong chua dat ten f8-30",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D030",
+    "centroid": {
+      "x": 31.71,
+      "z": 7.56
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 6.26,
+      "x2": 34.92,
+      "z2": 8.86
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R031",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-31",
+    "nameAscii": "phong chua dat ten f8-31",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D031",
+    "centroid": {
+      "x": 31.71,
+      "z": 10.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 8.86,
+      "x2": 34.92,
+      "z2": 11.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R032",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-32",
+    "nameAscii": "phong chua dat ten f8-32",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D032",
+    "centroid": {
+      "x": 31.71,
+      "z": 13.46
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 11.98,
+      "x2": 34.92,
+      "z2": 14.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R033",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-33",
+    "nameAscii": "phong chua dat ten f8-33",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D033",
+    "centroid": {
+      "x": 31.71,
+      "z": 16.47
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 14.94,
+      "x2": 34.92,
+      "z2": 18
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R034",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-34",
+    "nameAscii": "phong chua dat ten f8-34",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D034",
+    "centroid": {
+      "x": 31.71,
+      "z": 19.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 18,
+      "x2": 34.92,
+      "z2": 20.84
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R035",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-35",
+    "nameAscii": "phong chua dat ten f8-35",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D035",
+    "centroid": {
+      "x": 31.71,
+      "z": 22.39
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 20.84,
+      "x2": 34.92,
+      "z2": 23.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R036",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-36",
+    "nameAscii": "phong chua dat ten f8-36",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D036",
+    "centroid": {
+      "x": 31.71,
+      "z": 25.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 23.94,
+      "x2": 34.92,
+      "z2": 26.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R037",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-37",
+    "nameAscii": "phong chua dat ten f8-37",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D037",
+    "centroid": {
+      "x": 31.71,
+      "z": 28.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 26.94,
+      "x2": 34.92,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R038",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-38",
+    "nameAscii": "phong chua dat ten f8-38",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D038",
+    "centroid": {
+      "x": 31.71,
+      "z": 32.77
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 29.94,
+      "x2": 34.92,
+      "z2": 35.6
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R039",
+    "floorId": "F8",
+    "name": "Cầu thang Đông-Bắc",
+    "nameAscii": "cau thang dong-bac",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F8_D039",
+    "centroid": {
+      "x": 33.31,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 31.7,
+      "z1": 0,
+      "x2": 34.92,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F8_R040",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-40",
+    "nameAscii": "phong chua dat ten f8-40",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D040",
+    "centroid": {
+      "x": 30.1,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 0,
+      "x2": 31.7,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F8_R041",
+    "floorId": "F8",
+    "name": "Cầu thang Đông-Nam",
+    "nameAscii": "cau thang dong-nam",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F8_D041",
+    "centroid": {
+      "x": 33.28,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 31.64,
+      "z1": 35.6,
+      "x2": 34.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F8_R042",
+    "floorId": "F8",
+    "name": "Phòng chưa đặt tên F8-42",
+    "nameAscii": "phong chua dat ten f8-42",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F8_D042",
+    "centroid": {
+      "x": 30.07,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 35.6,
+      "x2": 31.64,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R001",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-1",
+    "nameAscii": "phong chua dat ten f9-1",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D001",
+    "centroid": {
+      "x": 3.38,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 0,
+      "x2": 6.76,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R002",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-2",
+    "nameAscii": "phong chua dat ten f9-2",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D002",
+    "centroid": {
+      "x": 8.28,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 6.76,
+      "z1": 0,
+      "x2": 9.8,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R003",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-3",
+    "nameAscii": "phong chua dat ten f9-3",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D003",
+    "centroid": {
+      "x": 11.47,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 9.8,
+      "z1": 0,
+      "x2": 13.14,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R004",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-4",
+    "nameAscii": "phong chua dat ten f9-4",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D004",
+    "centroid": {
+      "x": 14.73,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 13.14,
+      "z1": 0,
+      "x2": 16.32,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R005",
+    "floorId": "F9",
+    "name": "Phòng Trưởng ban",
+    "nameAscii": "phong truong ban",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F9_D005",
+    "centroid": {
+      "x": 17.93,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 0,
+      "x2": 19.54,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F9_R006",
+    "floorId": "F9",
+    "name": "Phòng kỹ thuật",
+    "nameAscii": "phong ky thuat",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F9_D006",
+    "centroid": {
+      "x": 21.12,
+      "z": 3.12
+    },
+    "bounds": {
+      "x1": 19.54,
+      "z1": 0,
+      "x2": 22.7,
+      "z2": 6.24
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F9_R007",
+    "floorId": "F9",
+    "name": "WC Nam",
+    "nameAscii": "wc nam",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F9_D007",
+    "centroid": {
+      "x": 24.3,
+      "z": 1.57
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 0,
+      "x2": 25.9,
+      "z2": 3.14
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F9_R008",
+    "floorId": "F9",
+    "name": "WC Nữ",
+    "nameAscii": "wc nu",
+    "type": "wc",
+    "accessible": false,
+    "doorNodeId": "F9_D008",
+    "centroid": {
+      "x": 24.3,
+      "z": 4.72
+    },
+    "bounds": {
+      "x1": 22.7,
+      "z1": 3.14,
+      "x2": 25.9,
+      "z2": 6.3
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F9_R009",
+    "floorId": "F9",
+    "name": "Phòng Hành chính",
+    "nameAscii": "phong hanh chinh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F9_D009",
+    "centroid": {
+      "x": 14.75,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 8.84,
+      "x2": 19.5,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F9_R010",
+    "floorId": "F9",
+    "name": "Phòng Điều hành",
+    "nameAscii": "phong dieu hanh",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F9_D010",
+    "centroid": {
+      "x": 22.7,
+      "z": 11.85
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 8.84,
+      "x2": 25.9,
+      "z2": 14.86
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F9_R011",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-11",
+    "nameAscii": "phong chua dat ten f9-11",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D011",
+    "centroid": {
+      "x": 3.55,
+      "z": 20.86
+    },
+    "bounds": {
+      "x1": 0.44,
+      "z1": 8.92,
+      "x2": 6.66,
+      "z2": 32.8
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R012",
+    "floorId": "F9",
+    "name": "Cầu thang giữa",
+    "nameAscii": "cau thang giua",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F9_D012",
+    "centroid": {
+      "x": 14.45,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 16.92,
+      "x2": 18.96,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F9_R013",
+    "floorId": "F9",
+    "name": "Thang máy / Giếng trời",
+    "nameAscii": "thang may / gieng troi",
+    "type": "elevator",
+    "accessible": true,
+    "doorNodeId": "F9_D013",
+    "centroid": {
+      "x": 22.68,
+      "z": 20.56
+    },
+    "bounds": {
+      "x1": 18.96,
+      "z1": 16.92,
+      "x2": 26.4,
+      "z2": 24.2
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F9_R014",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-14",
+    "nameAscii": "phong chua dat ten f9-14",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D014",
+    "centroid": {
+      "x": 11.62,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 10,
+      "z1": 26.98,
+      "x2": 13.24,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R015",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-15",
+    "nameAscii": "phong chua dat ten f9-15",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D015",
+    "centroid": {
+      "x": 14.84,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 13.24,
+      "z1": 26.98,
+      "x2": 16.44,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R016",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-16",
+    "nameAscii": "phong chua dat ten f9-16",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D016",
+    "centroid": {
+      "x": 18.04,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 16.44,
+      "z1": 26.98,
+      "x2": 19.64,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R017",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-17",
+    "nameAscii": "phong chua dat ten f9-17",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D017",
+    "centroid": {
+      "x": 21.19,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 19.64,
+      "z1": 26.98,
+      "x2": 22.74,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R018",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-18",
+    "nameAscii": "phong chua dat ten f9-18",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D018",
+    "centroid": {
+      "x": 24.28,
+      "z": 28.46
+    },
+    "bounds": {
+      "x1": 22.74,
+      "z1": 26.98,
+      "x2": 25.82,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R019",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-19",
+    "nameAscii": "phong chua dat ten f9-19",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D019",
+    "centroid": {
+      "x": 11.6,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 9.94,
+      "z1": 31.64,
+      "x2": 13.26,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R020",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-20",
+    "nameAscii": "phong chua dat ten f9-20",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D020",
+    "centroid": {
+      "x": 14.79,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 13.26,
+      "z1": 31.64,
+      "x2": 16.32,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R021",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-21",
+    "nameAscii": "phong chua dat ten f9-21",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D021",
+    "centroid": {
+      "x": 17.91,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 16.32,
+      "z1": 31.64,
+      "x2": 19.5,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R022",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-22",
+    "nameAscii": "phong chua dat ten f9-22",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D022",
+    "centroid": {
+      "x": 21.08,
+      "z": 35.82
+    },
+    "bounds": {
+      "x1": 19.5,
+      "z1": 31.64,
+      "x2": 22.66,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R023",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-23",
+    "nameAscii": "phong chua dat ten f9-23",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D023",
+    "centroid": {
+      "x": 24.28,
+      "z": 31.2
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 29.94,
+      "x2": 25.9,
+      "z2": 32.46
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R024",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-24",
+    "nameAscii": "phong chua dat ten f9-24",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D024",
+    "centroid": {
+      "x": 24.28,
+      "z": 33.72
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 32.46,
+      "x2": 25.9,
+      "z2": 34.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R025",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-25",
+    "nameAscii": "phong chua dat ten f9-25",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D025",
+    "centroid": {
+      "x": 24.28,
+      "z": 36.24
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 34.98,
+      "x2": 25.9,
+      "z2": 37.5
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R026",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-26",
+    "nameAscii": "phong chua dat ten f9-26",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D026",
+    "centroid": {
+      "x": 24.28,
+      "z": 38.75
+    },
+    "bounds": {
+      "x1": 22.66,
+      "z1": 37.5,
+      "x2": 25.9,
+      "z2": 40
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R027",
+    "floorId": "F9",
+    "name": "Trung Tâm dữ liệu",
+    "nameAscii": "trung tam du lieu",
+    "type": "office",
+    "accessible": true,
+    "doorNodeId": "F9_D027",
+    "centroid": {
+      "x": 3.43,
+      "z": 36.68
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 35.7,
+      "x2": 6.86,
+      "z2": 37.66
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F9_R028",
+    "floorId": "F9",
+    "name": "Kho",
+    "nameAscii": "kho",
+    "type": "storage",
+    "accessible": true,
+    "doorNodeId": "F9_D028",
+    "centroid": {
+      "x": 8.39,
+      "z": 38.81
+    },
+    "bounds": {
+      "x1": 6.86,
+      "z1": 35.7,
+      "x2": 9.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F9_R029",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-29",
+    "nameAscii": "phong chua dat ten f9-29",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D029",
+    "centroid": {
+      "x": 3.43,
+      "z": 39.79
+    },
+    "bounds": {
+      "x1": 0,
+      "z1": 37.66,
+      "x2": 6.86,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R030",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-30",
+    "nameAscii": "phong chua dat ten f9-30",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D030",
+    "centroid": {
+      "x": 31.71,
+      "z": 7.56
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 6.26,
+      "x2": 34.92,
+      "z2": 8.86
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R031",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-31",
+    "nameAscii": "phong chua dat ten f9-31",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D031",
+    "centroid": {
+      "x": 31.71,
+      "z": 10.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 8.86,
+      "x2": 34.92,
+      "z2": 11.98
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R032",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-32",
+    "nameAscii": "phong chua dat ten f9-32",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D032",
+    "centroid": {
+      "x": 31.71,
+      "z": 13.46
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 11.98,
+      "x2": 34.92,
+      "z2": 14.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R033",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-33",
+    "nameAscii": "phong chua dat ten f9-33",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D033",
+    "centroid": {
+      "x": 31.71,
+      "z": 16.47
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 14.94,
+      "x2": 34.92,
+      "z2": 18
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R034",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-34",
+    "nameAscii": "phong chua dat ten f9-34",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D034",
+    "centroid": {
+      "x": 31.71,
+      "z": 19.42
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 18,
+      "x2": 34.92,
+      "z2": 20.84
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R035",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-35",
+    "nameAscii": "phong chua dat ten f9-35",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D035",
+    "centroid": {
+      "x": 31.71,
+      "z": 22.39
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 20.84,
+      "x2": 34.92,
+      "z2": 23.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R036",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-36",
+    "nameAscii": "phong chua dat ten f9-36",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D036",
+    "centroid": {
+      "x": 31.71,
+      "z": 25.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 23.94,
+      "x2": 34.92,
+      "z2": 26.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R037",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-37",
+    "nameAscii": "phong chua dat ten f9-37",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D037",
+    "centroid": {
+      "x": 31.71,
+      "z": 28.44
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 26.94,
+      "x2": 34.92,
+      "z2": 29.94
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R038",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-38",
+    "nameAscii": "phong chua dat ten f9-38",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D038",
+    "centroid": {
+      "x": 31.71,
+      "z": 32.77
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 29.94,
+      "x2": 34.92,
+      "z2": 35.6
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R039",
+    "floorId": "F9",
+    "name": "Cầu thang Đông-Bắc",
+    "nameAscii": "cau thang dong-bac",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F9_D039",
+    "centroid": {
+      "x": 33.31,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 31.7,
+      "z1": 0,
+      "x2": 34.92,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F9_R040",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-40",
+    "nameAscii": "phong chua dat ten f9-40",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D040",
+    "centroid": {
+      "x": 30.1,
+      "z": 3.13
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 0,
+      "x2": 31.7,
+      "z2": 6.26
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  },
+  {
+    "id": "F9_R041",
+    "floorId": "F9",
+    "name": "Cầu thang Đông-Nam",
+    "nameAscii": "cau thang dong-nam",
+    "type": "stairs",
+    "accessible": false,
+    "doorNodeId": "F9_D041",
+    "centroid": {
+      "x": 33.28,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 31.64,
+      "z1": 35.6,
+      "x2": 34.92,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": false,
+    "status": "active"
+  },
+  {
+    "id": "F9_R042",
+    "floorId": "F9",
+    "name": "Phòng chưa đặt tên F9-42",
+    "nameAscii": "phong chua dat ten f9-42",
+    "type": "other",
+    "accessible": true,
+    "doorNodeId": "F9_D042",
+    "centroid": {
+      "x": 30.07,
+      "z": 38.76
+    },
+    "bounds": {
+      "x1": 28.5,
+      "z1": 35.6,
+      "x2": 31.64,
+      "z2": 41.92
+    },
+    "aliases": [],
+    "unlabeled": true,
+    "status": "active"
+  }
+]

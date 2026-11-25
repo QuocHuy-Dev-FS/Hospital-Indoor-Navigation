@@ -1,0 +1,10 @@
+# UUID thật của beacon — không commit
+allowlist.json
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo

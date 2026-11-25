@@ -1,0 +1,28 @@
+{
+  "_comment": "DỮ LIỆU GIẢ cho bản thử nghiệm. Không chứa tên, ngày sinh, BHYT thật. Mã thật: Cần xác nhận (HIS chưa có).",
+  "plans": [
+    {
+      "code": "DEMO-0001",
+      "steps": [
+        { "order": 1, "roomId": "F1_R009", "note": "Đăng ký tại Phòng Hành chính (demo)" },
+        { "order": 2, "roomId": "F1_R010", "note": "Gặp Phòng Điều hành (demo)" },
+        { "order": 3, "roomId": "F1_R005", "note": "Phòng Trưởng ban (demo)" }
+      ]
+    },
+    {
+      "code": "DEMO-0002",
+      "steps": [
+        { "order": 2, "roomId": "F2_R009", "note": "Lên Tầng 1: Phòng Hành chính (demo)" },
+        { "order": 1, "roomId": "F1_R010", "note": "Bắt đầu ở Phòng Điều hành (demo)" },
+        { "order": 3, "roomId": "F1_R028", "note": "Kho (demo)" }
+      ]
+    },
+    {
+      "code": "DEMO-0003",
+      "steps": [
+        { "order": 1, "roomId": "F1_R006" },
+        { "order": 2, "roomId": "F2_R006", "note": "Khác tầng (demo)" }
+      ]
+    }
+  ]
+}

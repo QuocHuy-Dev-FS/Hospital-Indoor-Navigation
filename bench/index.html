@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bench – Kiểm tra Beacon BLE</title>
+  <style>
+    :root {
+      --clr-bg:      #f0f4f8;
+      --clr-card:    #ffffff;
+      --clr-border:  #d0dce8;
+      --clr-primary: #1565C0;
+      --clr-ok:      #2e7d32;
+      --clr-warn:    #e65100;
+      --clr-bad:     #c62828;
+      --clr-sim:     #6a1b9a;
+      --clr-muted:   #607080;
+      --radius:      10px;
+      font-family: system-ui, 'Segoe UI', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--clr-bg);
+      color: #1a2a3a;
+      font-size: 16px;
+      padding: 16px;
+    }
+
+    h1 { font-size: 1.4rem; color: var(--clr-primary); margin-bottom: 4px; }
+    h2 { font-size: 1.05rem; color: var(--clr-primary); margin-bottom: 10px; }
+
+    .subtitle {
+      font-size: 0.85rem;
+      color: var(--clr-muted);
+      margin-bottom: 18px;
+    }
+
+    .card {
+      background: var(--clr-card);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-bottom: 14px;
+    }
+
+    .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 8px; }
+
+    button {
+      padding: 9px 18px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .btn-primary { background: var(--clr-primary); color: #fff; }
+    .btn-primary:hover { background: #1976d2; }
+    .btn-primary:disabled { background: #90a4ae; cursor: not-allowed; }
+
+    .btn-danger { background: #c62828; color: #fff; }
+    .btn-danger:hover { background: #b71c1c; }
+    .btn-danger:disabled { background: #90a4ae; cursor: not-allowed; }
+
+    .btn-secondary { background: #e3eaf3; color: #1a2a3a; }
+    .btn-secondary:hover { background: #d0dce8; }
+
+    .btn-sim { background: var(--clr-sim); color: #fff; }
+    .btn-sim:hover { background: #7b1fa2; }
+    .btn-sim:disabled { background: #90a4ae; cursor: not-allowed; }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+    .badge-ok   { background: #e8f5e9; color: var(--clr-ok); border: 1px solid #a5d6a7; }
+    .badge-warn { background: #fff3e0; color: var(--clr-warn); border: 1px solid #ffcc80; }
+    .badge-bad  { background: #ffebee; color: var(--clr-bad); border: 1px solid #ef9a9a; }
+    .badge-sim  { background: #f3e5f5; color: var(--clr-sim); border: 1px solid #ce93d8; }
+    .badge-info { background: #e3f2fd; color: var(--clr-primary); border: 1px solid #90caf9; }
+
+    label { font-size: 0.9rem; color: var(--clr-muted); }
+
+    select, input[type="text"], input[type="number"] {
+      padding: 7px 10px;
+      border: 1px solid var(--clr-border);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      background: #f8fbff;
+      color: #1a2a3a;
+    }
+
+    select:focus, input:focus { outline: 2px solid var(--clr-primary); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+
+    th {
+      background: #e3eaf3;
+      text-align: left;
+      padding: 7px 8px;
+      color: #1a2a3a;
+      font-weight: 700;
+      border-bottom: 2px solid var(--clr-border);
+    }
+
+    td {
+      padding: 6px 8px;
+      border-bottom: 1px solid #eaf0f8;
+      vertical-align: top;
+      word-break: break-all;
+    }
+
+    tr:hover td { background: #f5f9ff; }
+
+    .rssi-good  { color: var(--clr-ok);   font-weight: 700; }
+    .rssi-mid   { color: var(--clr-warn);  font-weight: 700; }
+    .rssi-bad   { color: var(--clr-bad);   font-weight: 700; }
+
+    #resolver-box {
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 14px;
+      border-radius: var(--radius);
+      margin-bottom: 8px;
+      background: #e3f2fd;
+      border: 2px solid var(--clr-primary);
+      color: var(--clr-primary);
+      min-height: 54px;
+    }
+    #resolver-box.status-near  { background: #e8f5e9; border-color: var(--clr-ok); color: var(--clr-ok); }
+    #resolver-box.status-uncertain { background: #fff3e0; border-color: var(--clr-warn); color: var(--clr-warn); }
+    #resolver-box.status-lost  { background: #ffebee; border-color: var(--clr-bad); color: var(--clr-bad); }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 8px;
+    }
+
+    .stat-tile {
+      background: #f5f9ff;
+      border: 1px solid var(--clr-border);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+
+    .stat-tile .label { font-size: 0.78rem; color: var(--clr-muted); margin-bottom: 2px; }
+    .stat-tile .value { font-size: 1.3rem; font-weight: 700; color: var(--clr-primary); }
+
+    #bt-check-list { list-style: none; margin-top: 8px; }
+    #bt-check-list li { padding: 4px 0; font-size: 0.9rem; }
+
+    .check-ok  { color: var(--clr-ok); }
+    .check-bad { color: var(--clr-bad); }
+    .check-warn{ color: var(--clr-warn); }
+
+    #filter-row { gap: 8px; margin-bottom: 8px; }
+
+    #packet-table-wrap {
+      max-height: 320px;
+      overflow-y: auto;
+      border: 1px solid var(--clr-border);
+      border-radius: 8px;
+    }
+
+    #sample-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: flex-end; margin-top: 10px; }
+    #sample-row input { width: 90px; }
+
+    #status-bar {
+      font-size: 0.85rem;
+      color: var(--clr-muted);
+      margin-top: 4px;
+    }
+
+    .error-msg {
+      background: #ffebee;
+      border: 1px solid #ef9a9a;
+      color: var(--clr-bad);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      margin-top: 8px;
+      white-space: pre-wrap;
+    }
+
+    details summary { cursor: pointer; font-weight: 600; color: var(--clr-primary); }
+    details[open] summary { margin-bottom: 8px; }
+
+    #csv-status { font-size: 0.82rem; color: var(--clr-ok); margin-left: 8px; }
+  </style>
+</head>
+<body>
+
+<h1>🔬 Bench – Kiểm tra Beacon BLE</h1>
+<p class="subtitle">Công cụ thử nghiệm BLE beacon cho Hospital Indoor Navigation · Dữ liệu tổng hợp (synthetic) khi dùng nguồn giả lập</p>
+
+<!-- ── Kiểm tra trình duyệt ── -->
+<div class="card">
+  <h2>1. Kiểm tra trình duyệt</h2>
+  <button class="btn-secondary" onclick="runBtCheck()">🔍 Kiểm tra trình duyệt</button>
+  <ul id="bt-check-list"></ul>
+  <div id="bt-hint" style="margin-top:8px; font-size:0.85rem; color:var(--clr-muted);"></div>
+</div>
+
+<!-- ── Cấu hình bảng ánh xạ beacon → phòng ── -->
+<div class="card">
+  <h2>2. Bảng ánh xạ beacon → phòng</h2>
+  <p style="font-size:0.88rem; color:var(--clr-muted); margin-bottom:10px;">
+    Mỗi dòng: <code>beaconKey,roomId,roomName</code> (beaconKey dạng <code>uuid-lower-major-minor</code>).
+    Tải file JSON mẫu hoặc dán thủ công. Không lưu UUID/MAC thật — dùng placeholder khi thử.
+  </p>
+  <div class="row">
+    <button class="btn-secondary" onclick="loadSampleMap()">📂 Tải mẫu (beacon-map-sample.json)</button>
+    <button class="btn-secondary" onclick="loadLocalMap()">🔑 Tải local (beacon-map.local.json)</button>
+    <button class="btn-secondary" onclick="clearMap()">🗑 Xóa</button>
+    <span id="map-count" class="badge badge-info">0 beacon</span>
+  </div>
+  <div id="map-source-hint" style="font-size:0.82rem;color:var(--clr-muted);margin-top:4px;"></div>
+  <textarea id="map-textarea" rows="5" style="width:100%;font-size:0.82rem;font-family:monospace;border:1px solid var(--clr-border);border-radius:8px;padding:8px;resize:vertical;"
+    placeholder='[{"beaconKey":"placeholder-uuid-1-1","roomId":"F1_R101","roomName":"Phòng mẫu"}]'></textarea>
+  <button class="btn-secondary" style="margin-top:6px;" onclick="applyMap()">✅ Áp dụng bảng ánh xạ</button>
+  <div id="map-error" class="error-msg" hidden></div>
+</div>
+
+<!-- ── Nguồn beacon ── -->
+<div class="card">
+  <h2>3. Nguồn beacon</h2>
+
+  <!-- Nguồn thật -->
+  <details>
+    <summary>📡 Nguồn THẬT (Web Bluetooth) — cần bấm &quot;Bắt đầu quét&quot;</summary>
+    <div style="margin-top:10px;">
+      <p style="font-size:0.85rem; color:var(--clr-muted); margin-bottom:8px;">
+        Yêu cầu: localhost hoặc HTTPS · Cần bật cờ thử nghiệm (xem README.md) · Không chạy trên iOS Safari.
+        Laptop Windows: có thể nhận thêm gói quảng bá của chính Windows — lọc theo UUID/Major/Minor bên dưới.
+      </p>
+      <div class="row">
+        <button class="btn-primary" id="btn-start-real" onclick="startReal()">▶ Bắt đầu quét (BLE)</button>
+        <button class="btn-danger" id="btn-stop-real" disabled onclick="stopReal()">■ Dừng</button>
+      </div>
+      <div id="real-error" hidden></div>
+    </div>
+  </details>
+
+  <!-- Nguồn giả lập -->
+  <div style="margin-top:12px;">
+    <h2 style="font-size:0.95rem;">🎭 Nguồn GIẢ LẬP (synthetic — dữ liệu tổng hợp)</h2>
+    <div class="row" style="margin-bottom:8px;">
+      <label>Kịch bản:
+        <select id="scenario-select">
+          <option value="near-A">Đứng cạnh phòng A (ổn định)</option>
+          <option value="A-to-B">Đi từ phòng A sang B (20 giây)</option>
+          <option value="overlap">Chồng lấn 2 phòng</option>
+          <option value="lost">Mất tín hiệu (sau 5 giây)</option>
+          <option value="noisy">RSSI nhiễu cao</option>
+        </select>
+      </label>
+      <label>Hạt giống: <input type="number" id="sim-seed" value="42" style="width:70px;"></label>
+      <label>Chu kỳ (ms): <input type="number" id="sim-interval" value="1000" style="width:80px;"></label>
+    </div>
+    <div class="row">
+      <button class="btn-sim" id="btn-start-sim" onclick="startSim()">▶ Bắt đầu giả lập</button>
+      <button class="btn-danger" id="btn-stop-sim" disabled onclick="stopSim()">■ Dừng</button>
+      <span class="badge badge-sim">Dữ liệu tổng hợp (synthetic)</span>
+    </div>
+  </div>
+
+  <p id="status-bar">Trạng thái: chờ</p>
+</div>
+
+<!-- ── Bộ lọc ── -->
+<div class="card">
+  <h2>4. Lọc gói</h2>
+  <div class="row" id="filter-row">
+    <label>UUID chứa: <input type="text" id="filter-uuid" placeholder="(để trống = tất cả)"></label>
+    <label>Major: <input type="number" id="filter-major" placeholder="0" style="width:70px;"></label>
+    <label>Minor: <input type="number" id="filter-minor" placeholder="0" style="width:70px;"></label>
+    <button class="btn-secondary" onclick="clearFilter()">✕ Xóa lọc</button>
+    <button class="btn-secondary" onclick="clearPackets()">🗑 Xóa bảng</button>
+  </div>
+  <p style="font-size:0.8rem;color:var(--clr-muted);">Lưu ý: không lưu UUID/MAC vào file. Lọc chỉ áp dụng khi hiển thị, không ảnh hưởng bộ phân giải.</p>
+</div>
+
+<!-- ── Bảng gói ── -->
+<div class="card">
+  <h2>5. Gói nhận được</h2>
+  <div id="packet-table-wrap">
+    <table id="packet-table">
+      <thead>
+        <tr>
+          <th>Thời điểm</th>
+          <th>RSSI (dBm)</th>
+          <th>Loại</th>
+          <th>UUID / Thông tin</th>
+          <th>Maj</th>
+          <th>Min</th>
+          <th>Hex thô</th>
+          <th>Synthetic</th>
+        </tr>
+      </thead>
+      <tbody id="packet-tbody"></tbody>
+    </table>
+  </div>
+  <p id="packet-count" style="font-size:0.82rem;color:var(--clr-muted);margin-top:4px;">0 gói (tổng)</p>
+</div>
+
+<!-- ── Kết luận bộ phân giải ── -->
+<div class="card">
+  <h2>6. Kết luận phân giải beacon → phòng</h2>
+  <div id="resolver-box">—</div>
+  <div id="resolver-reason" style="font-size:0.88rem;color:var(--clr-muted);margin-top:6px;"></div>
+
+  <details style="margin-top:12px;">
+    <summary>Thống kê RSSI trượt (theo beacon)</summary>
+    <div id="stats-area" class="stats-grid" style="margin-top:10px;"></div>
+  </details>
+</div>
+
+<!-- ── Ghi mẫu & xuất CSV ── -->
+<div class="card">
+  <h2>7. Ghi mẫu đo & xuất CSV</h2>
+  <p style="font-size:0.85rem;color:var(--clr-muted);margin-bottom:8px;">
+    Dùng để ghi lại kết quả bench test thực tế. beaconRef do người dùng đặt (không UUID/MAC đầy đủ).
+  </p>
+  <div id="sample-row">
+    <label>beaconRef: <input type="text" id="smp-ref" placeholder="B01" style="width:80px;"></label>
+    <label>Khoảng cách (m): <input type="number" id="smp-dist" placeholder="1.0" step="0.1" style="width:80px;"></label>
+    <label>Tình huống: <input type="text" id="smp-cond" placeholder="hành lang trống" style="width:160px;"></label>
+    <label>Ghi chú: <input type="text" id="smp-notes" placeholder="" style="width:160px;"></label>
+    <button class="btn-secondary" onclick="recordSample()">📌 Ghi mẫu</button>
+  </div>
+  <div style="margin-top:12px;">
+    <button class="btn-secondary" onclick="exportCSV()">⬇ Xuất CSV</button>
+    <span id="csv-status"></span>
+    <span id="sample-count" style="font-size:0.82rem;color:var(--clr-muted);margin-left:8px;">0 mẫu đã ghi</span>
+  </div>
+  <div id="sample-preview" style="margin-top:10px;font-size:0.8rem;max-height:120px;overflow-y:auto;"></div>
+</div>
+
+<script type="module">
+  import { parseManufacturerData, iBeaconKey } from './packet-parser.js';
+  import { RoomResolver, DEFAULT_PARAMS }       from './room-resolver.js';
+  import { RealSource, SimulatedSource, detectBluetooth, SCENARIO_LABELS } from './beacon-source.js';
+
+  // ─── State ────────────────────────────────────────────────────────────────────
+  let beaconMap  = [];
+  let resolver   = new RoomResolver(beaconMap);
+  let realSrc    = null;
+  let simSrc     = null;
+  let allPackets = []; // { ts, rssi, type, uuid, major, minor, rawHex, synthetic }
+  let recordedSamples = [];
+  let _resolveTimer = null;
+
+  // ─── Expose hoisted function declarations to window ──────────────────────────
+  // window.startReal/stopReal/startSim/stopSim/clearFilter/clearPackets/recordSample/exportCSV
+  // được gán trực tiếp tại vị trí định nghĩa bên dưới (window.x = function(){...})
+  window.runBtCheck       = runBtCheck;
+  window.loadSampleMap    = loadSampleMap;
+  window.loadLocalMap     = loadLocalMap;
+  window.clearMap         = clearMap;
+  window.applyMap         = applyMap;
+
+  // ─── Kiểm tra trình duyệt ────────────────────────────────────────────────────
+  function runBtCheck() {
+    const { hasBluetooth, hasLEScan, hasWatchAdvertisements } = detectBluetooth();
+    const list = document.getElementById('bt-check-list');
+    const hint = document.getElementById('bt-hint');
+
+    list.innerHTML = [
+      `<li class="${hasBluetooth ? 'check-ok' : 'check-bad'}">${hasBluetooth ? '✅' : '❌'} <b>'bluetooth' in navigator</b>: ${hasBluetooth}</li>`,
+      `<li class="${hasLEScan ? 'check-ok' : 'check-warn'}">${hasLEScan ? '✅' : '⚠️'} <b>requestLEScan</b> (quét trực tiếp): ${hasLEScan}</li>`,
+      `<li class="${hasWatchAdvertisements ? 'check-ok' : 'check-warn'}">${hasWatchAdvertisements ? '✅' : '⚠️'} <b>requestDevice + watchAdvertisements</b> (chọn thiết bị): ${hasWatchAdvertisements}</li>`,
+    ].join('');
+
+    let msg = '';
+    if (!hasBluetooth) {
+      msg = '❌ Trình duyệt không hỗ trợ Web Bluetooth.<br>'
+          + '→ Thử Chrome/Edge. Mở <code>chrome://flags/#enable-experimental-web-platform-features</code> và bật.<br>'
+          + '→ Cốc Cốc: hỗ trợ Web Bluetooth – Cần xác nhận (xem README.md).<br>'
+          + '→ Nguồn giả lập vẫn chạy bình thường mà không cần quyền BLE.';
+    } else if (!hasLEScan && !hasWatchAdvertisements) {
+      msg = '⚠️ Bluetooth có nhưng thiếu API quét.<br>→ Thử bật cờ <code>chrome://flags/#enable-experimental-web-platform-features</code>.';
+    } else if (!hasLEScan) {
+      msg = '⚠️ Không có requestLEScan — sẽ dùng phương án dự phòng (requestDevice + watchAdvertisements).<br>'
+          + 'Giới hạn: phải chọn từng thiết bị trong hộp thoại; thiết bị chỉ phát (non-connectable) có thể không liệt kê được — Cần xác nhận.';
+    } else {
+      msg = '✅ requestLEScan khả dụng — có thể quét tất cả thiết bị quảng bá không cần chọn.';
+    }
+    hint.innerHTML = msg;
+  }
+
+  // ─── Bảng ánh xạ ─────────────────────────────────────────────────────────────
+  async function loadSampleMap() {
+    try {
+      const res  = await fetch('./beacon-map-sample.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      document.getElementById('map-textarea').value = JSON.stringify(data, null, 2);
+      document.getElementById('map-source-hint').textContent = 'Đang dùng: beacon-map-sample.json (placeholder)';
+      applyMap();
+    } catch (e) {
+      showMapError('Không tải được file mẫu: ' + e.message);
+    }
+  }
+
+  async function loadLocalMap() {
+    try {
+      const res = await fetch('/data/beacon-map.local.json');
+      if (!res.ok) {
+        showMapError('Không tìm thấy /data/beacon-map.local.json (HTTP ' + res.status + '). Hãy tạo file trước — xem HUONG_DAN.md.');
+        return;
+      }
+      const data = await res.json();
+      document.getElementById('map-textarea').value = JSON.stringify(data, null, 2);
+      document.getElementById('map-source-hint').textContent = '✅ Đang dùng: beacon-map.local.json (UUID thật)';
+      applyMap();
+    } catch (e) {
+      showMapError('Lỗi tải beacon-map.local.json: ' + e.message);
+    }
+  }
+
+  function clearMap() {
+    document.getElementById('map-textarea').value = '';
+    beaconMap = [];
+    resolver = new RoomResolver([]);
+    document.getElementById('map-count').textContent = '0 beacon';
+    document.getElementById('map-error').hidden = true;
+  }
+
+  function applyMap() {
+    const txt = document.getElementById('map-textarea').value.trim();
+    if (!txt) { beaconMap = []; resolver = new RoomResolver([]); updateMapCount(); return; }
+    try {
+      const parsed = JSON.parse(txt);
+      if (!Array.isArray(parsed)) throw new Error('Phải là mảng JSON []');
+      beaconMap = parsed;
+      resolver  = new RoomResolver(beaconMap);
+      document.getElementById('map-error').hidden = true;
+      updateMapCount();
+    } catch (e) {
+      showMapError('JSON không hợp lệ: ' + e.message);
+    }
+  }
+
+  function showMapError(msg) {
+    const el = document.getElementById('map-error');
+    el.textContent = msg;
+    el.hidden = false;
+  }
+
+  function updateMapCount() {
+    document.getElementById('map-count').textContent = beaconMap.length + ' beacon';
+  }
+
+  // ─── Nhận gói ─────────────────────────────────────────────────────────────────
+  function onAdvertisement(ev) {
+    const ts   = new Date(ev.timestamp).toLocaleTimeString('vi-VN', { hour12: false }) + '.' + String(ev.timestamp % 1000).padStart(3,'0');
+    const rssi = ev.rssi;
+    const p    = ev.parsed ?? {};
+    const uuid = p.uuid ?? '';
+    const major = p.major ?? '';
+    const minor = p.minor ?? '';
+    const rawHex = p.rawHex ?? '';
+    const type   = p.type ?? ev.parsedType ?? 'unknown';
+
+    allPackets.push({ ts, rssi, type, uuid, major, minor, rawHex, synthetic: !!ev.synthetic });
+
+    // Cập nhật bộ phân giải
+    resolver.addSample(ev.beaconKey, rssi, ev.timestamp);
+
+    renderPacketRow(ts, rssi, type, uuid, major, minor, rawHex, !!ev.synthetic);
+    updatePacketCount();
+    triggerResolve();
+    updateStats();
+  }
+
+  function triggerResolve() {
+    clearTimeout(_resolveTimer);
+    _resolveTimer = setTimeout(runResolve, 100);
+  }
+
+  function runResolve() {
+    const result = resolver.resolve();
+    const box    = document.getElementById('resolver-box');
+    const reason = document.getElementById('resolver-reason');
+    box.className = '';
+    if (result.status === 'near-room') {
+      box.className = 'status-near';
+      box.textContent = `✅ Gần phòng: ${result.roomName ?? result.roomId}`;
+    } else if (result.status === 'lost') {
+      box.className = 'status-lost';
+      box.textContent = `📡 Mất tín hiệu — mốc cuối: ${result.roomName ?? result.roomId ?? '?'}`;
+    } else {
+      box.className = 'status-uncertain';
+      box.textContent = `❓ Không chắc chắn`;
+    }
+    reason.textContent = 'Lý do: ' + (result.reason ?? '—');
+  }
+
+  // ─── Bảng gói ─────────────────────────────────────────────────────────────────
+  function rssiClass(rssi) {
+    if (rssi >= -70) return 'rssi-good';
+    if (rssi >= -85) return 'rssi-mid';
+    return 'rssi-bad';
+  }
+
+  function passesFilter(uuid, major, minor) {
+    const fu = document.getElementById('filter-uuid').value.trim().toLowerCase();
+    const fm = document.getElementById('filter-major').value.trim();
+    const fn = document.getElementById('filter-minor').value.trim();
+    if (fu && !String(uuid).toLowerCase().includes(fu)) return false;
+    if (fm && String(major) !== fm) return false;
+    if (fn && String(minor) !== fn) return false;
+    return true;
+  }
+
+  function renderPacketRow(ts, rssi, type, uuid, major, minor, rawHex, synthetic) {
+    if (!passesFilter(uuid, major, minor)) return;
+
+    const tbody = document.getElementById('packet-tbody');
+    const tr    = document.createElement('tr');
+    const uuidShort = uuid ? uuid.slice(0, 8) + '…' : '—';
+
+    tr.innerHTML = `
+      <td>${ts}</td>
+      <td class="${rssiClass(rssi)}">${rssi}</td>
+      <td><span class="badge ${type === 'iBeacon' ? 'badge-ok' : type === 'eddystone' ? 'badge-info' : 'badge-warn'}">${type}</span></td>
+      <td title="${uuid}">${uuidShort}</td>
+      <td>${major !== '' ? major : '—'}</td>
+      <td>${minor !== '' ? minor : '—'}</td>
+      <td style="font-family:monospace;font-size:0.75rem;">${rawHex.slice(0, 30)}${rawHex.length > 30 ? '…' : ''}</td>
+      <td>${synthetic ? '<span class="badge badge-sim">sim</span>' : ''}</td>
+    `;
+
+    tbody.insertBefore(tr, tbody.firstChild);
+    // Giới hạn 200 dòng
+    while (tbody.rows.length > 200) tbody.deleteRow(tbody.rows.length - 1);
+  }
+
+  function updatePacketCount() {
+    document.getElementById('packet-count').textContent = allPackets.length + ' gói (tổng)';
+  }
+
+  window.clearFilter = function () {
+    document.getElementById('filter-uuid').value  = '';
+    document.getElementById('filter-major').value = '';
+    document.getElementById('filter-minor').value = '';
+  };
+
+  window.clearPackets = function () {
+    allPackets = [];
+    document.getElementById('packet-tbody').innerHTML = '';
+    updatePacketCount();
+  };
+
+  // ─── Thống kê ─────────────────────────────────────────────────────────────────
+  function updateStats() {
+    const area = document.getElementById('stats-area');
+    area.innerHTML = '';
+    for (const entry of beaconMap) {
+      const s = resolver.stats(entry.beaconKey);
+      if (!s) continue;
+      const tile = document.createElement('div');
+      tile.className = 'stat-tile';
+      tile.innerHTML = `
+        <div class="label">${entry.roomName ?? entry.roomId} (${entry.beaconKey.slice(0,12)}…)</div>
+        <div class="value" title="${s.mean} dBm">${s.mean} dBm</div>
+        <div style="font-size:0.75rem;color:var(--clr-muted);">TB | trung vị ${s.median} | σ ${s.std} | [${s.min}, ${s.max}] | n=${s.count}</div>
+      `;
+      area.appendChild(tile);
+    }
+  }
+
+  // ─── Nguồn THẬT ──────────────────────────────────────────────────────────────
+  window.startReal = async function () {
+    const errEl = document.getElementById('real-error');
+    errEl.className = 'error-msg';
+    errEl.hidden = true;
+
+    try {
+      realSrc = new RealSource();
+      await realSrc.start(onAdvertisement);
+      document.getElementById('btn-start-real').disabled = true;
+      document.getElementById('btn-stop-real').disabled  = false;
+      setStatus('🔵 Đang quét BLE (thật)…');
+    } catch (e) {
+      errEl.textContent = e.message ?? String(e);
+      errEl.hidden = false;
+      realSrc = null;
+    }
+  };
+
+  window.stopReal = function () {
+    realSrc?.stop();
+    realSrc = null;
+    document.getElementById('btn-start-real').disabled = false;
+    document.getElementById('btn-stop-real').disabled  = true;
+    setStatus('Trạng thái: đã dừng BLE thật');
+  };
+
+  // ─── Nguồn GIẢ LẬP ──────────────────────────────────────────────────────────
+  window.startSim = function () {
+    if (simSrc) { simSrc.stop(); simSrc = null; }
+
+    const scenario = document.getElementById('scenario-select').value;
+    const seed     = parseInt(document.getElementById('sim-seed').value, 10) || 42;
+    const interval = parseInt(document.getElementById('sim-interval').value, 10) || 1000;
+
+    if (beaconMap.length === 0) {
+      alert('Hãy tải bảng ánh xạ beacon → phòng trước (mục 2).');
+      return;
+    }
+
+    resolver.reset();
+    simSrc = new SimulatedSource(beaconMap, scenario, interval, seed);
+    simSrc.start(onAdvertisement);
+
+    document.getElementById('btn-start-sim').disabled = true;
+    document.getElementById('btn-stop-sim').disabled  = false;
+    setStatus(`🟣 Đang giả lập · kịch bản: ${SCENARIO_LABELS[scenario] ?? scenario}`);
+  };
+
+  window.stopSim = function () {
+    simSrc?.stop();
+    simSrc = null;
+    document.getElementById('btn-start-sim').disabled = false;
+    document.getElementById('btn-stop-sim').disabled  = true;
+    setStatus('Trạng thái: đã dừng giả lập');
+  };
+
+  function setStatus(msg) {
+    document.getElementById('status-bar').textContent = 'Trạng thái: ' + msg;
+  }
+
+  // ─── Ghi mẫu ─────────────────────────────────────────────────────────────────
+  window.recordSample = function () {
+    const ref   = document.getElementById('smp-ref').value.trim()   || 'B?';
+    const dist  = parseFloat(document.getElementById('smp-dist').value) || null;
+    const cond  = document.getElementById('smp-cond').value.trim()  || '';
+    const notes = document.getElementById('smp-notes').value.trim() || '';
+    const rssiNow = allPackets.length > 0 ? allPackets[allPackets.length - 1].rssi : null;
+
+    const idx = recordedSamples.length + 1;
+    const row = {
+      beaconRef:  ref,
+      distance_m: dist,
+      condition:  cond,
+      sampleIndex: idx,
+      rssi_dBm:   rssiNow,
+      timestamp:  new Date().toISOString(),
+      notes,
+    };
+    recordedSamples.push(row);
+    document.getElementById('sample-count').textContent = recordedSamples.length + ' mẫu đã ghi';
+
+    const preview = document.getElementById('sample-preview');
+    const line    = document.createElement('div');
+    line.style.fontFamily = 'monospace';
+    line.textContent = `#${idx} ${ref} d=${dist}m cond="${cond}" rssi=${rssiNow} dBm`;
+    preview.appendChild(line);
+  };
+
+  // ─── Xuất CSV ────────────────────────────────────────────────────────────────
+  window.exportCSV = function () {
+    if (recordedSamples.length === 0) { alert('Chưa có mẫu nào được ghi.'); return; }
+    const header = 'beaconRef,distance_m,condition,sampleIndex,rssi_dBm,timestamp,notes';
+    const rows   = recordedSamples.map(r =>
+      [r.beaconRef, r.distance_m ?? '', csvEsc(r.condition), r.sampleIndex, r.rssi_dBm ?? '', r.timestamp, csvEsc(r.notes)].join(',')
+    );
+    const csv    = [header, ...rows].join('\r\n');
+    const blob   = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8;' });
+    const url    = URL.createObjectURL(blob);
+    const a      = document.createElement('a');
+    a.href = url;
+    const ts = new Date().toISOString().slice(0,19).replace('T','_').replace(/:/g,'');
+    a.download = `bench_${ts}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 1000);
+    const st = document.getElementById('csv-status');
+    st.textContent = `✓ Đã xuất ${recordedSamples.length} mẫu`;
+    setTimeout(() => { st.textContent = ''; }, 3000);
+  };
+
+  function csvEsc(s) {
+    if (typeof s !== 'string') return s ?? '';
+    if (s.includes(',') || s.includes('"') || s.includes('\n')) return '"' + s.replace(/"/g, '""') + '"';
+    return s;
+  }
+
+  // ─── Auto-check khi tải trang ────────────────────────────────────────────────
+  runBtCheck();
+</script>
+</body>
+</html>

@@ -1,0 +1,2363 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách link QR – Hospital Indoor Navigation</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 20px; color: #1a2a3a; }
+    h1 { font-size: 1.3rem; color: #1565C0; }
+    h2 { font-size: 1.05rem; color: #1565C0; margin-top: 24px; }
+    .warn { background: #fff3e0; border: 1px solid #e65100; padding: 10px 14px; border-radius: 6px; margin-bottom: 18px; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 10px; }
+    th, td { border: 1px solid #d0dce8; padding: 6px 10px; font-size: 0.85rem; }
+    th { background: #eef4fa; }
+    .url-cell a { color: #1565C0; word-break: break-all; }
+    @media print { .no-print { display: none; } }
+  </style>
+</head>
+<body>
+  <h1>Danh sách link QR – Hospital Indoor Navigation</h1>
+  <p class="no-print" style="font-size:0.85rem;color:#607080;">
+    Sinh lúc 14:01:24 28/10/2026 · base URL: <code>http://localhost:5173</code>
+  </p>
+  <div class="warn">⚠️ URL chưa phải HTTPS — chỉ dùng được trên localhost (kiểm thử nội bộ).<br>
+    Khi triển khai: chạy <code>node tools/gen_qr_links.mjs https://&lt;domain&gt;</code></div>
+  <p class="no-print" style="font-size:0.85rem;">
+    Sao chép URL từng dòng vào trang tạo QR code (ví dụ: <em>qr-code-generator.com</em>) để in QR.<br>
+    Mỗi QR khi quét sẽ mở app và đặt vị trí xuất phát vào phòng tương ứng.
+  </p>
+
+    <h2>F1</h2>
+    <table>
+      <thead><tr><th>ID phòng</th><th>Tên</th><th>Loại</th><th>URL (?at=)</th></tr></thead>
+      <tbody>
+      <tr>
+        <td>F1_R001</td>
+        <td>Phòng chưa đặt tên F1-1</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R001" target="_blank">http://localhost:5173/?at=F1_R001</a></td>
+      </tr>
+      <tr>
+        <td>F1_R002</td>
+        <td>Phòng chưa đặt tên F1-2</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R002" target="_blank">http://localhost:5173/?at=F1_R002</a></td>
+      </tr>
+      <tr>
+        <td>F1_R003</td>
+        <td>Phòng chưa đặt tên F1-3</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R003" target="_blank">http://localhost:5173/?at=F1_R003</a></td>
+      </tr>
+      <tr>
+        <td>F1_R004</td>
+        <td>Phòng chưa đặt tên F1-4</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R004" target="_blank">http://localhost:5173/?at=F1_R004</a></td>
+      </tr>
+      <tr>
+        <td>F1_R005</td>
+        <td>Phòng Trưởng ban</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R005" target="_blank">http://localhost:5173/?at=F1_R005</a></td>
+      </tr>
+      <tr>
+        <td>F1_R006</td>
+        <td>Phòng kỹ thuật</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R006" target="_blank">http://localhost:5173/?at=F1_R006</a></td>
+      </tr>
+      <tr>
+        <td>F1_R007</td>
+        <td>WC Nam</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R007" target="_blank">http://localhost:5173/?at=F1_R007</a></td>
+      </tr>
+      <tr>
+        <td>F1_R008</td>
+        <td>WC Nữ</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R008" target="_blank">http://localhost:5173/?at=F1_R008</a></td>
+      </tr>
+      <tr>
+        <td>F1_R009</td>
+        <td>Phòng Hành chính</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R009" target="_blank">http://localhost:5173/?at=F1_R009</a></td>
+      </tr>
+      <tr>
+        <td>F1_R010</td>
+        <td>Phòng Điều hành</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R010" target="_blank">http://localhost:5173/?at=F1_R010</a></td>
+      </tr>
+      <tr>
+        <td>F1_R011</td>
+        <td>Phòng chưa đặt tên F1-11</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R011" target="_blank">http://localhost:5173/?at=F1_R011</a></td>
+      </tr>
+      <tr>
+        <td>F1_R012</td>
+        <td>Cầu thang giữa</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R012" target="_blank">http://localhost:5173/?at=F1_R012</a></td>
+      </tr>
+      <tr>
+        <td>F1_R013</td>
+        <td>Thang máy / Giếng trời</td>
+        <td>elevator</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R013" target="_blank">http://localhost:5173/?at=F1_R013</a></td>
+      </tr>
+      <tr>
+        <td>F1_R014</td>
+        <td>Phòng chưa đặt tên F1-14</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R014" target="_blank">http://localhost:5173/?at=F1_R014</a></td>
+      </tr>
+      <tr>
+        <td>F1_R015</td>
+        <td>Phòng chưa đặt tên F1-15</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R015" target="_blank">http://localhost:5173/?at=F1_R015</a></td>
+      </tr>
+      <tr>
+        <td>F1_R016</td>
+        <td>Phòng chưa đặt tên F1-16</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R016" target="_blank">http://localhost:5173/?at=F1_R016</a></td>
+      </tr>
+      <tr>
+        <td>F1_R017</td>
+        <td>Phòng chưa đặt tên F1-17</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R017" target="_blank">http://localhost:5173/?at=F1_R017</a></td>
+      </tr>
+      <tr>
+        <td>F1_R018</td>
+        <td>Phòng chưa đặt tên F1-18</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R018" target="_blank">http://localhost:5173/?at=F1_R018</a></td>
+      </tr>
+      <tr>
+        <td>F1_R019</td>
+        <td>Phòng chưa đặt tên F1-19</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R019" target="_blank">http://localhost:5173/?at=F1_R019</a></td>
+      </tr>
+      <tr>
+        <td>F1_R020</td>
+        <td>Phòng chưa đặt tên F1-20</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R020" target="_blank">http://localhost:5173/?at=F1_R020</a></td>
+      </tr>
+      <tr>
+        <td>F1_R021</td>
+        <td>Phòng chưa đặt tên F1-21</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R021" target="_blank">http://localhost:5173/?at=F1_R021</a></td>
+      </tr>
+      <tr>
+        <td>F1_R022</td>
+        <td>Phòng chưa đặt tên F1-22</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R022" target="_blank">http://localhost:5173/?at=F1_R022</a></td>
+      </tr>
+      <tr>
+        <td>F1_R023</td>
+        <td>Phòng chưa đặt tên F1-23</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R023" target="_blank">http://localhost:5173/?at=F1_R023</a></td>
+      </tr>
+      <tr>
+        <td>F1_R024</td>
+        <td>Phòng chưa đặt tên F1-24</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R024" target="_blank">http://localhost:5173/?at=F1_R024</a></td>
+      </tr>
+      <tr>
+        <td>F1_R025</td>
+        <td>Phòng chưa đặt tên F1-25</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R025" target="_blank">http://localhost:5173/?at=F1_R025</a></td>
+      </tr>
+      <tr>
+        <td>F1_R026</td>
+        <td>Phòng chưa đặt tên F1-26</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R026" target="_blank">http://localhost:5173/?at=F1_R026</a></td>
+      </tr>
+      <tr>
+        <td>F1_R027</td>
+        <td>Trung Tâm dữ liệu</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R027" target="_blank">http://localhost:5173/?at=F1_R027</a></td>
+      </tr>
+      <tr>
+        <td>F1_R028</td>
+        <td>Kho</td>
+        <td>storage</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R028" target="_blank">http://localhost:5173/?at=F1_R028</a></td>
+      </tr>
+      <tr>
+        <td>F1_R029</td>
+        <td>Phòng chưa đặt tên F1-29</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R029" target="_blank">http://localhost:5173/?at=F1_R029</a></td>
+      </tr>
+      <tr>
+        <td>F1_R030</td>
+        <td>Phòng chưa đặt tên F1-30</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R030" target="_blank">http://localhost:5173/?at=F1_R030</a></td>
+      </tr>
+      <tr>
+        <td>F1_R031</td>
+        <td>Phòng chưa đặt tên F1-31</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R031" target="_blank">http://localhost:5173/?at=F1_R031</a></td>
+      </tr>
+      <tr>
+        <td>F1_R032</td>
+        <td>Phòng chưa đặt tên F1-32</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R032" target="_blank">http://localhost:5173/?at=F1_R032</a></td>
+      </tr>
+      <tr>
+        <td>F1_R033</td>
+        <td>Phòng chưa đặt tên F1-33</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R033" target="_blank">http://localhost:5173/?at=F1_R033</a></td>
+      </tr>
+      <tr>
+        <td>F1_R034</td>
+        <td>Phòng chưa đặt tên F1-34</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R034" target="_blank">http://localhost:5173/?at=F1_R034</a></td>
+      </tr>
+      <tr>
+        <td>F1_R035</td>
+        <td>Phòng chưa đặt tên F1-35</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R035" target="_blank">http://localhost:5173/?at=F1_R035</a></td>
+      </tr>
+      <tr>
+        <td>F1_R036</td>
+        <td>Phòng chưa đặt tên F1-36</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R036" target="_blank">http://localhost:5173/?at=F1_R036</a></td>
+      </tr>
+      <tr>
+        <td>F1_R037</td>
+        <td>Phòng chưa đặt tên F1-37</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R037" target="_blank">http://localhost:5173/?at=F1_R037</a></td>
+      </tr>
+      <tr>
+        <td>F1_R038</td>
+        <td>Phòng chưa đặt tên F1-38</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R038" target="_blank">http://localhost:5173/?at=F1_R038</a></td>
+      </tr>
+      <tr>
+        <td>F1_R039</td>
+        <td>Cầu thang Đông-Bắc</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R039" target="_blank">http://localhost:5173/?at=F1_R039</a></td>
+      </tr>
+      <tr>
+        <td>F1_R040</td>
+        <td>Phòng chưa đặt tên F1-40</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R040" target="_blank">http://localhost:5173/?at=F1_R040</a></td>
+      </tr>
+      <tr>
+        <td>F1_R041</td>
+        <td>Cầu thang Đông-Nam</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R041" target="_blank">http://localhost:5173/?at=F1_R041</a></td>
+      </tr>
+      <tr>
+        <td>F1_R042</td>
+        <td>Phòng chưa đặt tên F1-42</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F1_R042" target="_blank">http://localhost:5173/?at=F1_R042</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2>F2</h2>
+    <table>
+      <thead><tr><th>ID phòng</th><th>Tên</th><th>Loại</th><th>URL (?at=)</th></tr></thead>
+      <tbody>
+      <tr>
+        <td>F2_R001</td>
+        <td>Phòng chưa đặt tên F2-1</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R001" target="_blank">http://localhost:5173/?at=F2_R001</a></td>
+      </tr>
+      <tr>
+        <td>F2_R002</td>
+        <td>Phòng chưa đặt tên F2-2</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R002" target="_blank">http://localhost:5173/?at=F2_R002</a></td>
+      </tr>
+      <tr>
+        <td>F2_R003</td>
+        <td>Phòng chưa đặt tên F2-3</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R003" target="_blank">http://localhost:5173/?at=F2_R003</a></td>
+      </tr>
+      <tr>
+        <td>F2_R004</td>
+        <td>Phòng chưa đặt tên F2-4</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R004" target="_blank">http://localhost:5173/?at=F2_R004</a></td>
+      </tr>
+      <tr>
+        <td>F2_R005</td>
+        <td>Phòng Trưởng ban</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R005" target="_blank">http://localhost:5173/?at=F2_R005</a></td>
+      </tr>
+      <tr>
+        <td>F2_R006</td>
+        <td>Phòng kỹ thuật</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R006" target="_blank">http://localhost:5173/?at=F2_R006</a></td>
+      </tr>
+      <tr>
+        <td>F2_R007</td>
+        <td>WC Nam</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R007" target="_blank">http://localhost:5173/?at=F2_R007</a></td>
+      </tr>
+      <tr>
+        <td>F2_R008</td>
+        <td>WC Nữ</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R008" target="_blank">http://localhost:5173/?at=F2_R008</a></td>
+      </tr>
+      <tr>
+        <td>F2_R009</td>
+        <td>Phòng Hành chính</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R009" target="_blank">http://localhost:5173/?at=F2_R009</a></td>
+      </tr>
+      <tr>
+        <td>F2_R010</td>
+        <td>Phòng Điều hành</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R010" target="_blank">http://localhost:5173/?at=F2_R010</a></td>
+      </tr>
+      <tr>
+        <td>F2_R011</td>
+        <td>Phòng chưa đặt tên F2-11</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R011" target="_blank">http://localhost:5173/?at=F2_R011</a></td>
+      </tr>
+      <tr>
+        <td>F2_R012</td>
+        <td>Cầu thang giữa</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R012" target="_blank">http://localhost:5173/?at=F2_R012</a></td>
+      </tr>
+      <tr>
+        <td>F2_R013</td>
+        <td>Thang máy / Giếng trời</td>
+        <td>elevator</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R013" target="_blank">http://localhost:5173/?at=F2_R013</a></td>
+      </tr>
+      <tr>
+        <td>F2_R014</td>
+        <td>Phòng chưa đặt tên F2-14</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R014" target="_blank">http://localhost:5173/?at=F2_R014</a></td>
+      </tr>
+      <tr>
+        <td>F2_R015</td>
+        <td>Phòng chưa đặt tên F2-15</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R015" target="_blank">http://localhost:5173/?at=F2_R015</a></td>
+      </tr>
+      <tr>
+        <td>F2_R016</td>
+        <td>Phòng chưa đặt tên F2-16</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R016" target="_blank">http://localhost:5173/?at=F2_R016</a></td>
+      </tr>
+      <tr>
+        <td>F2_R017</td>
+        <td>Phòng chưa đặt tên F2-17</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R017" target="_blank">http://localhost:5173/?at=F2_R017</a></td>
+      </tr>
+      <tr>
+        <td>F2_R018</td>
+        <td>Phòng chưa đặt tên F2-18</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R018" target="_blank">http://localhost:5173/?at=F2_R018</a></td>
+      </tr>
+      <tr>
+        <td>F2_R019</td>
+        <td>Phòng chưa đặt tên F2-19</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R019" target="_blank">http://localhost:5173/?at=F2_R019</a></td>
+      </tr>
+      <tr>
+        <td>F2_R020</td>
+        <td>Phòng chưa đặt tên F2-20</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R020" target="_blank">http://localhost:5173/?at=F2_R020</a></td>
+      </tr>
+      <tr>
+        <td>F2_R021</td>
+        <td>Phòng chưa đặt tên F2-21</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R021" target="_blank">http://localhost:5173/?at=F2_R021</a></td>
+      </tr>
+      <tr>
+        <td>F2_R022</td>
+        <td>Phòng chưa đặt tên F2-22</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R022" target="_blank">http://localhost:5173/?at=F2_R022</a></td>
+      </tr>
+      <tr>
+        <td>F2_R023</td>
+        <td>Phòng chưa đặt tên F2-23</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R023" target="_blank">http://localhost:5173/?at=F2_R023</a></td>
+      </tr>
+      <tr>
+        <td>F2_R024</td>
+        <td>Phòng chưa đặt tên F2-24</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R024" target="_blank">http://localhost:5173/?at=F2_R024</a></td>
+      </tr>
+      <tr>
+        <td>F2_R025</td>
+        <td>Phòng chưa đặt tên F2-25</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R025" target="_blank">http://localhost:5173/?at=F2_R025</a></td>
+      </tr>
+      <tr>
+        <td>F2_R026</td>
+        <td>Phòng chưa đặt tên F2-26</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R026" target="_blank">http://localhost:5173/?at=F2_R026</a></td>
+      </tr>
+      <tr>
+        <td>F2_R027</td>
+        <td>Trung Tâm dữ liệu</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R027" target="_blank">http://localhost:5173/?at=F2_R027</a></td>
+      </tr>
+      <tr>
+        <td>F2_R028</td>
+        <td>Kho</td>
+        <td>storage</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R028" target="_blank">http://localhost:5173/?at=F2_R028</a></td>
+      </tr>
+      <tr>
+        <td>F2_R029</td>
+        <td>Phòng chưa đặt tên F2-29</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R029" target="_blank">http://localhost:5173/?at=F2_R029</a></td>
+      </tr>
+      <tr>
+        <td>F2_R030</td>
+        <td>Phòng chưa đặt tên F2-30</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R030" target="_blank">http://localhost:5173/?at=F2_R030</a></td>
+      </tr>
+      <tr>
+        <td>F2_R031</td>
+        <td>Phòng chưa đặt tên F2-31</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R031" target="_blank">http://localhost:5173/?at=F2_R031</a></td>
+      </tr>
+      <tr>
+        <td>F2_R032</td>
+        <td>Phòng chưa đặt tên F2-32</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R032" target="_blank">http://localhost:5173/?at=F2_R032</a></td>
+      </tr>
+      <tr>
+        <td>F2_R033</td>
+        <td>Phòng chưa đặt tên F2-33</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R033" target="_blank">http://localhost:5173/?at=F2_R033</a></td>
+      </tr>
+      <tr>
+        <td>F2_R034</td>
+        <td>Phòng chưa đặt tên F2-34</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R034" target="_blank">http://localhost:5173/?at=F2_R034</a></td>
+      </tr>
+      <tr>
+        <td>F2_R035</td>
+        <td>Phòng chưa đặt tên F2-35</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R035" target="_blank">http://localhost:5173/?at=F2_R035</a></td>
+      </tr>
+      <tr>
+        <td>F2_R036</td>
+        <td>Phòng chưa đặt tên F2-36</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R036" target="_blank">http://localhost:5173/?at=F2_R036</a></td>
+      </tr>
+      <tr>
+        <td>F2_R037</td>
+        <td>Phòng chưa đặt tên F2-37</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R037" target="_blank">http://localhost:5173/?at=F2_R037</a></td>
+      </tr>
+      <tr>
+        <td>F2_R038</td>
+        <td>Phòng chưa đặt tên F2-38</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R038" target="_blank">http://localhost:5173/?at=F2_R038</a></td>
+      </tr>
+      <tr>
+        <td>F2_R039</td>
+        <td>Cầu thang Đông-Bắc</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R039" target="_blank">http://localhost:5173/?at=F2_R039</a></td>
+      </tr>
+      <tr>
+        <td>F2_R040</td>
+        <td>Phòng chưa đặt tên F2-40</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R040" target="_blank">http://localhost:5173/?at=F2_R040</a></td>
+      </tr>
+      <tr>
+        <td>F2_R041</td>
+        <td>Cầu thang Đông-Nam</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R041" target="_blank">http://localhost:5173/?at=F2_R041</a></td>
+      </tr>
+      <tr>
+        <td>F2_R042</td>
+        <td>Phòng chưa đặt tên F2-42</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F2_R042" target="_blank">http://localhost:5173/?at=F2_R042</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2>F3</h2>
+    <table>
+      <thead><tr><th>ID phòng</th><th>Tên</th><th>Loại</th><th>URL (?at=)</th></tr></thead>
+      <tbody>
+      <tr>
+        <td>F3_R001</td>
+        <td>Phòng chưa đặt tên F3-1</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R001" target="_blank">http://localhost:5173/?at=F3_R001</a></td>
+      </tr>
+      <tr>
+        <td>F3_R002</td>
+        <td>Phòng chưa đặt tên F3-2</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R002" target="_blank">http://localhost:5173/?at=F3_R002</a></td>
+      </tr>
+      <tr>
+        <td>F3_R003</td>
+        <td>Phòng chưa đặt tên F3-3</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R003" target="_blank">http://localhost:5173/?at=F3_R003</a></td>
+      </tr>
+      <tr>
+        <td>F3_R004</td>
+        <td>Phòng chưa đặt tên F3-4</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R004" target="_blank">http://localhost:5173/?at=F3_R004</a></td>
+      </tr>
+      <tr>
+        <td>F3_R005</td>
+        <td>Phòng Trưởng ban</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R005" target="_blank">http://localhost:5173/?at=F3_R005</a></td>
+      </tr>
+      <tr>
+        <td>F3_R006</td>
+        <td>Phòng kỹ thuật</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R006" target="_blank">http://localhost:5173/?at=F3_R006</a></td>
+      </tr>
+      <tr>
+        <td>F3_R007</td>
+        <td>WC Nam</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R007" target="_blank">http://localhost:5173/?at=F3_R007</a></td>
+      </tr>
+      <tr>
+        <td>F3_R008</td>
+        <td>WC Nữ</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R008" target="_blank">http://localhost:5173/?at=F3_R008</a></td>
+      </tr>
+      <tr>
+        <td>F3_R009</td>
+        <td>Phòng Hành chính</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R009" target="_blank">http://localhost:5173/?at=F3_R009</a></td>
+      </tr>
+      <tr>
+        <td>F3_R010</td>
+        <td>Phòng Điều hành</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R010" target="_blank">http://localhost:5173/?at=F3_R010</a></td>
+      </tr>
+      <tr>
+        <td>F3_R011</td>
+        <td>Phòng chưa đặt tên F3-11</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R011" target="_blank">http://localhost:5173/?at=F3_R011</a></td>
+      </tr>
+      <tr>
+        <td>F3_R012</td>
+        <td>Cầu thang giữa</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R012" target="_blank">http://localhost:5173/?at=F3_R012</a></td>
+      </tr>
+      <tr>
+        <td>F3_R013</td>
+        <td>Thang máy / Giếng trời</td>
+        <td>elevator</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R013" target="_blank">http://localhost:5173/?at=F3_R013</a></td>
+      </tr>
+      <tr>
+        <td>F3_R014</td>
+        <td>Phòng chưa đặt tên F3-14</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R014" target="_blank">http://localhost:5173/?at=F3_R014</a></td>
+      </tr>
+      <tr>
+        <td>F3_R015</td>
+        <td>Phòng chưa đặt tên F3-15</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R015" target="_blank">http://localhost:5173/?at=F3_R015</a></td>
+      </tr>
+      <tr>
+        <td>F3_R016</td>
+        <td>Phòng chưa đặt tên F3-16</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R016" target="_blank">http://localhost:5173/?at=F3_R016</a></td>
+      </tr>
+      <tr>
+        <td>F3_R017</td>
+        <td>Phòng chưa đặt tên F3-17</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R017" target="_blank">http://localhost:5173/?at=F3_R017</a></td>
+      </tr>
+      <tr>
+        <td>F3_R018</td>
+        <td>Phòng chưa đặt tên F3-18</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R018" target="_blank">http://localhost:5173/?at=F3_R018</a></td>
+      </tr>
+      <tr>
+        <td>F3_R019</td>
+        <td>Phòng chưa đặt tên F3-19</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R019" target="_blank">http://localhost:5173/?at=F3_R019</a></td>
+      </tr>
+      <tr>
+        <td>F3_R020</td>
+        <td>Phòng chưa đặt tên F3-20</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R020" target="_blank">http://localhost:5173/?at=F3_R020</a></td>
+      </tr>
+      <tr>
+        <td>F3_R021</td>
+        <td>Phòng chưa đặt tên F3-21</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R021" target="_blank">http://localhost:5173/?at=F3_R021</a></td>
+      </tr>
+      <tr>
+        <td>F3_R022</td>
+        <td>Phòng chưa đặt tên F3-22</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R022" target="_blank">http://localhost:5173/?at=F3_R022</a></td>
+      </tr>
+      <tr>
+        <td>F3_R023</td>
+        <td>Phòng chưa đặt tên F3-23</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R023" target="_blank">http://localhost:5173/?at=F3_R023</a></td>
+      </tr>
+      <tr>
+        <td>F3_R024</td>
+        <td>Phòng chưa đặt tên F3-24</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R024" target="_blank">http://localhost:5173/?at=F3_R024</a></td>
+      </tr>
+      <tr>
+        <td>F3_R025</td>
+        <td>Phòng chưa đặt tên F3-25</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R025" target="_blank">http://localhost:5173/?at=F3_R025</a></td>
+      </tr>
+      <tr>
+        <td>F3_R026</td>
+        <td>Phòng chưa đặt tên F3-26</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R026" target="_blank">http://localhost:5173/?at=F3_R026</a></td>
+      </tr>
+      <tr>
+        <td>F3_R027</td>
+        <td>Trung Tâm dữ liệu</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R027" target="_blank">http://localhost:5173/?at=F3_R027</a></td>
+      </tr>
+      <tr>
+        <td>F3_R028</td>
+        <td>Kho</td>
+        <td>storage</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R028" target="_blank">http://localhost:5173/?at=F3_R028</a></td>
+      </tr>
+      <tr>
+        <td>F3_R029</td>
+        <td>Phòng chưa đặt tên F3-29</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R029" target="_blank">http://localhost:5173/?at=F3_R029</a></td>
+      </tr>
+      <tr>
+        <td>F3_R030</td>
+        <td>Phòng chưa đặt tên F3-30</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R030" target="_blank">http://localhost:5173/?at=F3_R030</a></td>
+      </tr>
+      <tr>
+        <td>F3_R031</td>
+        <td>Phòng chưa đặt tên F3-31</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R031" target="_blank">http://localhost:5173/?at=F3_R031</a></td>
+      </tr>
+      <tr>
+        <td>F3_R032</td>
+        <td>Phòng chưa đặt tên F3-32</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R032" target="_blank">http://localhost:5173/?at=F3_R032</a></td>
+      </tr>
+      <tr>
+        <td>F3_R033</td>
+        <td>Phòng chưa đặt tên F3-33</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R033" target="_blank">http://localhost:5173/?at=F3_R033</a></td>
+      </tr>
+      <tr>
+        <td>F3_R034</td>
+        <td>Phòng chưa đặt tên F3-34</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R034" target="_blank">http://localhost:5173/?at=F3_R034</a></td>
+      </tr>
+      <tr>
+        <td>F3_R035</td>
+        <td>Phòng chưa đặt tên F3-35</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R035" target="_blank">http://localhost:5173/?at=F3_R035</a></td>
+      </tr>
+      <tr>
+        <td>F3_R036</td>
+        <td>Phòng chưa đặt tên F3-36</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R036" target="_blank">http://localhost:5173/?at=F3_R036</a></td>
+      </tr>
+      <tr>
+        <td>F3_R037</td>
+        <td>Phòng chưa đặt tên F3-37</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R037" target="_blank">http://localhost:5173/?at=F3_R037</a></td>
+      </tr>
+      <tr>
+        <td>F3_R038</td>
+        <td>Phòng chưa đặt tên F3-38</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R038" target="_blank">http://localhost:5173/?at=F3_R038</a></td>
+      </tr>
+      <tr>
+        <td>F3_R039</td>
+        <td>Cầu thang Đông-Bắc</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R039" target="_blank">http://localhost:5173/?at=F3_R039</a></td>
+      </tr>
+      <tr>
+        <td>F3_R040</td>
+        <td>Phòng chưa đặt tên F3-40</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R040" target="_blank">http://localhost:5173/?at=F3_R040</a></td>
+      </tr>
+      <tr>
+        <td>F3_R041</td>
+        <td>Cầu thang Đông-Nam</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R041" target="_blank">http://localhost:5173/?at=F3_R041</a></td>
+      </tr>
+      <tr>
+        <td>F3_R042</td>
+        <td>Phòng chưa đặt tên F3-42</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F3_R042" target="_blank">http://localhost:5173/?at=F3_R042</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2>F4</h2>
+    <table>
+      <thead><tr><th>ID phòng</th><th>Tên</th><th>Loại</th><th>URL (?at=)</th></tr></thead>
+      <tbody>
+      <tr>
+        <td>F4_R001</td>
+        <td>Phòng chưa đặt tên F4-1</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R001" target="_blank">http://localhost:5173/?at=F4_R001</a></td>
+      </tr>
+      <tr>
+        <td>F4_R002</td>
+        <td>Phòng chưa đặt tên F4-2</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R002" target="_blank">http://localhost:5173/?at=F4_R002</a></td>
+      </tr>
+      <tr>
+        <td>F4_R003</td>
+        <td>Phòng chưa đặt tên F4-3</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R003" target="_blank">http://localhost:5173/?at=F4_R003</a></td>
+      </tr>
+      <tr>
+        <td>F4_R004</td>
+        <td>Phòng chưa đặt tên F4-4</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R004" target="_blank">http://localhost:5173/?at=F4_R004</a></td>
+      </tr>
+      <tr>
+        <td>F4_R005</td>
+        <td>Phòng Trưởng ban</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R005" target="_blank">http://localhost:5173/?at=F4_R005</a></td>
+      </tr>
+      <tr>
+        <td>F4_R006</td>
+        <td>Phòng kỹ thuật</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R006" target="_blank">http://localhost:5173/?at=F4_R006</a></td>
+      </tr>
+      <tr>
+        <td>F4_R007</td>
+        <td>WC Nam</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R007" target="_blank">http://localhost:5173/?at=F4_R007</a></td>
+      </tr>
+      <tr>
+        <td>F4_R008</td>
+        <td>WC Nữ</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R008" target="_blank">http://localhost:5173/?at=F4_R008</a></td>
+      </tr>
+      <tr>
+        <td>F4_R009</td>
+        <td>Phòng Hành chính</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R009" target="_blank">http://localhost:5173/?at=F4_R009</a></td>
+      </tr>
+      <tr>
+        <td>F4_R010</td>
+        <td>Phòng Điều hành</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R010" target="_blank">http://localhost:5173/?at=F4_R010</a></td>
+      </tr>
+      <tr>
+        <td>F4_R011</td>
+        <td>Phòng chưa đặt tên F4-11</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R011" target="_blank">http://localhost:5173/?at=F4_R011</a></td>
+      </tr>
+      <tr>
+        <td>F4_R012</td>
+        <td>Cầu thang giữa</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R012" target="_blank">http://localhost:5173/?at=F4_R012</a></td>
+      </tr>
+      <tr>
+        <td>F4_R013</td>
+        <td>Thang máy / Giếng trời</td>
+        <td>elevator</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R013" target="_blank">http://localhost:5173/?at=F4_R013</a></td>
+      </tr>
+      <tr>
+        <td>F4_R014</td>
+        <td>Phòng chưa đặt tên F4-14</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R014" target="_blank">http://localhost:5173/?at=F4_R014</a></td>
+      </tr>
+      <tr>
+        <td>F4_R015</td>
+        <td>Phòng chưa đặt tên F4-15</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R015" target="_blank">http://localhost:5173/?at=F4_R015</a></td>
+      </tr>
+      <tr>
+        <td>F4_R016</td>
+        <td>Phòng chưa đặt tên F4-16</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R016" target="_blank">http://localhost:5173/?at=F4_R016</a></td>
+      </tr>
+      <tr>
+        <td>F4_R017</td>
+        <td>Phòng chưa đặt tên F4-17</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R017" target="_blank">http://localhost:5173/?at=F4_R017</a></td>
+      </tr>
+      <tr>
+        <td>F4_R018</td>
+        <td>Phòng chưa đặt tên F4-18</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R018" target="_blank">http://localhost:5173/?at=F4_R018</a></td>
+      </tr>
+      <tr>
+        <td>F4_R019</td>
+        <td>Phòng chưa đặt tên F4-19</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R019" target="_blank">http://localhost:5173/?at=F4_R019</a></td>
+      </tr>
+      <tr>
+        <td>F4_R020</td>
+        <td>Phòng chưa đặt tên F4-20</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R020" target="_blank">http://localhost:5173/?at=F4_R020</a></td>
+      </tr>
+      <tr>
+        <td>F4_R021</td>
+        <td>Phòng chưa đặt tên F4-21</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R021" target="_blank">http://localhost:5173/?at=F4_R021</a></td>
+      </tr>
+      <tr>
+        <td>F4_R022</td>
+        <td>Phòng chưa đặt tên F4-22</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R022" target="_blank">http://localhost:5173/?at=F4_R022</a></td>
+      </tr>
+      <tr>
+        <td>F4_R023</td>
+        <td>Phòng chưa đặt tên F4-23</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R023" target="_blank">http://localhost:5173/?at=F4_R023</a></td>
+      </tr>
+      <tr>
+        <td>F4_R024</td>
+        <td>Phòng chưa đặt tên F4-24</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R024" target="_blank">http://localhost:5173/?at=F4_R024</a></td>
+      </tr>
+      <tr>
+        <td>F4_R025</td>
+        <td>Phòng chưa đặt tên F4-25</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R025" target="_blank">http://localhost:5173/?at=F4_R025</a></td>
+      </tr>
+      <tr>
+        <td>F4_R026</td>
+        <td>Phòng chưa đặt tên F4-26</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R026" target="_blank">http://localhost:5173/?at=F4_R026</a></td>
+      </tr>
+      <tr>
+        <td>F4_R027</td>
+        <td>Trung Tâm dữ liệu</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R027" target="_blank">http://localhost:5173/?at=F4_R027</a></td>
+      </tr>
+      <tr>
+        <td>F4_R028</td>
+        <td>Kho</td>
+        <td>storage</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R028" target="_blank">http://localhost:5173/?at=F4_R028</a></td>
+      </tr>
+      <tr>
+        <td>F4_R029</td>
+        <td>Phòng chưa đặt tên F4-29</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R029" target="_blank">http://localhost:5173/?at=F4_R029</a></td>
+      </tr>
+      <tr>
+        <td>F4_R030</td>
+        <td>Phòng chưa đặt tên F4-30</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R030" target="_blank">http://localhost:5173/?at=F4_R030</a></td>
+      </tr>
+      <tr>
+        <td>F4_R031</td>
+        <td>Phòng chưa đặt tên F4-31</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R031" target="_blank">http://localhost:5173/?at=F4_R031</a></td>
+      </tr>
+      <tr>
+        <td>F4_R032</td>
+        <td>Phòng chưa đặt tên F4-32</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R032" target="_blank">http://localhost:5173/?at=F4_R032</a></td>
+      </tr>
+      <tr>
+        <td>F4_R033</td>
+        <td>Phòng chưa đặt tên F4-33</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R033" target="_blank">http://localhost:5173/?at=F4_R033</a></td>
+      </tr>
+      <tr>
+        <td>F4_R034</td>
+        <td>Phòng chưa đặt tên F4-34</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R034" target="_blank">http://localhost:5173/?at=F4_R034</a></td>
+      </tr>
+      <tr>
+        <td>F4_R035</td>
+        <td>Phòng chưa đặt tên F4-35</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R035" target="_blank">http://localhost:5173/?at=F4_R035</a></td>
+      </tr>
+      <tr>
+        <td>F4_R036</td>
+        <td>Phòng chưa đặt tên F4-36</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R036" target="_blank">http://localhost:5173/?at=F4_R036</a></td>
+      </tr>
+      <tr>
+        <td>F4_R037</td>
+        <td>Phòng chưa đặt tên F4-37</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R037" target="_blank">http://localhost:5173/?at=F4_R037</a></td>
+      </tr>
+      <tr>
+        <td>F4_R038</td>
+        <td>Phòng chưa đặt tên F4-38</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R038" target="_blank">http://localhost:5173/?at=F4_R038</a></td>
+      </tr>
+      <tr>
+        <td>F4_R039</td>
+        <td>Cầu thang Đông-Bắc</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R039" target="_blank">http://localhost:5173/?at=F4_R039</a></td>
+      </tr>
+      <tr>
+        <td>F4_R040</td>
+        <td>Phòng chưa đặt tên F4-40</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R040" target="_blank">http://localhost:5173/?at=F4_R040</a></td>
+      </tr>
+      <tr>
+        <td>F4_R041</td>
+        <td>Cầu thang Đông-Nam</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R041" target="_blank">http://localhost:5173/?at=F4_R041</a></td>
+      </tr>
+      <tr>
+        <td>F4_R042</td>
+        <td>Phòng chưa đặt tên F4-42</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F4_R042" target="_blank">http://localhost:5173/?at=F4_R042</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2>F5</h2>
+    <table>
+      <thead><tr><th>ID phòng</th><th>Tên</th><th>Loại</th><th>URL (?at=)</th></tr></thead>
+      <tbody>
+      <tr>
+        <td>F5_R001</td>
+        <td>Phòng chưa đặt tên F5-1</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R001" target="_blank">http://localhost:5173/?at=F5_R001</a></td>
+      </tr>
+      <tr>
+        <td>F5_R002</td>
+        <td>Phòng chưa đặt tên F5-2</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R002" target="_blank">http://localhost:5173/?at=F5_R002</a></td>
+      </tr>
+      <tr>
+        <td>F5_R003</td>
+        <td>Phòng chưa đặt tên F5-3</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R003" target="_blank">http://localhost:5173/?at=F5_R003</a></td>
+      </tr>
+      <tr>
+        <td>F5_R004</td>
+        <td>Phòng chưa đặt tên F5-4</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R004" target="_blank">http://localhost:5173/?at=F5_R004</a></td>
+      </tr>
+      <tr>
+        <td>F5_R005</td>
+        <td>Phòng Trưởng ban</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R005" target="_blank">http://localhost:5173/?at=F5_R005</a></td>
+      </tr>
+      <tr>
+        <td>F5_R006</td>
+        <td>Phòng kỹ thuật</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R006" target="_blank">http://localhost:5173/?at=F5_R006</a></td>
+      </tr>
+      <tr>
+        <td>F5_R007</td>
+        <td>WC Nam</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R007" target="_blank">http://localhost:5173/?at=F5_R007</a></td>
+      </tr>
+      <tr>
+        <td>F5_R008</td>
+        <td>WC Nữ</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R008" target="_blank">http://localhost:5173/?at=F5_R008</a></td>
+      </tr>
+      <tr>
+        <td>F5_R009</td>
+        <td>Phòng Hành chính</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R009" target="_blank">http://localhost:5173/?at=F5_R009</a></td>
+      </tr>
+      <tr>
+        <td>F5_R010</td>
+        <td>Phòng Điều hành</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R010" target="_blank">http://localhost:5173/?at=F5_R010</a></td>
+      </tr>
+      <tr>
+        <td>F5_R011</td>
+        <td>Phòng chưa đặt tên F5-11</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R011" target="_blank">http://localhost:5173/?at=F5_R011</a></td>
+      </tr>
+      <tr>
+        <td>F5_R012</td>
+        <td>Cầu thang giữa</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R012" target="_blank">http://localhost:5173/?at=F5_R012</a></td>
+      </tr>
+      <tr>
+        <td>F5_R013</td>
+        <td>Thang máy / Giếng trời</td>
+        <td>elevator</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R013" target="_blank">http://localhost:5173/?at=F5_R013</a></td>
+      </tr>
+      <tr>
+        <td>F5_R014</td>
+        <td>Phòng chưa đặt tên F5-14</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R014" target="_blank">http://localhost:5173/?at=F5_R014</a></td>
+      </tr>
+      <tr>
+        <td>F5_R015</td>
+        <td>Phòng chưa đặt tên F5-15</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R015" target="_blank">http://localhost:5173/?at=F5_R015</a></td>
+      </tr>
+      <tr>
+        <td>F5_R016</td>
+        <td>Phòng chưa đặt tên F5-16</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R016" target="_blank">http://localhost:5173/?at=F5_R016</a></td>
+      </tr>
+      <tr>
+        <td>F5_R017</td>
+        <td>Phòng chưa đặt tên F5-17</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R017" target="_blank">http://localhost:5173/?at=F5_R017</a></td>
+      </tr>
+      <tr>
+        <td>F5_R018</td>
+        <td>Phòng chưa đặt tên F5-18</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R018" target="_blank">http://localhost:5173/?at=F5_R018</a></td>
+      </tr>
+      <tr>
+        <td>F5_R019</td>
+        <td>Phòng chưa đặt tên F5-19</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R019" target="_blank">http://localhost:5173/?at=F5_R019</a></td>
+      </tr>
+      <tr>
+        <td>F5_R020</td>
+        <td>Phòng chưa đặt tên F5-20</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R020" target="_blank">http://localhost:5173/?at=F5_R020</a></td>
+      </tr>
+      <tr>
+        <td>F5_R021</td>
+        <td>Phòng chưa đặt tên F5-21</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R021" target="_blank">http://localhost:5173/?at=F5_R021</a></td>
+      </tr>
+      <tr>
+        <td>F5_R022</td>
+        <td>Phòng chưa đặt tên F5-22</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R022" target="_blank">http://localhost:5173/?at=F5_R022</a></td>
+      </tr>
+      <tr>
+        <td>F5_R023</td>
+        <td>Phòng chưa đặt tên F5-23</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R023" target="_blank">http://localhost:5173/?at=F5_R023</a></td>
+      </tr>
+      <tr>
+        <td>F5_R024</td>
+        <td>Phòng chưa đặt tên F5-24</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R024" target="_blank">http://localhost:5173/?at=F5_R024</a></td>
+      </tr>
+      <tr>
+        <td>F5_R025</td>
+        <td>Phòng chưa đặt tên F5-25</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R025" target="_blank">http://localhost:5173/?at=F5_R025</a></td>
+      </tr>
+      <tr>
+        <td>F5_R026</td>
+        <td>Phòng chưa đặt tên F5-26</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R026" target="_blank">http://localhost:5173/?at=F5_R026</a></td>
+      </tr>
+      <tr>
+        <td>F5_R027</td>
+        <td>Trung Tâm dữ liệu</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R027" target="_blank">http://localhost:5173/?at=F5_R027</a></td>
+      </tr>
+      <tr>
+        <td>F5_R028</td>
+        <td>Kho</td>
+        <td>storage</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R028" target="_blank">http://localhost:5173/?at=F5_R028</a></td>
+      </tr>
+      <tr>
+        <td>F5_R029</td>
+        <td>Phòng chưa đặt tên F5-29</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R029" target="_blank">http://localhost:5173/?at=F5_R029</a></td>
+      </tr>
+      <tr>
+        <td>F5_R030</td>
+        <td>Phòng chưa đặt tên F5-30</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R030" target="_blank">http://localhost:5173/?at=F5_R030</a></td>
+      </tr>
+      <tr>
+        <td>F5_R031</td>
+        <td>Phòng chưa đặt tên F5-31</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R031" target="_blank">http://localhost:5173/?at=F5_R031</a></td>
+      </tr>
+      <tr>
+        <td>F5_R032</td>
+        <td>Phòng chưa đặt tên F5-32</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R032" target="_blank">http://localhost:5173/?at=F5_R032</a></td>
+      </tr>
+      <tr>
+        <td>F5_R033</td>
+        <td>Phòng chưa đặt tên F5-33</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R033" target="_blank">http://localhost:5173/?at=F5_R033</a></td>
+      </tr>
+      <tr>
+        <td>F5_R034</td>
+        <td>Phòng chưa đặt tên F5-34</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R034" target="_blank">http://localhost:5173/?at=F5_R034</a></td>
+      </tr>
+      <tr>
+        <td>F5_R035</td>
+        <td>Phòng chưa đặt tên F5-35</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R035" target="_blank">http://localhost:5173/?at=F5_R035</a></td>
+      </tr>
+      <tr>
+        <td>F5_R036</td>
+        <td>Phòng chưa đặt tên F5-36</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R036" target="_blank">http://localhost:5173/?at=F5_R036</a></td>
+      </tr>
+      <tr>
+        <td>F5_R037</td>
+        <td>Phòng chưa đặt tên F5-37</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R037" target="_blank">http://localhost:5173/?at=F5_R037</a></td>
+      </tr>
+      <tr>
+        <td>F5_R038</td>
+        <td>Phòng chưa đặt tên F5-38</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R038" target="_blank">http://localhost:5173/?at=F5_R038</a></td>
+      </tr>
+      <tr>
+        <td>F5_R039</td>
+        <td>Cầu thang Đông-Bắc</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R039" target="_blank">http://localhost:5173/?at=F5_R039</a></td>
+      </tr>
+      <tr>
+        <td>F5_R040</td>
+        <td>Phòng chưa đặt tên F5-40</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R040" target="_blank">http://localhost:5173/?at=F5_R040</a></td>
+      </tr>
+      <tr>
+        <td>F5_R041</td>
+        <td>Cầu thang Đông-Nam</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R041" target="_blank">http://localhost:5173/?at=F5_R041</a></td>
+      </tr>
+      <tr>
+        <td>F5_R042</td>
+        <td>Phòng chưa đặt tên F5-42</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F5_R042" target="_blank">http://localhost:5173/?at=F5_R042</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2>F6</h2>
+    <table>
+      <thead><tr><th>ID phòng</th><th>Tên</th><th>Loại</th><th>URL (?at=)</th></tr></thead>
+      <tbody>
+      <tr>
+        <td>F6_R001</td>
+        <td>Phòng chưa đặt tên F6-1</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R001" target="_blank">http://localhost:5173/?at=F6_R001</a></td>
+      </tr>
+      <tr>
+        <td>F6_R002</td>
+        <td>Phòng chưa đặt tên F6-2</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R002" target="_blank">http://localhost:5173/?at=F6_R002</a></td>
+      </tr>
+      <tr>
+        <td>F6_R003</td>
+        <td>Phòng chưa đặt tên F6-3</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R003" target="_blank">http://localhost:5173/?at=F6_R003</a></td>
+      </tr>
+      <tr>
+        <td>F6_R004</td>
+        <td>Phòng chưa đặt tên F6-4</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R004" target="_blank">http://localhost:5173/?at=F6_R004</a></td>
+      </tr>
+      <tr>
+        <td>F6_R005</td>
+        <td>Phòng Trưởng ban</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R005" target="_blank">http://localhost:5173/?at=F6_R005</a></td>
+      </tr>
+      <tr>
+        <td>F6_R006</td>
+        <td>Phòng kỹ thuật</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R006" target="_blank">http://localhost:5173/?at=F6_R006</a></td>
+      </tr>
+      <tr>
+        <td>F6_R007</td>
+        <td>WC Nam</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R007" target="_blank">http://localhost:5173/?at=F6_R007</a></td>
+      </tr>
+      <tr>
+        <td>F6_R008</td>
+        <td>WC Nữ</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R008" target="_blank">http://localhost:5173/?at=F6_R008</a></td>
+      </tr>
+      <tr>
+        <td>F6_R009</td>
+        <td>Phòng Hành chính</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R009" target="_blank">http://localhost:5173/?at=F6_R009</a></td>
+      </tr>
+      <tr>
+        <td>F6_R010</td>
+        <td>Phòng Điều hành</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R010" target="_blank">http://localhost:5173/?at=F6_R010</a></td>
+      </tr>
+      <tr>
+        <td>F6_R011</td>
+        <td>Phòng chưa đặt tên F6-11</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R011" target="_blank">http://localhost:5173/?at=F6_R011</a></td>
+      </tr>
+      <tr>
+        <td>F6_R012</td>
+        <td>Cầu thang giữa</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R012" target="_blank">http://localhost:5173/?at=F6_R012</a></td>
+      </tr>
+      <tr>
+        <td>F6_R013</td>
+        <td>Thang máy / Giếng trời</td>
+        <td>elevator</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R013" target="_blank">http://localhost:5173/?at=F6_R013</a></td>
+      </tr>
+      <tr>
+        <td>F6_R014</td>
+        <td>Phòng chưa đặt tên F6-14</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R014" target="_blank">http://localhost:5173/?at=F6_R014</a></td>
+      </tr>
+      <tr>
+        <td>F6_R015</td>
+        <td>Phòng chưa đặt tên F6-15</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R015" target="_blank">http://localhost:5173/?at=F6_R015</a></td>
+      </tr>
+      <tr>
+        <td>F6_R016</td>
+        <td>Phòng chưa đặt tên F6-16</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R016" target="_blank">http://localhost:5173/?at=F6_R016</a></td>
+      </tr>
+      <tr>
+        <td>F6_R017</td>
+        <td>Phòng chưa đặt tên F6-17</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R017" target="_blank">http://localhost:5173/?at=F6_R017</a></td>
+      </tr>
+      <tr>
+        <td>F6_R018</td>
+        <td>Phòng chưa đặt tên F6-18</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R018" target="_blank">http://localhost:5173/?at=F6_R018</a></td>
+      </tr>
+      <tr>
+        <td>F6_R019</td>
+        <td>Phòng chưa đặt tên F6-19</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R019" target="_blank">http://localhost:5173/?at=F6_R019</a></td>
+      </tr>
+      <tr>
+        <td>F6_R020</td>
+        <td>Phòng chưa đặt tên F6-20</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R020" target="_blank">http://localhost:5173/?at=F6_R020</a></td>
+      </tr>
+      <tr>
+        <td>F6_R021</td>
+        <td>Phòng chưa đặt tên F6-21</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R021" target="_blank">http://localhost:5173/?at=F6_R021</a></td>
+      </tr>
+      <tr>
+        <td>F6_R022</td>
+        <td>Phòng chưa đặt tên F6-22</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R022" target="_blank">http://localhost:5173/?at=F6_R022</a></td>
+      </tr>
+      <tr>
+        <td>F6_R023</td>
+        <td>Phòng chưa đặt tên F6-23</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R023" target="_blank">http://localhost:5173/?at=F6_R023</a></td>
+      </tr>
+      <tr>
+        <td>F6_R024</td>
+        <td>Phòng chưa đặt tên F6-24</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R024" target="_blank">http://localhost:5173/?at=F6_R024</a></td>
+      </tr>
+      <tr>
+        <td>F6_R025</td>
+        <td>Phòng chưa đặt tên F6-25</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R025" target="_blank">http://localhost:5173/?at=F6_R025</a></td>
+      </tr>
+      <tr>
+        <td>F6_R026</td>
+        <td>Phòng chưa đặt tên F6-26</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R026" target="_blank">http://localhost:5173/?at=F6_R026</a></td>
+      </tr>
+      <tr>
+        <td>F6_R027</td>
+        <td>Trung Tâm dữ liệu</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R027" target="_blank">http://localhost:5173/?at=F6_R027</a></td>
+      </tr>
+      <tr>
+        <td>F6_R028</td>
+        <td>Kho</td>
+        <td>storage</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R028" target="_blank">http://localhost:5173/?at=F6_R028</a></td>
+      </tr>
+      <tr>
+        <td>F6_R029</td>
+        <td>Phòng chưa đặt tên F6-29</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R029" target="_blank">http://localhost:5173/?at=F6_R029</a></td>
+      </tr>
+      <tr>
+        <td>F6_R030</td>
+        <td>Phòng chưa đặt tên F6-30</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R030" target="_blank">http://localhost:5173/?at=F6_R030</a></td>
+      </tr>
+      <tr>
+        <td>F6_R031</td>
+        <td>Phòng chưa đặt tên F6-31</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R031" target="_blank">http://localhost:5173/?at=F6_R031</a></td>
+      </tr>
+      <tr>
+        <td>F6_R032</td>
+        <td>Phòng chưa đặt tên F6-32</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R032" target="_blank">http://localhost:5173/?at=F6_R032</a></td>
+      </tr>
+      <tr>
+        <td>F6_R033</td>
+        <td>Phòng chưa đặt tên F6-33</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R033" target="_blank">http://localhost:5173/?at=F6_R033</a></td>
+      </tr>
+      <tr>
+        <td>F6_R034</td>
+        <td>Phòng chưa đặt tên F6-34</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R034" target="_blank">http://localhost:5173/?at=F6_R034</a></td>
+      </tr>
+      <tr>
+        <td>F6_R035</td>
+        <td>Phòng chưa đặt tên F6-35</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R035" target="_blank">http://localhost:5173/?at=F6_R035</a></td>
+      </tr>
+      <tr>
+        <td>F6_R036</td>
+        <td>Phòng chưa đặt tên F6-36</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R036" target="_blank">http://localhost:5173/?at=F6_R036</a></td>
+      </tr>
+      <tr>
+        <td>F6_R037</td>
+        <td>Phòng chưa đặt tên F6-37</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R037" target="_blank">http://localhost:5173/?at=F6_R037</a></td>
+      </tr>
+      <tr>
+        <td>F6_R038</td>
+        <td>Phòng chưa đặt tên F6-38</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R038" target="_blank">http://localhost:5173/?at=F6_R038</a></td>
+      </tr>
+      <tr>
+        <td>F6_R039</td>
+        <td>Cầu thang Đông-Bắc</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R039" target="_blank">http://localhost:5173/?at=F6_R039</a></td>
+      </tr>
+      <tr>
+        <td>F6_R040</td>
+        <td>Phòng chưa đặt tên F6-40</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R040" target="_blank">http://localhost:5173/?at=F6_R040</a></td>
+      </tr>
+      <tr>
+        <td>F6_R041</td>
+        <td>Cầu thang Đông-Nam</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R041" target="_blank">http://localhost:5173/?at=F6_R041</a></td>
+      </tr>
+      <tr>
+        <td>F6_R042</td>
+        <td>Phòng chưa đặt tên F6-42</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F6_R042" target="_blank">http://localhost:5173/?at=F6_R042</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2>F7</h2>
+    <table>
+      <thead><tr><th>ID phòng</th><th>Tên</th><th>Loại</th><th>URL (?at=)</th></tr></thead>
+      <tbody>
+      <tr>
+        <td>F7_R001</td>
+        <td>Phòng chưa đặt tên F7-1</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R001" target="_blank">http://localhost:5173/?at=F7_R001</a></td>
+      </tr>
+      <tr>
+        <td>F7_R002</td>
+        <td>Phòng chưa đặt tên F7-2</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R002" target="_blank">http://localhost:5173/?at=F7_R002</a></td>
+      </tr>
+      <tr>
+        <td>F7_R003</td>
+        <td>Phòng chưa đặt tên F7-3</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R003" target="_blank">http://localhost:5173/?at=F7_R003</a></td>
+      </tr>
+      <tr>
+        <td>F7_R004</td>
+        <td>Phòng chưa đặt tên F7-4</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R004" target="_blank">http://localhost:5173/?at=F7_R004</a></td>
+      </tr>
+      <tr>
+        <td>F7_R005</td>
+        <td>Phòng Trưởng ban</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R005" target="_blank">http://localhost:5173/?at=F7_R005</a></td>
+      </tr>
+      <tr>
+        <td>F7_R006</td>
+        <td>Phòng kỹ thuật</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R006" target="_blank">http://localhost:5173/?at=F7_R006</a></td>
+      </tr>
+      <tr>
+        <td>F7_R007</td>
+        <td>WC Nam</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R007" target="_blank">http://localhost:5173/?at=F7_R007</a></td>
+      </tr>
+      <tr>
+        <td>F7_R008</td>
+        <td>WC Nữ</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R008" target="_blank">http://localhost:5173/?at=F7_R008</a></td>
+      </tr>
+      <tr>
+        <td>F7_R009</td>
+        <td>Phòng Hành chính</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R009" target="_blank">http://localhost:5173/?at=F7_R009</a></td>
+      </tr>
+      <tr>
+        <td>F7_R010</td>
+        <td>Phòng Điều hành</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R010" target="_blank">http://localhost:5173/?at=F7_R010</a></td>
+      </tr>
+      <tr>
+        <td>F7_R011</td>
+        <td>Phòng chưa đặt tên F7-11</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R011" target="_blank">http://localhost:5173/?at=F7_R011</a></td>
+      </tr>
+      <tr>
+        <td>F7_R012</td>
+        <td>Cầu thang giữa</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R012" target="_blank">http://localhost:5173/?at=F7_R012</a></td>
+      </tr>
+      <tr>
+        <td>F7_R013</td>
+        <td>Thang máy / Giếng trời</td>
+        <td>elevator</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R013" target="_blank">http://localhost:5173/?at=F7_R013</a></td>
+      </tr>
+      <tr>
+        <td>F7_R014</td>
+        <td>Phòng chưa đặt tên F7-14</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R014" target="_blank">http://localhost:5173/?at=F7_R014</a></td>
+      </tr>
+      <tr>
+        <td>F7_R015</td>
+        <td>Phòng chưa đặt tên F7-15</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R015" target="_blank">http://localhost:5173/?at=F7_R015</a></td>
+      </tr>
+      <tr>
+        <td>F7_R016</td>
+        <td>Phòng chưa đặt tên F7-16</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R016" target="_blank">http://localhost:5173/?at=F7_R016</a></td>
+      </tr>
+      <tr>
+        <td>F7_R017</td>
+        <td>Phòng chưa đặt tên F7-17</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R017" target="_blank">http://localhost:5173/?at=F7_R017</a></td>
+      </tr>
+      <tr>
+        <td>F7_R018</td>
+        <td>Phòng chưa đặt tên F7-18</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R018" target="_blank">http://localhost:5173/?at=F7_R018</a></td>
+      </tr>
+      <tr>
+        <td>F7_R019</td>
+        <td>Phòng chưa đặt tên F7-19</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R019" target="_blank">http://localhost:5173/?at=F7_R019</a></td>
+      </tr>
+      <tr>
+        <td>F7_R020</td>
+        <td>Phòng chưa đặt tên F7-20</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R020" target="_blank">http://localhost:5173/?at=F7_R020</a></td>
+      </tr>
+      <tr>
+        <td>F7_R021</td>
+        <td>Phòng chưa đặt tên F7-21</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R021" target="_blank">http://localhost:5173/?at=F7_R021</a></td>
+      </tr>
+      <tr>
+        <td>F7_R022</td>
+        <td>Phòng chưa đặt tên F7-22</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R022" target="_blank">http://localhost:5173/?at=F7_R022</a></td>
+      </tr>
+      <tr>
+        <td>F7_R023</td>
+        <td>Phòng chưa đặt tên F7-23</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R023" target="_blank">http://localhost:5173/?at=F7_R023</a></td>
+      </tr>
+      <tr>
+        <td>F7_R024</td>
+        <td>Phòng chưa đặt tên F7-24</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R024" target="_blank">http://localhost:5173/?at=F7_R024</a></td>
+      </tr>
+      <tr>
+        <td>F7_R025</td>
+        <td>Phòng chưa đặt tên F7-25</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R025" target="_blank">http://localhost:5173/?at=F7_R025</a></td>
+      </tr>
+      <tr>
+        <td>F7_R026</td>
+        <td>Phòng chưa đặt tên F7-26</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R026" target="_blank">http://localhost:5173/?at=F7_R026</a></td>
+      </tr>
+      <tr>
+        <td>F7_R027</td>
+        <td>Trung Tâm dữ liệu</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R027" target="_blank">http://localhost:5173/?at=F7_R027</a></td>
+      </tr>
+      <tr>
+        <td>F7_R028</td>
+        <td>Kho</td>
+        <td>storage</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R028" target="_blank">http://localhost:5173/?at=F7_R028</a></td>
+      </tr>
+      <tr>
+        <td>F7_R029</td>
+        <td>Phòng chưa đặt tên F7-29</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R029" target="_blank">http://localhost:5173/?at=F7_R029</a></td>
+      </tr>
+      <tr>
+        <td>F7_R030</td>
+        <td>Phòng chưa đặt tên F7-30</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R030" target="_blank">http://localhost:5173/?at=F7_R030</a></td>
+      </tr>
+      <tr>
+        <td>F7_R031</td>
+        <td>Phòng chưa đặt tên F7-31</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R031" target="_blank">http://localhost:5173/?at=F7_R031</a></td>
+      </tr>
+      <tr>
+        <td>F7_R032</td>
+        <td>Phòng chưa đặt tên F7-32</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R032" target="_blank">http://localhost:5173/?at=F7_R032</a></td>
+      </tr>
+      <tr>
+        <td>F7_R033</td>
+        <td>Phòng chưa đặt tên F7-33</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R033" target="_blank">http://localhost:5173/?at=F7_R033</a></td>
+      </tr>
+      <tr>
+        <td>F7_R034</td>
+        <td>Phòng chưa đặt tên F7-34</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R034" target="_blank">http://localhost:5173/?at=F7_R034</a></td>
+      </tr>
+      <tr>
+        <td>F7_R035</td>
+        <td>Phòng chưa đặt tên F7-35</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R035" target="_blank">http://localhost:5173/?at=F7_R035</a></td>
+      </tr>
+      <tr>
+        <td>F7_R036</td>
+        <td>Phòng chưa đặt tên F7-36</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R036" target="_blank">http://localhost:5173/?at=F7_R036</a></td>
+      </tr>
+      <tr>
+        <td>F7_R037</td>
+        <td>Phòng chưa đặt tên F7-37</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R037" target="_blank">http://localhost:5173/?at=F7_R037</a></td>
+      </tr>
+      <tr>
+        <td>F7_R038</td>
+        <td>Phòng chưa đặt tên F7-38</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R038" target="_blank">http://localhost:5173/?at=F7_R038</a></td>
+      </tr>
+      <tr>
+        <td>F7_R039</td>
+        <td>Cầu thang Đông-Bắc</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R039" target="_blank">http://localhost:5173/?at=F7_R039</a></td>
+      </tr>
+      <tr>
+        <td>F7_R040</td>
+        <td>Phòng chưa đặt tên F7-40</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R040" target="_blank">http://localhost:5173/?at=F7_R040</a></td>
+      </tr>
+      <tr>
+        <td>F7_R041</td>
+        <td>Cầu thang Đông-Nam</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R041" target="_blank">http://localhost:5173/?at=F7_R041</a></td>
+      </tr>
+      <tr>
+        <td>F7_R042</td>
+        <td>Phòng chưa đặt tên F7-42</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F7_R042" target="_blank">http://localhost:5173/?at=F7_R042</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2>F8</h2>
+    <table>
+      <thead><tr><th>ID phòng</th><th>Tên</th><th>Loại</th><th>URL (?at=)</th></tr></thead>
+      <tbody>
+      <tr>
+        <td>F8_R001</td>
+        <td>Phòng chưa đặt tên F8-1</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R001" target="_blank">http://localhost:5173/?at=F8_R001</a></td>
+      </tr>
+      <tr>
+        <td>F8_R002</td>
+        <td>Phòng chưa đặt tên F8-2</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R002" target="_blank">http://localhost:5173/?at=F8_R002</a></td>
+      </tr>
+      <tr>
+        <td>F8_R003</td>
+        <td>Phòng chưa đặt tên F8-3</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R003" target="_blank">http://localhost:5173/?at=F8_R003</a></td>
+      </tr>
+      <tr>
+        <td>F8_R004</td>
+        <td>Phòng chưa đặt tên F8-4</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R004" target="_blank">http://localhost:5173/?at=F8_R004</a></td>
+      </tr>
+      <tr>
+        <td>F8_R005</td>
+        <td>Phòng Trưởng ban</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R005" target="_blank">http://localhost:5173/?at=F8_R005</a></td>
+      </tr>
+      <tr>
+        <td>F8_R006</td>
+        <td>Phòng kỹ thuật</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R006" target="_blank">http://localhost:5173/?at=F8_R006</a></td>
+      </tr>
+      <tr>
+        <td>F8_R007</td>
+        <td>WC Nam</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R007" target="_blank">http://localhost:5173/?at=F8_R007</a></td>
+      </tr>
+      <tr>
+        <td>F8_R008</td>
+        <td>WC Nữ</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R008" target="_blank">http://localhost:5173/?at=F8_R008</a></td>
+      </tr>
+      <tr>
+        <td>F8_R009</td>
+        <td>Phòng Hành chính</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R009" target="_blank">http://localhost:5173/?at=F8_R009</a></td>
+      </tr>
+      <tr>
+        <td>F8_R010</td>
+        <td>Phòng Điều hành</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R010" target="_blank">http://localhost:5173/?at=F8_R010</a></td>
+      </tr>
+      <tr>
+        <td>F8_R011</td>
+        <td>Phòng chưa đặt tên F8-11</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R011" target="_blank">http://localhost:5173/?at=F8_R011</a></td>
+      </tr>
+      <tr>
+        <td>F8_R012</td>
+        <td>Cầu thang giữa</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R012" target="_blank">http://localhost:5173/?at=F8_R012</a></td>
+      </tr>
+      <tr>
+        <td>F8_R013</td>
+        <td>Thang máy / Giếng trời</td>
+        <td>elevator</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R013" target="_blank">http://localhost:5173/?at=F8_R013</a></td>
+      </tr>
+      <tr>
+        <td>F8_R014</td>
+        <td>Phòng chưa đặt tên F8-14</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R014" target="_blank">http://localhost:5173/?at=F8_R014</a></td>
+      </tr>
+      <tr>
+        <td>F8_R015</td>
+        <td>Phòng chưa đặt tên F8-15</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R015" target="_blank">http://localhost:5173/?at=F8_R015</a></td>
+      </tr>
+      <tr>
+        <td>F8_R016</td>
+        <td>Phòng chưa đặt tên F8-16</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R016" target="_blank">http://localhost:5173/?at=F8_R016</a></td>
+      </tr>
+      <tr>
+        <td>F8_R017</td>
+        <td>Phòng chưa đặt tên F8-17</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R017" target="_blank">http://localhost:5173/?at=F8_R017</a></td>
+      </tr>
+      <tr>
+        <td>F8_R018</td>
+        <td>Phòng chưa đặt tên F8-18</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R018" target="_blank">http://localhost:5173/?at=F8_R018</a></td>
+      </tr>
+      <tr>
+        <td>F8_R019</td>
+        <td>Phòng chưa đặt tên F8-19</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R019" target="_blank">http://localhost:5173/?at=F8_R019</a></td>
+      </tr>
+      <tr>
+        <td>F8_R020</td>
+        <td>Phòng chưa đặt tên F8-20</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R020" target="_blank">http://localhost:5173/?at=F8_R020</a></td>
+      </tr>
+      <tr>
+        <td>F8_R021</td>
+        <td>Phòng chưa đặt tên F8-21</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R021" target="_blank">http://localhost:5173/?at=F8_R021</a></td>
+      </tr>
+      <tr>
+        <td>F8_R022</td>
+        <td>Phòng chưa đặt tên F8-22</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R022" target="_blank">http://localhost:5173/?at=F8_R022</a></td>
+      </tr>
+      <tr>
+        <td>F8_R023</td>
+        <td>Phòng chưa đặt tên F8-23</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R023" target="_blank">http://localhost:5173/?at=F8_R023</a></td>
+      </tr>
+      <tr>
+        <td>F8_R024</td>
+        <td>Phòng chưa đặt tên F8-24</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R024" target="_blank">http://localhost:5173/?at=F8_R024</a></td>
+      </tr>
+      <tr>
+        <td>F8_R025</td>
+        <td>Phòng chưa đặt tên F8-25</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R025" target="_blank">http://localhost:5173/?at=F8_R025</a></td>
+      </tr>
+      <tr>
+        <td>F8_R026</td>
+        <td>Phòng chưa đặt tên F8-26</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R026" target="_blank">http://localhost:5173/?at=F8_R026</a></td>
+      </tr>
+      <tr>
+        <td>F8_R027</td>
+        <td>Trung Tâm dữ liệu</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R027" target="_blank">http://localhost:5173/?at=F8_R027</a></td>
+      </tr>
+      <tr>
+        <td>F8_R028</td>
+        <td>Kho</td>
+        <td>storage</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R028" target="_blank">http://localhost:5173/?at=F8_R028</a></td>
+      </tr>
+      <tr>
+        <td>F8_R029</td>
+        <td>Phòng chưa đặt tên F8-29</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R029" target="_blank">http://localhost:5173/?at=F8_R029</a></td>
+      </tr>
+      <tr>
+        <td>F8_R030</td>
+        <td>Phòng chưa đặt tên F8-30</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R030" target="_blank">http://localhost:5173/?at=F8_R030</a></td>
+      </tr>
+      <tr>
+        <td>F8_R031</td>
+        <td>Phòng chưa đặt tên F8-31</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R031" target="_blank">http://localhost:5173/?at=F8_R031</a></td>
+      </tr>
+      <tr>
+        <td>F8_R032</td>
+        <td>Phòng chưa đặt tên F8-32</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R032" target="_blank">http://localhost:5173/?at=F8_R032</a></td>
+      </tr>
+      <tr>
+        <td>F8_R033</td>
+        <td>Phòng chưa đặt tên F8-33</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R033" target="_blank">http://localhost:5173/?at=F8_R033</a></td>
+      </tr>
+      <tr>
+        <td>F8_R034</td>
+        <td>Phòng chưa đặt tên F8-34</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R034" target="_blank">http://localhost:5173/?at=F8_R034</a></td>
+      </tr>
+      <tr>
+        <td>F8_R035</td>
+        <td>Phòng chưa đặt tên F8-35</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R035" target="_blank">http://localhost:5173/?at=F8_R035</a></td>
+      </tr>
+      <tr>
+        <td>F8_R036</td>
+        <td>Phòng chưa đặt tên F8-36</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R036" target="_blank">http://localhost:5173/?at=F8_R036</a></td>
+      </tr>
+      <tr>
+        <td>F8_R037</td>
+        <td>Phòng chưa đặt tên F8-37</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R037" target="_blank">http://localhost:5173/?at=F8_R037</a></td>
+      </tr>
+      <tr>
+        <td>F8_R038</td>
+        <td>Phòng chưa đặt tên F8-38</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R038" target="_blank">http://localhost:5173/?at=F8_R038</a></td>
+      </tr>
+      <tr>
+        <td>F8_R039</td>
+        <td>Cầu thang Đông-Bắc</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R039" target="_blank">http://localhost:5173/?at=F8_R039</a></td>
+      </tr>
+      <tr>
+        <td>F8_R040</td>
+        <td>Phòng chưa đặt tên F8-40</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R040" target="_blank">http://localhost:5173/?at=F8_R040</a></td>
+      </tr>
+      <tr>
+        <td>F8_R041</td>
+        <td>Cầu thang Đông-Nam</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R041" target="_blank">http://localhost:5173/?at=F8_R041</a></td>
+      </tr>
+      <tr>
+        <td>F8_R042</td>
+        <td>Phòng chưa đặt tên F8-42</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F8_R042" target="_blank">http://localhost:5173/?at=F8_R042</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2>F9</h2>
+    <table>
+      <thead><tr><th>ID phòng</th><th>Tên</th><th>Loại</th><th>URL (?at=)</th></tr></thead>
+      <tbody>
+      <tr>
+        <td>F9_R001</td>
+        <td>Phòng chưa đặt tên F9-1</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R001" target="_blank">http://localhost:5173/?at=F9_R001</a></td>
+      </tr>
+      <tr>
+        <td>F9_R002</td>
+        <td>Phòng chưa đặt tên F9-2</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R002" target="_blank">http://localhost:5173/?at=F9_R002</a></td>
+      </tr>
+      <tr>
+        <td>F9_R003</td>
+        <td>Phòng chưa đặt tên F9-3</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R003" target="_blank">http://localhost:5173/?at=F9_R003</a></td>
+      </tr>
+      <tr>
+        <td>F9_R004</td>
+        <td>Phòng chưa đặt tên F9-4</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R004" target="_blank">http://localhost:5173/?at=F9_R004</a></td>
+      </tr>
+      <tr>
+        <td>F9_R005</td>
+        <td>Phòng Trưởng ban</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R005" target="_blank">http://localhost:5173/?at=F9_R005</a></td>
+      </tr>
+      <tr>
+        <td>F9_R006</td>
+        <td>Phòng kỹ thuật</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R006" target="_blank">http://localhost:5173/?at=F9_R006</a></td>
+      </tr>
+      <tr>
+        <td>F9_R007</td>
+        <td>WC Nam</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R007" target="_blank">http://localhost:5173/?at=F9_R007</a></td>
+      </tr>
+      <tr>
+        <td>F9_R008</td>
+        <td>WC Nữ</td>
+        <td>wc</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R008" target="_blank">http://localhost:5173/?at=F9_R008</a></td>
+      </tr>
+      <tr>
+        <td>F9_R009</td>
+        <td>Phòng Hành chính</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R009" target="_blank">http://localhost:5173/?at=F9_R009</a></td>
+      </tr>
+      <tr>
+        <td>F9_R010</td>
+        <td>Phòng Điều hành</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R010" target="_blank">http://localhost:5173/?at=F9_R010</a></td>
+      </tr>
+      <tr>
+        <td>F9_R011</td>
+        <td>Phòng chưa đặt tên F9-11</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R011" target="_blank">http://localhost:5173/?at=F9_R011</a></td>
+      </tr>
+      <tr>
+        <td>F9_R012</td>
+        <td>Cầu thang giữa</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R012" target="_blank">http://localhost:5173/?at=F9_R012</a></td>
+      </tr>
+      <tr>
+        <td>F9_R013</td>
+        <td>Thang máy / Giếng trời</td>
+        <td>elevator</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R013" target="_blank">http://localhost:5173/?at=F9_R013</a></td>
+      </tr>
+      <tr>
+        <td>F9_R014</td>
+        <td>Phòng chưa đặt tên F9-14</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R014" target="_blank">http://localhost:5173/?at=F9_R014</a></td>
+      </tr>
+      <tr>
+        <td>F9_R015</td>
+        <td>Phòng chưa đặt tên F9-15</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R015" target="_blank">http://localhost:5173/?at=F9_R015</a></td>
+      </tr>
+      <tr>
+        <td>F9_R016</td>
+        <td>Phòng chưa đặt tên F9-16</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R016" target="_blank">http://localhost:5173/?at=F9_R016</a></td>
+      </tr>
+      <tr>
+        <td>F9_R017</td>
+        <td>Phòng chưa đặt tên F9-17</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R017" target="_blank">http://localhost:5173/?at=F9_R017</a></td>
+      </tr>
+      <tr>
+        <td>F9_R018</td>
+        <td>Phòng chưa đặt tên F9-18</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R018" target="_blank">http://localhost:5173/?at=F9_R018</a></td>
+      </tr>
+      <tr>
+        <td>F9_R019</td>
+        <td>Phòng chưa đặt tên F9-19</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R019" target="_blank">http://localhost:5173/?at=F9_R019</a></td>
+      </tr>
+      <tr>
+        <td>F9_R020</td>
+        <td>Phòng chưa đặt tên F9-20</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R020" target="_blank">http://localhost:5173/?at=F9_R020</a></td>
+      </tr>
+      <tr>
+        <td>F9_R021</td>
+        <td>Phòng chưa đặt tên F9-21</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R021" target="_blank">http://localhost:5173/?at=F9_R021</a></td>
+      </tr>
+      <tr>
+        <td>F9_R022</td>
+        <td>Phòng chưa đặt tên F9-22</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R022" target="_blank">http://localhost:5173/?at=F9_R022</a></td>
+      </tr>
+      <tr>
+        <td>F9_R023</td>
+        <td>Phòng chưa đặt tên F9-23</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R023" target="_blank">http://localhost:5173/?at=F9_R023</a></td>
+      </tr>
+      <tr>
+        <td>F9_R024</td>
+        <td>Phòng chưa đặt tên F9-24</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R024" target="_blank">http://localhost:5173/?at=F9_R024</a></td>
+      </tr>
+      <tr>
+        <td>F9_R025</td>
+        <td>Phòng chưa đặt tên F9-25</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R025" target="_blank">http://localhost:5173/?at=F9_R025</a></td>
+      </tr>
+      <tr>
+        <td>F9_R026</td>
+        <td>Phòng chưa đặt tên F9-26</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R026" target="_blank">http://localhost:5173/?at=F9_R026</a></td>
+      </tr>
+      <tr>
+        <td>F9_R027</td>
+        <td>Trung Tâm dữ liệu</td>
+        <td>office</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R027" target="_blank">http://localhost:5173/?at=F9_R027</a></td>
+      </tr>
+      <tr>
+        <td>F9_R028</td>
+        <td>Kho</td>
+        <td>storage</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R028" target="_blank">http://localhost:5173/?at=F9_R028</a></td>
+      </tr>
+      <tr>
+        <td>F9_R029</td>
+        <td>Phòng chưa đặt tên F9-29</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R029" target="_blank">http://localhost:5173/?at=F9_R029</a></td>
+      </tr>
+      <tr>
+        <td>F9_R030</td>
+        <td>Phòng chưa đặt tên F9-30</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R030" target="_blank">http://localhost:5173/?at=F9_R030</a></td>
+      </tr>
+      <tr>
+        <td>F9_R031</td>
+        <td>Phòng chưa đặt tên F9-31</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R031" target="_blank">http://localhost:5173/?at=F9_R031</a></td>
+      </tr>
+      <tr>
+        <td>F9_R032</td>
+        <td>Phòng chưa đặt tên F9-32</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R032" target="_blank">http://localhost:5173/?at=F9_R032</a></td>
+      </tr>
+      <tr>
+        <td>F9_R033</td>
+        <td>Phòng chưa đặt tên F9-33</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R033" target="_blank">http://localhost:5173/?at=F9_R033</a></td>
+      </tr>
+      <tr>
+        <td>F9_R034</td>
+        <td>Phòng chưa đặt tên F9-34</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R034" target="_blank">http://localhost:5173/?at=F9_R034</a></td>
+      </tr>
+      <tr>
+        <td>F9_R035</td>
+        <td>Phòng chưa đặt tên F9-35</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R035" target="_blank">http://localhost:5173/?at=F9_R035</a></td>
+      </tr>
+      <tr>
+        <td>F9_R036</td>
+        <td>Phòng chưa đặt tên F9-36</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R036" target="_blank">http://localhost:5173/?at=F9_R036</a></td>
+      </tr>
+      <tr>
+        <td>F9_R037</td>
+        <td>Phòng chưa đặt tên F9-37</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R037" target="_blank">http://localhost:5173/?at=F9_R037</a></td>
+      </tr>
+      <tr>
+        <td>F9_R038</td>
+        <td>Phòng chưa đặt tên F9-38</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R038" target="_blank">http://localhost:5173/?at=F9_R038</a></td>
+      </tr>
+      <tr>
+        <td>F9_R039</td>
+        <td>Cầu thang Đông-Bắc</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R039" target="_blank">http://localhost:5173/?at=F9_R039</a></td>
+      </tr>
+      <tr>
+        <td>F9_R040</td>
+        <td>Phòng chưa đặt tên F9-40</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R040" target="_blank">http://localhost:5173/?at=F9_R040</a></td>
+      </tr>
+      <tr>
+        <td>F9_R041</td>
+        <td>Cầu thang Đông-Nam</td>
+        <td>stairs</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R041" target="_blank">http://localhost:5173/?at=F9_R041</a></td>
+      </tr>
+      <tr>
+        <td>F9_R042</td>
+        <td>Phòng chưa đặt tên F9-42</td>
+        <td>other</td>
+        <td class="url-cell"><a href="http://localhost:5173/?at=F9_R042" target="_blank">http://localhost:5173/?at=F9_R042</a></td>
+      </tr>
+      </tbody>
+    </table>
+
+  <p style="margin-top:24px;font-size:0.8rem;color:#607080;">378 phòng tổng cộng</p>
+</body>
+</html>

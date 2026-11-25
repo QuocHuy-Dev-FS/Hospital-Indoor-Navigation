@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f1f5f7" />
+  <title>Bản đồ Bệnh viện Quân y 7A</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+  <link rel="stylesheet" href="/src/ui/wayfinding.css" />
+  <link rel="stylesheet" href="/src/ui/hospital-theme.css" />
+  <link rel="stylesheet" href="/src/ui/mobile-flow.css" />
+  <link rel="stylesheet" href="/src/ui/visit.css" />
+  <link rel="icon" type="image/jpeg" href="/brand/quan-y-7a-logo.jpg" />
+</head>
+<body>
+  <div id="app">
+    <div id="splash" role="dialog" aria-modal="true" aria-labelledby="splash-title">
+      <div class="welcome-page">
+        <div class="welcome-hero">
+          <div class="welcome-top">
+            <div class="welcome-brand"><img src="/brand/quan-y-7a-logo.jpg" width="158" height="49" alt="Logo Bệnh viện Quân y 7A"><span>Bệnh viện Quân y 7A</span></div>
+            <span class="welcome-top-note">Bản đồ & dẫn đường trong bệnh viện</span>
+          </div>
+          <div class="welcome-photo"><img src="/brand/quan-y-7a-care.jpg" alt="Đội ngũ y bác sĩ Bệnh viện Quân y 7A trong phòng phẫu thuật" width="2600" height="1733"></div>
+          <div class="welcome-copy">
+            <h1 id="splash-title">Đến đúng nơi.<br>An tâm mỗi bước.</h1>
+            <p>Khám phá bản đồ 3D, tìm phòng và xem đường đi tại Bệnh viện Quân y 7A.</p>
+            <button id="splash-start" class="welcome-primary" autofocus>Khám phá bản đồ 3D <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
+            <div class="welcome-floors"><span>Tầng trệt</span><span>Tầng 1</span><span>Tầng 2</span></div>
+          </div>
+          <svg class="welcome-wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 20C300 150 650 10 980 55s330 38 460-30v75H0Z" fill="#ffffff"/></svg>
+        </div>
+        <div class="welcome-bottom">
+          <div class="welcome-preferences">
+            <div class="splash-options" role="group" aria-label="Tuỳ chọn ban đầu">
+              <span class="splash-option-label">Chọn cách di chuyển</span>
+              <div class="splash-mode-group"><label class="splash-radio"><input type="radio" name="mobility" value="normal" checked><span class="splash-radio-btn">Đi bộ</span></label><label class="splash-radio"><input type="radio" name="mobility" value="wheelchair"><span class="splash-radio-btn">Xe lăn</span></label></div>
+            </div>
+            <div class="splash-options" role="group" aria-label="Cỡ chữ"><span class="splash-option-label">Cỡ chữ dễ đọc</span><div class="splash-font-group"><button class="splash-font-btn active" data-size="normal" aria-pressed="true">A</button><button class="splash-font-btn" data-size="large" aria-pressed="false">A+</button><button class="splash-font-btn" data-size="xlarge" aria-pressed="false">A++</button></div></div>
+            <div class="welcome-trial"><strong>Bản thử nghiệm</strong><p>Sơ đồ và nội thất minh họa.<br>Chưa dùng để xác nhận bố trí thực tế.</p></div>
+          </div>
+          <div class="welcome-footer"><p>Không lưu lịch sử vị trí. Không sử dụng camera.</p><a href="https://baoquankhu7.vn/benh-vien-quan-y-7a-49-nam-xay-dung-chien-dau-truong-thanh-559666123-0048548s34910gs" target="_blank" rel="noopener">Ảnh: Báo Quân khu 7</a></div>
+        </div>
+      </div>
+    </div>
+
+
+    <header id="app-header" role="banner" hidden>
+      <div class="header-left">
+        <span class="brand-symbol"><img src="/brand/quan-y-7a-logo.jpg" width="115" height="35" alt="Logo Bệnh viện Quân y 7A"></span>
+        <div><span class="app-title">Bệnh viện Quân y 7A</span><span class="brand-caption">Bản đồ & dẫn đường</span></div>
+      </div>
+      <nav class="hospital-nav" aria-label="Điều hướng chính"><button id="nav-map" class="active" type="button">Bản đồ 3D</button><button id="nav-route" type="button">Tìm đường</button><button id="nav-help" type="button">Hướng dẫn</button><a href="/bench/index.html" target="_blank" rel="noopener">Kiểm thử beacon</a></nav>
+      <div class="workspace-title"><h1>Bản đồ 3D bệnh viện</h1><p>Tầng trệt · Tầng 1 · Tầng 2</p></div>
+      <div class="header-center">
+        <div class="search-wrap" role="search">
+          <span class="search-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></span>
+          <input id="search-input" type="search" placeholder="Tìm phòng, khoa hoặc tiện ích…" aria-label="Tìm kiếm phòng" aria-controls="search-suggestions" aria-expanded="false" autocomplete="off" spellcheck="false">
+          <ul id="search-suggestions" role="listbox" aria-label="Gợi ý tìm kiếm" hidden></ul>
+        </div>
+        <span id="search-feedback" class="sr-only" role="status"></span>
+      </div>
+      <div class="header-right">
+        <span class="header-trial-badge">Bản thử nghiệm</span>
+        <button id="btn-menu" aria-label="Ẩn bảng dẫn đường" aria-expanded="true" aria-controls="side-panel" class="icon-btn" title="Ẩn/hiện bảng dẫn đường"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/></svg></button>
+      </div>
+    </header>
+
+    <div id="main-layout" hidden>
+      <aside id="side-panel" aria-label="Điều khiển bản đồ">
+        <div class="panel-intro"><h2>Bạn muốn đến đâu?</h2><p>Chọn điểm xuất phát và phòng cần đến.</p></div>
+        <section class="panel-section navigation-section" aria-labelledby="navigation-title">
+          <h3 id="navigation-title" class="section-label">Tìm đường</h3>
+          <div class="nav-inputs">
+            <div class="input-row">
+              <label for="nav-from">Điểm xuất phát</label>
+              <div class="nav-combo-wrap"><input id="nav-from" type="text" placeholder="Chọn nơi bạn đang đứng" autocomplete="off"><ul id="nav-from-suggestions" class="nav-suggestions" role="listbox" hidden></ul></div>
+              <button id="btn-use-position" aria-label="Dùng vị trí đã chọn" title="Dùng vị trí đã chọn" class="icon-btn small"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg></button>
+            </div>
+            <div class="input-row">
+              <label for="nav-to">Điểm đến</label>
+              <div class="nav-combo-wrap"><input id="nav-to" type="text" placeholder="Chọn phòng hoặc khoa" autocomplete="off"><ul id="nav-to-suggestions" class="nav-suggestions" role="listbox" hidden></ul></div>
+            </div>
+            <label class="checkbox-label"><input type="checkbox" id="wheelchair-mode">Đường đi cho xe lăn</label>
+            <button id="btn-find-route" class="btn-primary">Tìm đường đi <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
+          </div>
+        </section>
+
+        <section class="panel-section" id="route-section" hidden aria-label="Chỉ dẫn">
+          <h3 class="section-label">Chỉ dẫn đường đi</h3>
+          <div id="route-distance" class="route-distance" aria-live="polite"></div>
+          <div id="route-steps" role="list"></div>
+          <div class="route-controls"><button id="btn-prev-step" class="btn-secondary" aria-label="Bước trước">Trước</button><span id="step-counter" aria-live="polite"></span><button id="btn-next-step" class="btn-secondary" aria-label="Bước tiếp">Tiếp</button></div>
+          <div class="route-actions"><button id="btn-read-aloud" class="btn-secondary">Đọc chỉ dẫn</button><button id="btn-clear-route" class="btn-secondary">Xóa tuyến</button></div>
+          <button id="btn-start-nav" class="btn-primary btn-start-nav" hidden>Bắt đầu dẫn đường →</button>
+        </section>
+        <section class="panel-section" id="arrived-section" hidden role="status"><p>Đã đến nơi!</p><button id="btn-new-route" class="btn-primary">Tìm đường mới</button></section>
+
+        <section class="panel-section" aria-labelledby="quick-title">
+          <h3 id="quick-title" class="section-label">Tiện ích</h3>
+          <div class="search-shortcuts" aria-label="Tìm nhanh theo loại">
+            <button class="shortcut-chip" data-query="WC"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="4" r="1.5"/><circle cx="17" cy="4" r="1.5"/><path d="M5 10V8h6v2M8 8v13m-2-7v7m4-7v7m4-6 3-7 3 7h-6m2 0v6m2-6v6"/></svg><span>Nhà vệ sinh</span></button>
+            <button class="shortcut-chip" data-query="thang máy"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 12V7m-2 2 2-2 2 2m4 3v5m-2-2 2 2 2-2"/></svg><span>Thang máy</span></button>
+            <button class="shortcut-chip" data-query="thu ngân"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 9h18M6 6V4h12v2m-2 8h2"/></svg><span>Thu ngân</span></button>
+            <button class="shortcut-chip" data-query="nhà thuốc"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m14 4 6 6a5 5 0 0 1-7 7l-6-6a5 5 0 0 1 7-7Z"/><path d="m9 13 7-7M4 19h6m-3-3v6"/></svg><span>Nhà thuốc</span></button>
+          </div>
+        </section>
+
+        <section class="panel-section location-section" aria-labelledby="position-title">
+          <h3 id="position-title" class="section-label">Vị trí của bạn</h3>
+          <div class="position-status" id="position-status"><span class="pos-dot" id="pos-dot"></span><span id="pos-label">Chưa chọn vị trí</span></div>
+          <div id="position-manual-wrap" hidden><div class="nav-combo-wrap"><input id="manual-pos-input" aria-label="Chọn vị trí thủ công" type="text" placeholder="Tìm phòng bạn đang đứng…" autocomplete="off"><ul id="manual-pos-suggestions" class="nav-suggestions" role="listbox" hidden></ul></div></div>
+          <button id="btn-set-manual-pos" class="text-button">Chọn vị trí thủ công <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button>
+          <a class="beacon-link" href="/bench/index.html" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m10 3 6 5-6 5 6 5-6 3V3m-4 5 10 10M6 16 16 8"/></svg> Kiểm thử beacon <span aria-hidden="true">↗</span></a>
+          <a id="btn-scan-ble" class="beacon-link" href="/scan/" style="display:none"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M6.3 6.3a8 8 0 0 0 0 11.4m11.4 0a8 8 0 0 0 0-11.4M3.5 3.5a12 12 0 0 0 0 17M20.5 20.5a12 12 0 0 0 0-17"/></svg> Quét beacon (thử nghiệm)</a>
+          <details class="bridge-section">
+            <summary>Cầu nối máy quét BLE (demo)</summary>
+            <p class="muted-note">Mở <a href="/scan/" target="_blank" rel="noopener">/scan/</a> trên laptop, nhập mã 6 số hiện ở đó.</p>
+            <div class="bridge-code-row">
+              <input id="bridge-code-input" type="text" placeholder="123456" maxlength="6" inputmode="numeric" aria-label="Mã ghép cặp" class="bridge-code-input">
+              <button id="btn-bridge-connect" class="btn-secondary small">Kết nối</button>
+            </div>
+            <div id="bridge-status" class="bridge-status" hidden></div>
+          </details>
+          <p class="muted-note">Chưa kết nối beacon với bản đồ.</p>
+        </section>
+        <section class="panel-section" id="beacon-place-section" aria-labelledby="beacon-place-title" hidden>
+          <h3 id="beacon-place-title" class="section-label">Gán beacon (dev)</h3>
+          <button id="bp-toggle" class="text-button" type="button" aria-pressed="false">Bật chế độ gán beacon</button>
+          <div id="bp-body" hidden>
+            <ul id="bp-list" class="nav-suggestions" style="position:static;max-height:160px;overflow:auto"></ul>
+            <p id="bp-hint" class="muted-note">Chọn beacon, rồi chạm vào điểm trên bản đồ (chế độ một tầng).</p>
+            <div id="bp-edit" hidden>
+              <label>x (m) <input id="bp-x" type="number" step="0.05" style="width:5.5em"></label>
+              <label>z (m) <input id="bp-z" type="number" step="0.05" style="width:5.5em"></label>
+              <label>Cao (m) <input id="bp-h" type="number" step="0.1" min="0.1" style="width:4.5em"></label>
+              <div class="display-actions">
+                <button id="bp-confirm" class="btn-secondary" type="button">Xác nhận</button>
+                <button id="bp-cancel" class="btn-secondary" type="button">Hủy</button>
+                <button id="bp-remove" class="btn-secondary" type="button">Gỡ vị trí</button>
+              </div>
+              <p id="bp-room-label" class="muted-note"></p>
+              <div class="display-actions">
+                <button id="bp-room-mode" class="btn-secondary" type="button" aria-pressed="false">Chạm phòng để gắn</button>
+                <button id="bp-room-clear" class="btn-secondary" type="button">Gỡ phòng</button>
+              </div>
+            </div>
+            <p id="bp-status" class="muted-note" role="status"></p>
+          </div>
+        </section>
+        <details class="display-options"><summary>Tùy chọn hiển thị</summary><div class="display-actions"><button id="btn-font-size" class="btn-secondary" aria-label="Thay đổi cỡ chữ">Cỡ chữ A+</button><button id="btn-contrast" class="btn-secondary" aria-label="Tương phản cao" aria-pressed="false">Tương phản</button><button id="btn-saving-mode" class="btn-secondary" aria-label="Chế độ tiết kiệm" aria-pressed="false">Tiết kiệm pin</button></div></details>
+      </aside>
+
+      <main id="canvas-wrap" aria-label="Bản đồ 3D">
+        <canvas id="three-canvas" aria-label="Mô hình 3D tòa nhà"></canvas>
+        <div class="map-toolbar">
+          <div id="floor-buttons" role="group" aria-label="Chọn tầng"></div>
+          <div class="view-switch" role="group" aria-label="Chế độ xem"><button id="mode-single" class="mode-btn active" data-mode="single" aria-pressed="true">Một tầng</button><button id="mode-all" class="mode-btn" data-mode="all" aria-pressed="false">Cả 3 tầng</button></div>
+        </div>
+        <div class="map-caption"><span class="map-caption-dot"></span><span id="map-floor-name">Tầng trệt</span><span id="map-room-count"></span><span class="model-disclaimer">Nội thất minh họa</span></div>
+        <div class="map-actions"><button id="btn-interior" class="map-fab" aria-label="Hiện nội thất" aria-pressed="true" title="Ẩn/hiện nội thất"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-7 9 7M5 10v10h14V10M9 20v-7h6v7"/></svg><span>Nội thất</span></button><button id="btn-go-to-me" class="map-fab" aria-label="Về vị trí của tôi" title="Về vị trí của tôi" hidden><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg></button><button id="btn-reset-view" class="map-fab" aria-label="Reset góc nhìn" title="Xem toàn bộ tầng"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9V3h6m6 0h6v6M3 15v6h6m6 0h6v-6"/><rect x="8" y="8" width="8" height="8" rx="1"/></svg><span>Toàn cảnh</span></button></div>
+        <p class="map-help">Kéo để xoay · Cuộn để thu phóng · Bấm phòng để xem</p>
+        <div id="sim-badge">Vị trí thủ công · Chưa dùng beacon thật</div>
+        <div id="signal-lost-banner" hidden role="alert">Mất tín hiệu beacon — hãy chọn vị trí thủ công</div>
+        <div id="sample-data-badge" hidden>Dữ liệu mẫu — chưa có sơ đồ thật</div>
+        <div id="dev-tools" hidden><button id="btn-export-glb" class="btn-secondary small">Xuất GLB tầng</button></div>
+
+        <!-- ═══ Nav mode overlay ══════════════════════════════════════════════ -->
+        <div id="nav-mode-overlay" hidden aria-live="assertive" role="region" aria-label="Dẫn đường đang hoạt động">
+          <div id="nav-banner">
+            <div id="nav-step-icon" class="nav-step-icon" aria-hidden="true">→</div>
+            <div id="nav-step-text" class="nav-step-text">…</div>
+            <div id="nav-step-dist" class="nav-step-dist"></div>
+          </div>
+          <div id="nav-mode-actions">
+            <button id="btn-reached-waypoint" class="nav-action-btn">✓ Tôi đã tới mốc này</button>
+            <button id="btn-nav-go-to-me" class="nav-action-btn secondary">⊙ Về vị trí</button>
+            <button id="btn-exit-nav" class="nav-action-btn exit">✕ Thoát</button>
+          </div>
+          <div id="nav-off-route-banner" hidden role="alert">
+            <span>Có vẻ bạn đã lệch tuyến</span>
+            <button id="btn-recalculate" class="nav-recalc-btn">Tính lại</button>
+          </div>
+          <div id="nav-arrived-banner" hidden role="status">
+            <div class="nav-arrived-text">Bạn đã đến nơi!</div>
+            <button id="btn-nav-new-route" class="nav-action-btn">Tìm đường mới</button>
+          </div>
+          <div id="nav-mock-badge" hidden>MOCK</div>
+        </div>
+      </main>
+    </div>
+
+    <!-- ═══ Giấy khám / lịch trình khám (bản thử nghiệm, dữ liệu demo) ═══ -->
+    <div id="visit-root"></div>
+
+    <!-- ═══ Luồng di động "Khám phá bản đồ 3D" (chỉ hiện khi body.mobile-flow) ═══ -->
+    <div id="mf-root">
+      <!-- Lớp phủ kiểu Google Maps: tuyến, chấm "Bạn ở đây", ghim đích (vẽ bằng JS, không nhận chạm) -->
+      <svg id="mf-route-svg" aria-hidden="true" focusable="false">
+        <path id="mf-route-done-casing" class="mf-rt-casing mf-rt-done"/>
+        <path id="mf-route-done" class="mf-rt-line mf-rt-done"/>
+        <path id="mf-route-casing" class="mf-rt-casing"/>
+        <path id="mf-route-line" class="mf-rt-line"/>
+      </svg>
+      <div id="mf-here" class="mf-here" aria-hidden="true" hidden><span class="mf-here-acc"></span><span class="mf-here-dot"></span><span class="mf-here-label">Bạn ở đây · Vị trí demo</span></div>
+      <div id="mf-pin" class="mf-pin" aria-hidden="true" hidden><svg viewBox="0 0 32 44" width="32" height="44" focusable="false"><path d="M16 1C8 1 2 7.2 2 15c0 10.5 14 28 14 28s14-17.5 14-28C30 7.2 24 1 16 1z" fill="#d93025" stroke="#ffffff" stroke-width="2.5"/><circle cx="16" cy="15" r="5.5" fill="#ffffff"/></svg></div>
+
+      <div id="mf-top">
+        <button id="mf-search-pill" type="button" aria-label="Tìm phòng. Bạn muốn đến đâu?" hidden>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+          <span class="mf-pill-text">Bạn muốn đến đâu?</span>
+          <span class="mf-trial">Thử nghiệm</span>
+        </button>
+        <div id="mf-filter-chips" class="mf-filter-chips" role="group" aria-label="Lọc nhanh" hidden></div>
+      </div>
+      <div id="mf-fabs" class="mf-fabs" hidden>
+        <button id="mf-floor-chip" type="button" class="mf-fab" aria-label="Chọn tầng" aria-haspopup="true" aria-expanded="false" aria-controls="mf-floor-menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/></svg><span id="mf-floor-label" class="sr-only">Tầng trệt</span></button>
+        <button id="mf-reorient" type="button" class="mf-fab" aria-label="Định lại hướng bản đồ" title="Định lại hướng"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 4 9H8l4-9z"/><path d="m12 22-4-9h8l-4 9z" opacity=".45"/></svg></button>
+        <button id="mf-locate" type="button" class="mf-fab" aria-label="Vị trí của tôi" title="Vị trí của tôi"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg></button>
+      </div>
+      <div id="mf-floor-menu" role="group" aria-label="Chọn tầng" hidden></div>
+
+      <!-- S1: Tìm kiếm -->
+      <div id="mf-search-overlay" role="dialog" aria-modal="true" aria-label="Tìm kiếm phòng" hidden>
+        <div class="mf-bar">
+          <button id="mf-back" type="button" aria-label="Quay lại bản đồ">←</button>
+          <input id="mf-search-input" type="search" placeholder="Tìm phòng theo tên hoặc mã…" aria-label="Tìm phòng theo tên hoặc mã" autocomplete="off" spellcheck="false" enterkeyhint="search">
+        </div>
+        <div id="mf-chips" class="mf-chips" role="group" aria-label="Tìm nhanh">
+          <button type="button" class="mf-chip mf-chip-beacon" data-beacon-toggle aria-pressed="false" hidden>Có beacon</button>
+          <button type="button" class="mf-chip" data-query="WC">Nhà vệ sinh</button>
+          <button type="button" class="mf-chip" data-query="thang máy">Thang máy</button>
+          <button type="button" class="mf-chip" data-query="thu ngân">Thu ngân</button>
+          <button type="button" class="mf-chip" data-query="nhà thuốc">Nhà thuốc</button>
+        </div>
+        <ul id="mf-results" aria-label="Kết quả tìm kiếm"></ul>
+        <p id="mf-no-result" role="status" hidden>Không tìm thấy phòng phù hợp. Thử tên khác hoặc mã phòng (ví dụ F1_R001).</p>
+        <p class="mf-note">Dữ liệu thử nghiệm. Tìm theo khoa: Cần xác nhận, dữ liệu phòng chưa có trường khoa.</p>
+      </div>
+
+      <!-- S2: Thiết lập tuyến -->
+      <section id="mf-route-sheet" aria-label="Chỉ đường" hidden>
+        <div class="mf-route-top">
+          <div class="mf-route-head">
+            <h2 class="mf-route-title">Chỉ đường</h2>
+            <button id="mf-close" type="button" aria-label="Đóng chỉ đường">✕</button>
+          </div>
+          <div class="mf-fields">
+            <div class="mf-field-col">
+              <button id="mf-start" type="button" class="mf-field" aria-label="Điểm xuất phát"><span class="mf-field-k">Điểm xuất phát</span><span id="mf-start-label" class="mf-field-v">Chọn điểm xuất phát</span></button>
+              <div class="mf-field mf-field-static" aria-label="Điểm đến"><span class="mf-field-k">Điểm đến</span><span id="mf-dest" class="mf-field-v"></span></div>
+            </div>
+            <button id="mf-swap" type="button" aria-label="Đảo điểm xuất phát và điểm đến"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16m0 0-3-3m3 3 3-3M17 20V4m0 0-3 3m3-3 3 3"/></svg></button>
+          </div>
+          <div id="mf-pick-start" class="mf-pick-start" hidden>
+            <span class="mf-pick-title">Chọn điểm xuất phát</span>
+            <div class="mf-pick-actions">
+              <button id="mf-pick-map" type="button" class="mf-btn-secondary">Chạm trên bản đồ</button>
+              <button id="mf-pick-list" type="button" class="mf-btn-secondary">Chọn từ danh sách</button>
+            </div>
+          </div>
+        </div>
+        <div id="mf-sheet" class="mf-route-bottom mf-sheet" data-collapsed="true">
+          <button id="mf-sheet-handle" type="button" class="mf-sheet-handle" aria-expanded="false" aria-controls="mf-sheet-more" aria-label="Mở rộng chi tiết tuyến"><span class="mf-grip" aria-hidden="true"></span></button>
+          <h2 id="mf-sheet-dest" class="mf-sheet-dest"></h2>
+          <p id="mf-summary" role="status"></p>
+          <div id="mf-sheet-more" class="mf-sheet-more">
+            <div id="mf-route-floors" class="mf-route-floors" role="group" aria-label="Xem tầng"></div>
+            <label class="mf-switch"><input type="checkbox" id="mf-wheelchair" role="switch"><span>Xe lăn (không bậc thang)</span></label>
+          </div>
+          <button id="mf-go" type="button" class="mf-btn-primary" aria-describedby="mf-summary" disabled>Bắt đầu</button>
+        </div>
+      </section>
+
+      <!-- Bộ chọn điểm xuất phát / "Bạn đang ở đâu?" -->
+      <div id="mf-start-picker" role="dialog" aria-modal="true" aria-labelledby="mf-picker-title" hidden>
+        <div class="mf-bar">
+          <button id="mf-picker-back" type="button" aria-label="Quay lại">←</button>
+          <h2 id="mf-picker-title">Chọn điểm xuất phát</h2>
+        </div>
+        <input id="mf-start-input" type="search" placeholder="Tìm phòng hoặc mốc bạn đang đứng…" aria-label="Tìm phòng hoặc mốc" autocomplete="off" spellcheck="false">
+        <div class="mf-chips" role="group" aria-label="Mốc nhanh">
+          <button type="button" class="mf-chip" data-group="elevator">Thang máy</button>
+          <button type="button" class="mf-chip" data-group="stairs">Cầu thang</button>
+          <button type="button" class="mf-chip" data-group="wc">WC</button>
+        </div>
+        <button id="mf-pick-on-map" type="button" class="mf-btn-secondary mf-wide">Chạm trên bản đồ</button>
+        <ul id="mf-start-results" aria-label="Danh sách mốc và phòng"></ul>
+        <p id="mf-start-empty" role="status" hidden>Không tìm thấy phòng phù hợp. Thử tên khác hoặc mã phòng (ví dụ F1_R001).</p>
+        <details class="mf-bridge">
+          <summary>Nhận vị trí từ máy quét (demo)</summary>
+          <p>Mở /scan/ trên laptop, nhập mã 4–6 số hiện ở đó.</p>
+          <div class="mf-bridge-row">
+            <input id="mf-bridge-code" type="text" inputmode="numeric" maxlength="6" placeholder="123456" aria-label="Mã ghép cặp">
+            <button id="mf-bridge-connect" type="button" class="mf-btn-secondary">Kết nối</button>
+          </div>
+          <p id="mf-bridge-status" role="status" hidden></p>
+        </details>
+      </div>
+
+      <!-- S3: Đang dẫn đường -->
+      <div id="mf-nav-top" role="region" aria-label="Chỉ dẫn kế tiếp" hidden>
+        <div id="mf-nav-icon" class="mf-nav-icon" aria-hidden="true">↑</div>
+        <div class="mf-nav-body">
+          <p id="mf-nav-text"></p>
+          <p id="mf-nav-sub"></p>
+          <p id="mf-lowconf" hidden>Độ tin cậy thấp – chỉ dẫn theo mốc</p>
+          <button id="mf-arrived" type="button" class="mf-btn-secondary" hidden>Về bản đồ</button>
+        </div>
+      </div>
+      <div id="mf-nav-bottom" hidden>
+        <p id="mf-nav-dest" class="mf-nav-dest"></p>
+        <div class="mf-nav-actions">
+          <button id="mf-recenter" type="button" class="mf-btn-secondary" hidden>Về vị trí của tôi</button>
+          <button id="mf-reset-pos" type="button" class="mf-btn-secondary" hidden>Đặt lại điểm đứng</button>
+          <button id="mf-next" type="button" class="mf-btn-secondary">Đã tới mốc này</button>
+        </div>
+        <div class="mf-nav-row">
+          <span id="mf-remaining"></span>
+          <button id="mf-end" type="button" class="mf-btn-primary">Kết thúc</button>
+        </div>
+      </div>
+      <div id="mf-live" class="sr-only" aria-live="polite" role="status"></div>
+    </div>
+
+    <dialog id="map-help-dialog" aria-labelledby="help-title"><h2 id="help-title">Khám phá bản đồ bệnh viện</h2><ul><li>Kéo bản đồ để xoay. Cuộn chuột hoặc chụm hai ngón tay để thu phóng.</li><li>Chọn Tầng trệt, Tầng 1 hoặc Tầng 2. Góc nhìn được giữ khi đổi tầng.</li><li>Bấm vào sàn phòng để xem thông tin. Chọn Xem gần khi muốn phóng tới phòng.</li><li>Chọn điểm xuất phát và điểm đến, rồi bấm Tìm đường đi. Bật đường đi cho xe lăn khi cần.</li><li>Nút Nội thất giúp ẩn hoặc hiện đồ đạc minh họa.</li></ul><p>Bản thử nghiệm: sơ đồ, nội thất và vị trí cần được xác nhận tại hiện trường. Beacon chưa kết nối với bản đồ.</p><button id="btn-close-help" class="btn-primary">Đã hiểu</button></dialog>
+
+    <!-- ═══ Bottom sheet thông tin phòng ══════════════════════════════════════ -->
+    <div id="room-sheet" role="dialog" aria-labelledby="room-sheet-name" aria-modal="false" hidden>
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div id="room-sheet-name" class="room-name"></div>
+      <div id="room-sheet-meta" class="room-meta"></div>
+      <div class="sheet-actions"><button id="btn-focus-room" class="btn-secondary">Xem gần</button>
+        <button id="btn-nav-to-room"   class="btn-primary">Dẫn đường đến đây</button>
+        <button id="btn-nav-from-room" class="btn-secondary">Xuất phát từ đây</button>
+        <button id="btn-close-sheet"   class="btn-secondary" aria-label="Đóng">Đóng</button>
+      </div>
+    </div>
+
+    <!-- ═══ WebGL Fallback / 2D Mode ═════════════════════════════════════════ -->
+    <div id="webgl-fallback" class="webgl-fallback" hidden>
+      <div class="webgl-fallback-inner">
+        <h2 id="fb-title">Bản đồ 3D không hiển thị được</h2>
+
+        <!-- Khu vực thông báo lỗi — ẩn khi ?force2d=1 -->
+        <div id="fb-error-area" hidden>
+          <p id="fb-desc">Trình duyệt không hỗ trợ WebGL hoặc đã tắt tăng tốc phần cứng.</p>
+          <ul class="fb-tips">
+            <li>Trình duyệt <strong>Cốc Cốc</strong>: Bật <strong>Tăng tốc phần cứng</strong> trong
+              <em>Cài đặt → Hệ thống</em>, hoặc mở <code>coccoc://gpu</code> để kiểm tra.</li>
+            <li>Mở qua <strong>http://localhost</strong> (không phải <code>file://</code>).</li>
+            <li>Cập nhật trình duyệt và driver card đồ họa.</li>
+            <li>Thử trên <strong>Chrome</strong> hoặc <strong>Firefox</strong> mới nhất.</li>
+          </ul>
+          <!-- Lỗi thật (hidden mặc định, hiện khi có error object) -->
+          <div class="fb-copy-wrap">
+            <code id="fb-error-msg" class="fb-error-msg" hidden></code>
+            <button id="fb-copy-error" type="button" class="btn-secondary small" hidden>Sao chép lỗi</button>
+          </div>
+        </div>
+
+        <!-- Tìm kiếm phòng (luôn hiển thị) -->
+        <p class="fb-search-label">Tìm kiếm phòng (không cần 3D):</p>
+        <input id="fb-search" type="search" placeholder="Tìm phòng, khoa…" aria-label="Tìm kiếm phòng" />
+        <ul id="fb-results" class="fb-results" hidden></ul>
+
+        <!-- Bản đồ 2D SVG (hiển thị sau khi data tải xong) -->
+        <div id="map2d-area" class="map2d-area" hidden></div>
+
+        <!-- Tìm đường 2D (hiển thị sau khi data tải xong) -->
+        <div id="fb-2d-nav" class="fb-2d-nav" hidden>
+          <p class="fb-search-label">Tìm đường trên bản đồ 2D:</p>
+          <div class="fb-nav-inputs">
+            <div class="fb-nav-combo">
+              <input id="fb-nav-from" type="text" placeholder="Xuất phát từ…" autocomplete="off" aria-label="Điểm xuất phát" />
+            </div>
+            <span class="fb-nav-arrow" aria-hidden="true">→</span>
+            <div class="fb-nav-combo">
+              <input id="fb-nav-to" type="text" placeholder="Điểm đến…" autocomplete="off" aria-label="Điểm đến" />
+            </div>
+            <button id="fb-find-route" type="button" class="btn-primary">Tìm đường</button>
+            <button id="fb-clear-route" type="button" class="btn-secondary">Xóa</button>
+          </div>
+          <p id="fb-route-info" class="fb-route-info" hidden></p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ═══ Spinner loading ════════════════════════════════════════════════════ -->
+    <div id="loading-overlay" role="status" aria-live="polite">
+      <div class="spinner" id="loading-spinner"></div>
+      <p id="loading-msg">Đang tải dữ liệu…</p>
+      <p id="loading-sub" class="loading-sub" hidden>Dữ liệu thử nghiệm – không phải sơ đồ thật</p>
+    </div>
+
+    <!-- ═══ Toast ════════════════════════════════════════════════════════════ -->
+    <div id="toast-area" aria-live="assertive" aria-atomic="true"></div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+</html>

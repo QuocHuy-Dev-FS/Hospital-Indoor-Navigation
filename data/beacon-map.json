@@ -1,0 +1,62 @@
+[
+  {
+    "beaconKey": "00000001-0000-0000-0000-000000000000-1-1",
+    "roomId":    "F1_R001",
+    "roomName":  "Phòng F1_R001 (Placeholder)"
+  },
+  {
+    "beaconKey": "00000001-0000-0000-0000-000000000000-1-2",
+    "roomId":    "F1_R002",
+    "roomName":  "Phòng F1_R002 (Placeholder)"
+  },
+  {
+    "beaconKey": "00000001-0000-0000-0000-000000000000-1-3",
+    "roomId":    "F1_R003",
+    "roomName":  "Phòng F1_R003 (Placeholder)"
+  },
+  {
+    "beaconKey": "00000001-0000-0000-0000-000000000000-1-4",
+    "roomId":    "F1_R004",
+    "roomName":  "Phòng F1_R004 (Placeholder)"
+  },
+  {
+    "beaconKey": "00000001-0000-0000-0000-000000000000-2-1",
+    "roomId":    "F2_R001",
+    "roomName":  "Phòng F2_R001 (Placeholder)"
+  },
+  {
+    "beaconKey": "00000001-0000-0000-0000-000000000000-2-2",
+    "roomId":    "F2_R002",
+    "roomName":  "Phòng F2_R002 (Placeholder)"
+  },
+  {
+    "beaconKey": "00000001-0000-0000-0000-000000000000-2-3",
+    "roomId":    "F2_R003",
+    "roomName":  "Phòng F2_R003 (Placeholder)"
+  },
+  {
+    "beaconKey": "00000001-0000-0000-0000-000000000000-2-4",
+    "roomId":    "F2_R004",
+    "roomName":  "Phòng F2_R004 (Placeholder)"
+  },
+  {
+    "beaconKey": "00000001-0000-0000-0000-000000000000-3-1",
+    "roomId":    "F3_R001",
+    "roomName":  "Phòng F3_R001 (Placeholder)"
+  },
+  {
+    "beaconKey": "00000001-0000-0000-0000-000000000000-3-2",
+    "roomId":    "F3_R002",
+    "roomName":  "Phòng F3_R002 (Placeholder)"
+  },
+  {
+    "beaconKey": "00000001-0000-0000-0000-000000000000-3-3",
+    "roomId":    "F3_R003",
+    "roomName":  "Phòng F3_R003 (Placeholder)"
+  },
+  {
+    "beaconKey": "00000001-0000-0000-0000-000000000000-3-4",
+    "roomId":    "F3_R004",
+    "roomName":  "Phòng F3_R004 (Placeholder)"
+  }
+]

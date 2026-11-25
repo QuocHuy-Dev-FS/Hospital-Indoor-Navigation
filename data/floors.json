@@ -1,0 +1,83 @@
+[
+  {
+    "id": "F1",
+    "buildingId": "B1",
+    "level": 1,
+    "name": "Tầng 1",
+    "elevation_m": 0,
+    "height_m": 3.6,
+    "note": "Tầng trệt"
+  },
+  {
+    "id": "F2",
+    "buildingId": "B1",
+    "level": 2,
+    "name": "Tầng 2",
+    "elevation_m": 3.6,
+    "height_m": 3.6,
+    "note": ""
+  },
+  {
+    "id": "F3",
+    "buildingId": "B1",
+    "level": 3,
+    "name": "Tầng 3",
+    "elevation_m": 7.2,
+    "height_m": 3.6,
+    "note": ""
+  },
+  {
+    "id": "F4",
+    "buildingId": "B1",
+    "level": 4,
+    "name": "Tầng 4",
+    "elevation_m": 10.8,
+    "height_m": 3.6,
+    "note": ""
+  },
+  {
+    "id": "F5",
+    "buildingId": "B1",
+    "level": 5,
+    "name": "Tầng 5",
+    "elevation_m": 14.4,
+    "height_m": 3.6,
+    "note": ""
+  },
+  {
+    "id": "F6",
+    "buildingId": "B1",
+    "level": 6,
+    "name": "Tầng 6",
+    "elevation_m": 18,
+    "height_m": 3.6,
+    "note": ""
+  },
+  {
+    "id": "F7",
+    "buildingId": "B1",
+    "level": 7,
+    "name": "Tầng 7",
+    "elevation_m": 21.6,
+    "height_m": 3.6,
+    "note": ""
+  },
+  {
+    "id": "F8",
+    "buildingId": "B1",
+    "level": 8,
+    "name": "Tầng 8",
+    "elevation_m": 25.2,
+    "height_m": 3.6,
+    "note": ""
+  },
+  {
+    "id": "F9",
+    "buildingId": "B1",
+    "level": 9,
+    "name": "Tầng 9",
+    "elevation_m": 28.8,
+    "height_m": 3.6,
+    "note": ""
+  }
+]

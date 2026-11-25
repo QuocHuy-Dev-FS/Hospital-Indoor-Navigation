@@ -1,0 +1,61 @@
+/**
+ * visit.css — Giao diện "Giấy khám" (bản thử nghiệm). Chỉ chứa quy tắc cho #visit-root.
+ * Ẩn khi màn hình chính chưa hiện (splash).
+ */
+#main-layout[hidden] ~ #visit-root { display: none; }
+#visit-root [hidden] { display: none !important; }
+
+#visit-root {
+  --visit-text: #0f2a24;
+  --visit-primary: #1558b0;
+  --visit-soft: #e8f0fe;
+  --visit-border: #5b7a73;
+  --visit-warn-bg: #fff3cd;
+  --visit-warn-text: #6a4010;
+  --visit-err: #b3261e;
+}
+
+.visit-open {
+  position: fixed; z-index: 700; left: 8px;
+  bottom: calc(var(--mf-sheet-h, 0px) + 12px + env(safe-area-inset-bottom, 0px));
+  min-height: 44px; padding: 8px 14px; border-radius: 22px; border: 1px solid var(--visit-border);
+  background: #fff; color: var(--visit-text); font-weight: 600; font-size: 15px; line-height: 1.2; font-family: inherit; box-shadow: 0 2px 10px rgba(15, 42, 36, 0.28); cursor: pointer;
+}
+.visit-trial { margin-left: 8px; padding: 2px 8px; border-radius: 10px; background: var(--visit-warn-bg); color: var(--visit-warn-text); font-size: 12px; font-weight: 600; }
+
+.visit-panel {
+  position: fixed; z-index: 710; left: 8px; right: 8px; max-width: 460px; max-height: 75vh; overflow-y: auto;
+  bottom: calc(var(--mf-sheet-h, 0px) + 68px + env(safe-area-inset-bottom, 0px));
+  padding: 14px; border-radius: 16px; background: #fff; color: var(--visit-text); box-shadow: 0 4px 24px rgba(15, 42, 36, 0.35);
+  font-size: 16px; line-height: 1.4;
+}
+.visit-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.visit-head h2 { margin: 0; font-size: 18px; }
+.visit-close { min-width: 44px; min-height: 44px; border: 0; background: transparent; font-size: 18px; cursor: pointer; color: var(--visit-text); }
+.visit-note { margin: 8px 0; padding: 6px 10px; border-radius: 8px; background: var(--visit-warn-bg); color: var(--visit-warn-text); font-size: 14px; }
+.visit-form { display: grid; gap: 8px; margin: 8px 0; }
+.visit-panel input { min-height: 44px; padding: 8px 12px; font-size: 16px; border: 1px solid var(--visit-border); border-radius: 10px; width: 100%; box-sizing: border-box; }
+.visit-error { margin: 6px 0 0; color: var(--visit-err); font-weight: 600; }
+.visit-seg { margin: 10px 0 4px; font-size: 18px; font-weight: 700; }
+.visit-step-note { margin: 0 0 8px; color: #44605a; }
+.visit-done { margin: 10px 0; font-weight: 700; }
+.visit-actions { display: grid; gap: 8px; margin: 8px 0; }
+.visit-primary, .visit-secondary {
+  min-height: 44px; padding: 8px 14px; border-radius: 12px; font-weight: 600; font-size: 16px; line-height: 1.2; font-family: inherit; cursor: pointer;
+}
+.visit-primary { border: 0; background: var(--visit-primary); color: #fff; }
+.visit-secondary { border: 1px solid var(--visit-primary); background: #fff; color: var(--visit-primary); }
+.visit-link { min-height: 44px; border: 0; background: transparent; color: var(--visit-primary); font: inherit; text-decoration: underline; cursor: pointer; }
+.visit-steps { margin: 8px 0; padding-left: 20px; }
+.visit-step { margin: 4px 0; }
+.visit-st-done > span { color: #44605a; }
+.visit-st-skipped > span { color: var(--visit-warn-text); }
+.visit-results { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 4px; }
+.visit-results button { width: 100%; min-height: 44px; text-align: left; padding: 8px 12px; border: 1px solid var(--visit-border); border-radius: 10px; background: #fff; font: inherit; cursor: pointer; }
+
+.visit-bar {
+  position: fixed; z-index: 705; left: 8px; right: 8px; max-width: 460px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  bottom: calc(var(--mf-sheet-h, 0px) + 68px + env(safe-area-inset-bottom, 0px));
+  padding: 8px 12px; border-radius: 14px; background: var(--visit-soft); color: var(--visit-text); box-shadow: 0 2px 10px rgba(15, 42, 36, 0.28);
+}
+.visit-bar-text { flex: 1 1 100%; font-weight: 700; }

@@ -1,0 +1,323 @@
+/**
+ * mobile-flow.css — Luồng di động "Khám phá bản đồ 3D" (bản thử nghiệm).
+ * Toàn bộ quy tắc nằm dưới `body.mobile-flow` (chỉ bật khi màn hình <=700px,
+ * không kiosk / force2d / glb). Ngoại lệ: #mf-root là phần tử mới, mặc định ẩn.
+ * Nạp SAU CÙNG nên ghi đè styles.css, wayfinding.css, hospital-theme.css.
+ */
+
+/* Phần tử mới: ẩn hoàn toàn khi không ở mobile-flow */
+#mf-root { display: none; }
+#mf-root [hidden] { display: none !important; }
+
+body.mobile-flow {
+  --mf-text: #0f2a24;
+  --mf-muted: #44605a;
+  --mf-surface: #ffffff;
+  --mf-primary: #1558b0;
+  --mf-blue: #1a73e8;
+  --mf-red: #d93025;
+  --mf-route-done: #9db7dd;
+  --mf-sheet-h: 0px;
+  --mf-on-primary: #ffffff;
+  --mf-soft: #e8f0fe;
+  --mf-soft-text: #0f4a9a;
+  --mf-border: #5b7a73;
+  --mf-warn-bg: #fff3e0;
+  --mf-warn-text: #7a3b00;
+  --mf-trial-bg: #fff3cd;
+  --mf-trial-text: #6a4010;
+  --mf-shadow: 0 2px 10px rgba(15, 42, 36, 0.28);
+  --mf-top: calc(env(safe-area-inset-top, 0px) + 12px);
+  --mf-bottom: calc(env(safe-area-inset-bottom, 0px) + 12px);
+  --mf-left: calc(env(safe-area-inset-left, 0px) + 12px);
+  --mf-right: calc(env(safe-area-inset-right, 0px) + 12px);
+}
+body.mobile-flow.high-contrast {
+  --mf-text: #000000;
+  --mf-muted: #1d3641;
+  --mf-primary: #0b3d82;
+  --mf-soft: #ffffff;
+  --mf-soft-text: #0b3d82;
+  --mf-border: #1d3641;
+  --mf-warn-bg: #ffffff;
+  --mf-warn-text: #5a2800;
+}
+
+body.mobile-flow #mf-root { display: block; }
+body.mobile-flow, body.mobile-flow #mf-root { overflow-x: hidden; max-width: 100vw; }
+
+/* ── Bản đồ toàn màn hình ───────────────────────────────────────────────── */
+body.mobile-flow #app-header,
+body.mobile-flow #side-panel,
+body.mobile-flow .map-toolbar,
+body.mobile-flow .map-caption,
+body.mobile-flow .map-actions,
+body.mobile-flow .map-help,
+body.mobile-flow #sim-badge,
+body.mobile-flow #room-sheet { display: none !important; }
+
+body.mobile-flow #main-layout {
+  position: fixed; inset: 0; top: 0; left: 0; right: 0; bottom: 0;
+  height: 100vh; height: 100dvh; display: block; margin: 0; gap: 0;
+}
+body.mobile-flow #canvas-wrap {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  margin: 0; min-height: 0; flex: none; border: 0; border-radius: 0;
+}
+
+/* Overlay dẫn đường cũ: chỉ giữ huy hiệu MOCK; S3 dùng #mf-nav-top / #mf-nav-bottom */
+body.mobile-flow #nav-mode-overlay,
+body.mobile-flow #nav-mode-overlay[hidden] {
+  display: block !important; position: absolute; inset: 0; bottom: auto; height: 0; pointer-events: none;
+}
+body.mobile-flow #nav-banner,
+body.mobile-flow #nav-mode-actions,
+body.mobile-flow #nav-off-route-banner,
+body.mobile-flow #nav-arrived-banner { display: none !important; }
+body.mobile-flow #nav-mock-badge {
+  top: calc(env(safe-area-inset-top, 0px) + 80px); left: var(--mf-left); right: auto;
+  border-radius: 8px; font-size: 16px; padding: 4px 10px; background: #b71c1c;
+}
+body.mobile-flow #nav-mock-badge[hidden] { display: none !important; }
+
+/* Giữ: cảnh báo mất tín hiệu (dưới pill), huy hiệu dữ liệu mẫu, toast */
+body.mobile-flow #signal-lost-banner {
+  top: calc(env(safe-area-inset-top, 0px) + 80px); left: 50%; max-width: calc(100% - 24px);
+  font-size: 16px; line-height: 1.35; text-align: center; white-space: normal;
+  background: var(--mf-warn-bg); color: var(--mf-warn-text); border-color: var(--mf-warn-text);
+  z-index: 70;
+}
+body.mobile-flow #signal-lost-banner[hidden] { display: none !important; }
+body.mobile-flow[data-mf-state="S3"] #signal-lost-banner { display: none !important; }
+body.mobile-flow #sample-data-badge {
+  top: auto; bottom: var(--mf-bottom); left: var(--mf-left); transform: none;
+  font-size: 16px; line-height: 1.3; color: #5b1670; z-index: 30;
+}
+body.mobile-flow #sample-data-badge[hidden] { display: none !important; }
+body.mobile-flow[data-mf-state="S1"] #sample-data-badge,
+body.mobile-flow[data-mf-state="S2"] #sample-data-badge,
+body.mobile-flow[data-mf-state="S3"] #sample-data-badge { display: none !important; }
+body.mobile-flow #toast-area {
+  top: calc(env(safe-area-inset-top, 0px) + 140px); bottom: auto; left: var(--mf-left); right: var(--mf-right);
+  align-items: center; z-index: 800;
+}
+body.mobile-flow .toast { font-size: 16px; line-height: 1.4; color: var(--mf-text); background: var(--mf-surface); border-color: var(--mf-border); }
+body.mobile-flow .toast.error { background: #ffebee; color: #8a1c1c; }
+body.mobile-flow .toast.success { background: #e8f5e9; color: #1b5e20; }
+
+/* ── Thành phần chung ──────────────────────────────────────────────────── */
+body.mobile-flow #mf-root,
+body.mobile-flow #mf-root button,
+body.mobile-flow #mf-root input,
+body.mobile-flow #mf-root summary { font-family: inherit; font-size: 16px; line-height: 1.4; color: var(--mf-text); }
+body.mobile-flow #mf-root button { -webkit-tap-highlight-color: transparent; cursor: pointer; }
+body.mobile-flow #mf-root .icon { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+body.mobile-flow #mf-root button:focus-visible,
+body.mobile-flow #mf-root input:focus-visible,
+body.mobile-flow #mf-root summary:focus-visible { outline: 3px solid #0057b8; outline-offset: 2px; }
+
+body.mobile-flow .mf-btn-primary,
+body.mobile-flow .mf-btn-secondary {
+  min-height: 48px; min-width: 48px; padding: 0 18px; border-radius: 12px; border: 2px solid transparent; font-weight: 600;
+}
+body.mobile-flow #mf-root .mf-btn-primary { background: var(--mf-primary); color: var(--mf-on-primary); }
+body.mobile-flow #mf-root .mf-btn-primary:disabled { background: #d9e2df; color: #3f524d; cursor: not-allowed; }
+body.mobile-flow #mf-root .mf-btn-secondary { background: var(--mf-soft); color: var(--mf-soft-text); border-color: var(--mf-soft-text); }
+body.mobile-flow #mf-root .mf-wide { width: 100%; }
+
+/* Nút nổi: pill tìm kiếm nổi, chip lọc, cột nút tròn bên phải */
+body.mobile-flow #mf-top { position: fixed; top: var(--mf-top); left: var(--mf-left); right: var(--mf-right); z-index: 500; pointer-events: none; display: flex; flex-direction: column; gap: 8px; }
+body.mobile-flow #mf-search-pill {
+  pointer-events: auto; display: flex; align-items: center; gap: 10px; width: 100%; min-height: 56px; padding: 0 12px 0 16px;
+  background: var(--mf-surface); border: 0; border-radius: 28px; box-shadow: 0 2px 8px rgba(15, 30, 60, 0.35), 0 0 0 1px rgba(15, 30, 60, 0.12); text-align: left;
+}
+body.mobile-flow #mf-search-pill:not([hidden]) { display: flex; }
+body.mobile-flow #mf-search-pill .icon { color: var(--mf-primary); }
+body.mobile-flow .mf-pill-text { flex: 1; min-width: 0; color: var(--mf-muted); font-weight: 500; }
+body.mobile-flow .mf-trial { flex: none; padding: 2px 10px; border-radius: 12px; background: var(--mf-trial-bg); color: var(--mf-trial-text); font-size: 16px; font-weight: 600; }
+body.mobile-flow .mf-filter-chips { pointer-events: auto; display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 2px 2px 6px; margin: 0 -2px; }
+body.mobile-flow .mf-filter-chips::-webkit-scrollbar { display: none; }
+body.mobile-flow #mf-root .mf-fchip {
+  flex: none; min-height: 44px; padding: 0 16px; border-radius: 22px; border: 0; background: var(--mf-surface);
+  color: var(--mf-text); font-weight: 600; box-shadow: 0 1px 5px rgba(15, 30, 60, 0.35);
+}
+body.mobile-flow #mf-root .mf-fchip[aria-pressed="true"] { background: var(--mf-primary); color: var(--mf-on-primary); }
+
+body.mobile-flow .mf-fabs {
+  position: fixed; z-index: 500; right: var(--mf-right); bottom: calc(var(--mf-sheet-h, 0px) + var(--mf-bottom));
+  display: flex; flex-direction: column; gap: 10px; transition: bottom 0.2s ease;
+}
+body.mobile-flow .mf-fabs[hidden] { display: none !important; }
+body.mobile-flow #mf-root .mf-fab {
+  width: 48px; height: 48px; padding: 0; display: flex; align-items: center; justify-content: center;
+  background: var(--mf-surface); border: 0; border-radius: 50%; color: var(--mf-primary); box-shadow: 0 2px 8px rgba(15, 30, 60, 0.4);
+}
+body.mobile-flow #mf-root .mf-fab .icon { color: var(--mf-primary); }
+body.mobile-flow #mf-floor-menu {
+  position: fixed; z-index: 510; right: calc(var(--mf-right) + 58px); bottom: calc(var(--mf-sheet-h, 0px) + var(--mf-bottom));
+  display: flex; flex-direction: column; gap: 4px; padding: 6px; background: var(--mf-surface);
+  border: 0; border-radius: 16px; box-shadow: 0 2px 10px rgba(15, 30, 60, 0.4); max-height: 60vh; overflow-y: auto;
+}
+body.mobile-flow #mf-floor-menu[hidden] { display: none !important; }
+body.mobile-flow .mf-floor-opt {
+  min-height: 48px; min-width: 120px; padding: 0 14px; border-radius: 10px; border: 2px solid transparent;
+  background: transparent; text-align: left; font-weight: 500;
+}
+body.mobile-flow #mf-root .mf-floor-opt[aria-pressed="true"] { background: var(--mf-soft-text); color: #ffffff; font-weight: 700; }
+body.mobile-flow #mf-root .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* Lớp phủ kiểu Google Maps: tuyến, chấm "Bạn ở đây", ghim đích */
+body.mobile-flow #mf-route-svg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 400; pointer-events: none; overflow: visible; }
+body.mobile-flow #mf-route-svg path { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+body.mobile-flow #mf-route-svg .mf-rt-casing { stroke: #ffffff; stroke-width: 12; }
+body.mobile-flow #mf-route-svg .mf-rt-line { stroke: var(--mf-blue); stroke-width: 7; }
+body.mobile-flow #mf-route-svg .mf-rt-casing.mf-rt-done { stroke: #ffffff; stroke-opacity: 0.55; }
+body.mobile-flow #mf-route-svg .mf-rt-line.mf-rt-done { stroke: var(--mf-route-done); }
+body.mobile-flow .mf-here, body.mobile-flow .mf-pin { position: fixed; left: 0; top: 0; z-index: 410; pointer-events: none; will-change: transform; }
+body.mobile-flow .mf-here[hidden], body.mobile-flow .mf-pin[hidden] { display: none !important; }
+body.mobile-flow .mf-here-dot {
+  position: absolute; left: -11px; top: -11px; width: 22px; height: 22px; border-radius: 50%;
+  background: var(--mf-blue); border: 3px solid #ffffff; box-sizing: border-box; box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+body.mobile-flow .mf-here-acc {
+  position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; border-radius: 50%;
+  background: rgba(26, 115, 232, 0.22); border: 1px solid rgba(26, 115, 232, 0.5); animation: mf-pulse 2s ease-out infinite;
+}
+body.mobile-flow .mf-here.is-low .mf-here-dot { background: #6b7a90; }
+body.mobile-flow .mf-here.is-low .mf-here-acc { background: rgba(107, 122, 144, 0.2); border-color: rgba(107, 122, 144, 0.5); }
+body.mobile-flow .mf-here-label {
+  position: absolute; left: 0; top: 18px; transform: translateX(-50%); white-space: nowrap; padding: 2px 8px; border-radius: 10px;
+  background: #ffffff; color: var(--mf-primary); font-size: 16px; font-weight: 700; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+body.mobile-flow .mf-pin svg { position: absolute; left: -16px; top: -44px; filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4)); }
+@keyframes mf-pulse { 0% { transform: scale(0.5); opacity: 0.9; } 100% { transform: scale(1.15); opacity: 0; } }
+
+/* ── S1 / bộ chọn: lớp toàn màn hình ───────────────────────────────────── */
+body.mobile-flow #mf-search-overlay,
+body.mobile-flow #mf-start-picker {
+  position: fixed; inset: 0; z-index: 600; background: var(--mf-surface); overflow-y: auto; -webkit-overflow-scrolling: touch;
+  padding: var(--mf-top) var(--mf-right) var(--mf-bottom) var(--mf-left); display: flex; flex-direction: column; gap: 12px;
+  height: 100vh; height: 100dvh;
+}
+body.mobile-flow #mf-search-overlay[hidden],
+body.mobile-flow #mf-start-picker[hidden] { display: none !important; }
+body.mobile-flow .mf-bar { display: flex; align-items: center; gap: 8px; }
+body.mobile-flow .mf-bar h2 { margin: 0; font-size: 20px; font-weight: 700; color: var(--mf-text); }
+body.mobile-flow #mf-back,
+body.mobile-flow #mf-picker-back,
+body.mobile-flow #mf-close {
+  flex: none; width: 48px; height: 48px; padding: 0; border-radius: 50%; border: 2px solid var(--mf-border);
+  background: var(--mf-surface); font-size: 22px; font-weight: 700;
+}
+body.mobile-flow #mf-search-input,
+body.mobile-flow #mf-start-input,
+body.mobile-flow #mf-bridge-code {
+  flex: 1; min-width: 0; min-height: 48px; padding: 0 16px; font-size: 16px; color: var(--mf-text);
+  background: var(--mf-surface); border: 2px solid var(--mf-border); border-radius: 24px;
+}
+body.mobile-flow #mf-start-input { flex: none; width: 100%; box-sizing: border-box; }
+body.mobile-flow #mf-search-input::placeholder,
+body.mobile-flow #mf-start-input::placeholder { color: #4a625c; opacity: 1; }
+body.mobile-flow .mf-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+body.mobile-flow #mf-root .mf-chip {
+  min-height: 48px; padding: 0 16px; border-radius: 24px; border: 2px solid var(--mf-soft-text);
+  background: var(--mf-soft); color: var(--mf-soft-text); font-weight: 600;
+}
+body.mobile-flow #mf-root .mf-chip[aria-pressed="true"] { background: var(--mf-primary); color: var(--mf-on-primary); border-color: var(--mf-primary); }
+body.mobile-flow #mf-results,
+body.mobile-flow #mf-start-results { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+body.mobile-flow .mf-result {
+  display: flex; flex-direction: column; justify-content: center; gap: 2px; width: 100%; min-height: 56px; padding: 8px 4px;
+  background: transparent; border: 0; border-bottom: 1px solid #c9d6d2; text-align: left;
+}
+body.mobile-flow .mf-result-name { font-weight: 600; color: var(--mf-text); }
+body.mobile-flow .mf-result-meta { color: var(--mf-muted); }
+body.mobile-flow #mf-no-result,
+body.mobile-flow #mf-start-empty { margin: 8px 4px; color: var(--mf-text); font-weight: 500; }
+body.mobile-flow .mf-note { margin: 4px; color: var(--mf-muted); }
+body.mobile-flow .mf-bridge { border-top: 1px solid #c9d6d2; padding-top: 8px; }
+body.mobile-flow .mf-bridge summary { min-height: 48px; display: flex; align-items: center; font-weight: 600; cursor: pointer; }
+body.mobile-flow .mf-bridge p { margin: 4px 0; color: var(--mf-muted); }
+body.mobile-flow .mf-bridge-row { display: flex; gap: 8px; margin-top: 6px; }
+body.mobile-flow #mf-bridge-status { padding: 8px 12px; border-radius: 8px; background: var(--mf-soft); color: var(--mf-soft-text); font-weight: 500; }
+
+/* ── S2: khung chỉ đường ───────────────────────────────────────────────── */
+body.mobile-flow #mf-route-sheet { position: fixed; inset: 0; z-index: 500; pointer-events: none; }
+body.mobile-flow #mf-route-sheet[hidden] { display: none !important; }
+body.mobile-flow .mf-route-top {
+  pointer-events: auto; position: absolute; top: 0; left: 0; right: 0;
+  padding: var(--mf-top) var(--mf-right) 12px var(--mf-left);
+  background: var(--mf-surface); border-radius: 0 0 20px 20px; box-shadow: var(--mf-shadow);
+  display: flex; flex-direction: column; gap: 8px;
+}
+body.mobile-flow .mf-route-head { display: flex; align-items: center; justify-content: space-between; }
+body.mobile-flow .mf-route-title { margin: 0; font-size: 20px; font-weight: 700; color: var(--mf-text); }
+body.mobile-flow .mf-fields { display: flex; align-items: stretch; gap: 8px; }
+body.mobile-flow .mf-field-col { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+body.mobile-flow .mf-field {
+  display: flex; flex-direction: column; justify-content: center; min-height: 56px; padding: 6px 14px; text-align: left;
+  background: var(--mf-surface); border: 2px solid var(--mf-border); border-radius: 12px; box-sizing: border-box; width: 100%;
+}
+body.mobile-flow .mf-field-k { color: var(--mf-muted); font-size: 16px; }
+body.mobile-flow .mf-field-v { font-weight: 600; color: var(--mf-text); overflow-wrap: anywhere; }
+body.mobile-flow #mf-swap {
+  flex: none; align-self: center; width: 48px; height: 48px; padding: 0; border-radius: 50%; border: 2px solid var(--mf-border);
+  background: var(--mf-surface); display: flex; align-items: center; justify-content: center;
+}
+body.mobile-flow .mf-pick-start { display: flex; flex-direction: column; gap: 8px; padding: 8px; border-radius: 12px; background: var(--mf-warn-bg); }
+body.mobile-flow .mf-pick-title { font-weight: 700; color: var(--mf-warn-text); }
+body.mobile-flow .mf-pick-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+body.mobile-flow .mf-pick-actions .mf-btn-secondary { flex: 1; min-width: 140px; }
+body.mobile-flow .mf-switch { display: flex; align-items: center; gap: 12px; min-height: 48px; font-weight: 500; color: var(--mf-text); cursor: pointer; }
+body.mobile-flow .mf-switch input { width: 28px; height: 28px; flex: none; accent-color: var(--mf-primary); }
+body.mobile-flow .mf-route-bottom {
+  pointer-events: auto; position: absolute; left: 0; right: 0; bottom: 0; max-height: 70vh; overflow-y: auto;
+  padding: 4px var(--mf-right) var(--mf-bottom) var(--mf-left);
+  background: var(--mf-surface); border-radius: 20px 20px 0 0; box-shadow: var(--mf-shadow);
+  display: flex; flex-direction: column; gap: 8px;
+}
+body.mobile-flow .mf-route-floors { display: flex; gap: 6px; flex-wrap: wrap; }
+body.mobile-flow .mf-route-floors .mf-floor-opt { min-width: 0; flex: 1; text-align: center; border-color: var(--mf-border); }
+body.mobile-flow #mf-summary { margin: 0; font-weight: 500; color: var(--mf-text); }
+body.mobile-flow #mf-go { width: 100%; min-height: 52px; font-size: 18px; }
+body.mobile-flow .mf-sheet-handle { width: 100%; min-height: 44px; padding: 0; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; }
+body.mobile-flow .mf-grip { width: 40px; height: 5px; border-radius: 3px; background: #6b7a90; }
+body.mobile-flow .mf-sheet-dest { margin: 0; font-size: 20px; font-weight: 700; color: var(--mf-text); overflow-wrap: anywhere; }
+body.mobile-flow .mf-sheet[data-collapsed="true"] .mf-sheet-more { display: none; }
+body.mobile-flow .mf-sheet-more { display: flex; flex-direction: column; gap: 8px; }
+
+/* ── S3: đang dẫn đường ────────────────────────────────────────────────── */
+body.mobile-flow #mf-nav-top {
+  position: fixed; z-index: 500; top: 0; left: 0; right: 0;
+  padding: var(--mf-top) var(--mf-right) 14px var(--mf-left);
+  background: var(--mf-primary); color: var(--mf-on-primary); border-radius: 0 0 20px 20px; box-shadow: var(--mf-shadow);
+  display: flex; align-items: flex-start; gap: 12px;
+}
+body.mobile-flow #mf-nav-top[hidden] { display: none !important; }
+body.mobile-flow .mf-nav-icon { flex: none; width: 56px; height: 56px; display: flex; align-items: center; justify-content: center; font-size: 44px; line-height: 1; font-weight: 700; border-radius: 14px; background: rgba(255, 255, 255, 0.18); }
+body.mobile-flow .mf-nav-dest { margin: 0; font-weight: 700; color: var(--mf-text); overflow-wrap: anywhere; }
+body.mobile-flow .mf-nav-dest:empty { display: none; }
+body.mobile-flow .mf-nav-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+body.mobile-flow #mf-nav-text { margin: 0; font-size: 22px; font-weight: 600; line-height: 1.3; color: var(--mf-on-primary); }
+body.mobile-flow #mf-nav-sub { margin: 0; font-size: 18px; color: #eaf1fd; }
+body.mobile-flow #mf-nav-sub:empty { display: none; }
+body.mobile-flow #mf-lowconf {
+  margin: 0; padding: 6px 12px; border-radius: 10px; background: var(--mf-warn-bg); color: var(--mf-warn-text);
+  font-size: 16px; font-weight: 700; align-self: flex-start;
+}
+body.mobile-flow #mf-nav-bottom {
+  position: fixed; z-index: 500; left: 0; right: 0; bottom: 0;
+  padding: 12px var(--mf-right) var(--mf-bottom) var(--mf-left);
+  background: var(--mf-surface); border-radius: 20px 20px 0 0; box-shadow: var(--mf-shadow);
+  display: flex; flex-direction: column; gap: 10px;
+}
+body.mobile-flow #mf-nav-bottom[hidden] { display: none !important; }
+body.mobile-flow .mf-nav-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+body.mobile-flow .mf-nav-actions .mf-btn-secondary { flex: 1; min-width: 140px; }
+body.mobile-flow .mf-nav-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+body.mobile-flow #mf-remaining { font-size: 18px; font-weight: 600; color: var(--mf-text); }
+body.mobile-flow #mf-end { min-width: 120px; }
+
+@media (prefers-reduced-motion: reduce) {
+  body.mobile-flow #mf-root * { animation: none !important; transition: none !important; }
+}

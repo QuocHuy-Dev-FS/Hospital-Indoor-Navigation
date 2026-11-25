@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0-prototype",
+  "generatedAt": "2026-10-28T07:01:09.143Z",
+  "buildingId": "B1",
+  "buildingName": "Bệnh viện Quân y 7A",
+  "note": "Prototype P0.5 – dữ liệu giả định, chưa xác minh thực tế",
+  "hashes": {
+    "floors": "e15e3ecc08862c9d",
+    "rooms": "40af532daf477062",
+    "nodes": "223ee5e1ffe25fa3",
+    "edges": "f7eb05ec37b3225f",
+    "connectors": "a940344a9541e2bb",
+    "beacons": "c00e795880fc902d"
+  }
+}

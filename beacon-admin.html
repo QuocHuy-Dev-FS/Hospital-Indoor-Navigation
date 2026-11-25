@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản trị Beacon – BV Quân y 7A</title>
+  <style>
+    :root {
+      --clr-bg:      #f0f4f8;
+      --clr-card:    #ffffff;
+      --clr-border:  #d0dce8;
+      --clr-primary: #1565C0;
+      --clr-muted:   #607080;
+      --clr-active:  #2e7d32;
+      --clr-weak:    #e65100;
+      --clr-lost:    #c62828;
+      --clr-never:   #9e9e9e;
+      font-family: system-ui, 'Segoe UI', sans-serif;
+      font-size: 14px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--clr-bg); color: #1a2a3a; }
+
+    /* ── Layout ── */
+    #app { display: grid; grid-template-rows: auto auto 1fr; min-height: 100vh; }
+    header { background: var(--clr-primary); color: #fff; padding: 12px 20px;
+             display: flex; align-items: center; gap: 12px; }
+    header h1 { font-size: 1rem; font-weight: 600; }
+    #source-bar { background: #e8eef6; border-bottom: 1px solid var(--clr-border);
+                  padding: 8px 20px; display: flex; gap: 8px; align-items: center; }
+    main { padding: 16px 20px; display: grid; gap: 16px;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: auto auto; }
+    @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+
+    /* ── Card ── */
+    .card { background: var(--clr-card); border: 1px solid var(--clr-border);
+            border-radius: 8px; padding: 14px; }
+    .card h2 { font-size: 0.9rem; font-weight: 600; color: var(--clr-primary);
+               margin-bottom: 10px; }
+
+    /* ── Connection bar ── */
+    #conn-bar { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #1a2a3a; }
+    .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+    .dot-connected    { background: var(--clr-active); }
+    .dot-connecting   { background: #f9a825; }
+    .dot-disconnected { background: var(--clr-lost); }
+    .dot-active  { background: var(--clr-active); }
+    .dot-weak    { background: var(--clr-weak); }
+    .dot-lost    { background: var(--clr-lost); }
+    .dot-never   { background: var(--clr-never); }
+
+    /* ── Source buttons ── */
+    .src-btn { padding: 5px 14px; border: 1px solid var(--clr-border); border-radius: 6px;
+               background: #fff; cursor: pointer; font-size: 0.85rem; color: #1a2a3a; }
+    .src-btn.active { background: var(--clr-primary); color: #fff; border-color: var(--clr-primary); }
+    .src-btn:hover:not(.active) { background: #dde8f4; }
+    select.inline { border: 1px solid var(--clr-border); border-radius: 4px; padding: 4px 6px;
+                    font-size: 0.83rem; background: #fff; cursor: pointer; }
+
+    /* ── Tables ── */
+    table { width: 100%; border-collapse: collapse; font-size: 0.83rem; }
+    th { text-align: left; color: var(--clr-muted); font-weight: 500;
+         padding: 4px 8px; border-bottom: 1px solid var(--clr-border); }
+    td { padding: 5px 8px; border-bottom: 1px solid #edf2f7; vertical-align: middle; }
+    tr:last-child td { border-bottom: none; }
+    .beacon-id { font-family: monospace; font-weight: 600; color: var(--clr-primary); }
+    .key-cell { font-family: monospace; font-size: 0.78rem; color: var(--clr-muted); }
+    .btn-assign { padding: 3px 10px; border: 1px solid var(--clr-primary); border-radius: 4px;
+                  background: #fff; color: var(--clr-primary); cursor: pointer; font-size: 0.8rem; }
+    .btn-assign:hover { background: #e3eef9; }
+
+    /* ── Calibration ── */
+    .form-row { display: flex; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; }
+    .form-row label { font-size: 0.83rem; color: var(--clr-muted); white-space: nowrap; }
+    .form-row input, .form-row select { border: 1px solid var(--clr-border); border-radius: 4px;
+                                        padding: 4px 8px; font-size: 0.83rem; width: 100px; }
+    .form-row input[type="text"] { width: 180px; }
+    .btn-primary { padding: 6px 16px; background: var(--clr-primary); color: #fff;
+                   border: none; border-radius: 6px; cursor: pointer; font-size: 0.85rem; }
+    .btn-primary:disabled { background: #90a4ae; cursor: not-allowed; }
+    .btn-primary:hover:not(:disabled) { background: #1976d2; }
+    #calib-progress { display: none; margin-top: 8px; }
+    #calib-progress progress { width: 100%; height: 8px; }
+    #calib-result { display: none; margin-top: 8px; padding: 10px; background: #e8f5e9;
+                    border-radius: 6px; border: 1px solid #a5d6a7; font-size: 0.85rem; }
+    #calib-live-rssi { font-size: 0.82rem; color: var(--clr-muted); }
+
+    /* ── Modal ── */
+    dialog { border: none; border-radius: 10px; padding: 20px; width: 90%; max-width: 480px;
+             box-shadow: 0 8px 32px rgba(0,0,0,0.18); }
+    dialog::backdrop { background: rgba(0,0,0,0.4); }
+    dialog h3 { font-size: 0.95rem; color: var(--clr-primary); margin-bottom: 12px; }
+    #mini-map { border: 1px solid var(--clr-border); border-radius: 4px; cursor: crosshair;
+                display: block; margin: 8px 0; }
+    .modal-actions { display: flex; gap: 8px; margin-top: 12px; justify-content: flex-end; }
+    .btn-sec { padding: 6px 14px; background: #f0f4f8; border: 1px solid var(--clr-border);
+               border-radius: 6px; cursor: pointer; font-size: 0.85rem; }
+    .info-row { font-size: 0.82rem; color: var(--clr-muted); margin-bottom: 6px;
+                font-family: monospace; word-break: break-all; }
+  </style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>🔧 Quản trị Beacon – BV Quân y 7A</h1>
+    <div id="conn-bar">
+      <span class="dot dot-never" id="conn-dot"></span>
+      <span id="conn-txt">—</span>
+    </div>
+    <span style="margin-left:auto;font-size:0.78rem;opacity:0.7">Chỉ dành cho kỹ thuật viên</span>
+  </header>
+
+  <div id="source-bar">
+    <span style="font-size:0.83rem;color:#607080;margin-right:4px">Nguồn dữ liệu:</span>
+    <button class="src-btn" data-source="mock">Mock Replay</button>
+    <button class="src-btn" data-source="bridge">Bridge (ws://127.0.0.1:8765)</button>
+    <label style="font-size:0.83rem;color:#607080;margin-left:12px">Kịch bản:</label>
+    <select class="inline" id="mock-scenario">
+      <option value="near-A">near-A (1 beacon gần)</option>
+      <option value="A-to-B">A-to-B (chuyển dần)</option>
+      <option value="overlap">overlap (2 beacon)</option>
+      <option value="lost">lost (mất sau 3s)</option>
+      <option value="noisy">noisy (nhiễu)</option>
+    </select>
+  </div>
+
+  <main>
+    <!-- Beacon đã đăng ký -->
+    <div class="card" style="grid-column:1/-1">
+      <h2>Beacon đã đăng ký (<span id="reg-count">0</span>)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th><th>RSSI (smoothed)</th><th>TxPower</th><th>Lần cuối thấy</th><th>Trạng thái</th>
+          </tr>
+        </thead>
+        <tbody id="reg-tbody"></tbody>
+      </table>
+    </div>
+
+    <!-- Beacon chưa đăng ký -->
+    <div class="card">
+      <h2>Beacon chưa đăng ký (<span id="unk-count">0</span>)</h2>
+      <table>
+        <thead>
+          <tr><th>Key (rút gọn)</th><th>RSSI</th><th>Lần cuối thấy</th><th></th></tr>
+        </thead>
+        <tbody id="unk-tbody"></tbody>
+      </table>
+      <p style="font-size:0.8rem;color:var(--clr-muted);margin-top:8px">
+        Beacon trong vùng phủ nhưng chưa có trong <code>data/beacons.json</code>.
+        Nhấn "Gán vị trí" để xuất bản ghi nháp.
+      </p>
+    </div>
+
+    <!-- Hiệu chuẩn -->
+    <div class="card">
+      <h2>Ghi CalibrationRecord</h2>
+      <div class="form-row">
+        <label>Beacon:</label>
+        <select id="calib-beacon-sel"><option value="">— Chọn —</option></select>
+      </div>
+      <div class="form-row">
+        <label>Khoảng cách (m):</label>
+        <input type="number" id="calib-distance" min="0.1" step="0.1" placeholder="1.0">
+      </div>
+      <div class="form-row">
+        <label>Điều kiện:</label>
+        <input type="text" id="calib-condition" placeholder="Hành lang, không vật cản">
+      </div>
+      <button class="btn-primary" id="calib-start">Bắt đầu đo (${CALIB_COUNT} mẫu)</button>
+      <p id="calib-live-rssi" style="margin-top:6px"></p>
+
+      <div id="calib-progress">
+        <progress id="calib-bar" value="0" max="30"></progress>
+        <span id="calib-lbl" style="font-size:0.8rem;color:var(--clr-muted)">0 / 30 mẫu</span>
+      </div>
+      <div id="calib-result">
+        <strong>Kết quả:</strong>
+        Mean: <strong id="calib-mean">—</strong> dBm &nbsp;±&nbsp;
+        Std: <strong id="calib-std">—</strong> dBm
+        <br><br>
+        <button class="btn-primary" id="btn-export-calib">Xuất bản ghi (.json)</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Modal: Gán vị trí beacon chưa đăng ký -->
+<dialog id="assign-modal">
+  <h3>Gán vị trí cho beacon</h3>
+  <p class="info-row" id="assign-key-display"></p>
+  <p style="font-size:0.82rem;color:var(--clr-muted);margin-bottom:6px">
+    Click lên bản đồ để chọn tọa độ, hoặc nhập trực tiếp. Bản ghi xuất ra là
+    <strong>nháp</strong> — bạn cần tự kiểm tra và lưu vào
+    <code>data/beacons.local.json</code>.
+  </p>
+  <canvas id="mini-map" width="420" height="240"></canvas>
+  <div class="form-row">
+    <label>Tầng:</label>
+    <select id="assign-floor">
+      <option value="F1">F1</option>
+      <option value="F2">F2</option>
+      <option value="F3">F3</option>
+    </select>
+    <label>x (m):</label>
+    <input type="number" id="assign-x" step="0.01" placeholder="0.00" style="width:80px">
+    <label>z (m):</label>
+    <input type="number" id="assign-z" step="0.01" placeholder="0.00" style="width:80px">
+  </div>
+  <div class="modal-actions">
+    <button class="btn-sec" id="btn-assign-close">Huỷ</button>
+    <button class="btn-primary" id="btn-assign-export">Xuất bản ghi nháp (.json)</button>
+  </div>
+</dialog>
+
+<script type="module" src="/src/beacon-admin/main.js"></script>
+</body>
+</html>

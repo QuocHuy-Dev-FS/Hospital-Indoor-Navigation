@@ -1,0 +1,183 @@
+[
+  {
+    "id": "STAIR_A",
+    "type": "stairs",
+    "wheelchairOk": false,
+    "restricted": false,
+    "name": "Cầu thang Đông-Bắc",
+    "links": [
+      {
+        "floorId": "F1",
+        "nodeId": "F1_N038"
+      },
+      {
+        "floorId": "F2",
+        "nodeId": "F2_N038"
+      },
+      {
+        "floorId": "F3",
+        "nodeId": "F3_N038"
+      },
+      {
+        "floorId": "F4",
+        "nodeId": "F4_N038"
+      },
+      {
+        "floorId": "F5",
+        "nodeId": "F5_N038"
+      },
+      {
+        "floorId": "F6",
+        "nodeId": "F6_N038"
+      },
+      {
+        "floorId": "F7",
+        "nodeId": "F7_N038"
+      },
+      {
+        "floorId": "F8",
+        "nodeId": "F8_N038"
+      },
+      {
+        "floorId": "F9",
+        "nodeId": "F9_N038"
+      }
+    ]
+  },
+  {
+    "id": "STAIR_B",
+    "type": "stairs",
+    "wheelchairOk": false,
+    "restricted": false,
+    "name": "Cầu thang giữa",
+    "links": [
+      {
+        "floorId": "F1",
+        "nodeId": "F1_N037"
+      },
+      {
+        "floorId": "F2",
+        "nodeId": "F2_N037"
+      },
+      {
+        "floorId": "F3",
+        "nodeId": "F3_N037"
+      },
+      {
+        "floorId": "F4",
+        "nodeId": "F4_N037"
+      },
+      {
+        "floorId": "F5",
+        "nodeId": "F5_N037"
+      },
+      {
+        "floorId": "F6",
+        "nodeId": "F6_N037"
+      },
+      {
+        "floorId": "F7",
+        "nodeId": "F7_N037"
+      },
+      {
+        "floorId": "F8",
+        "nodeId": "F8_N037"
+      },
+      {
+        "floorId": "F9",
+        "nodeId": "F9_N037"
+      }
+    ]
+  },
+  {
+    "id": "STAIR_C",
+    "type": "stairs",
+    "wheelchairOk": false,
+    "restricted": false,
+    "name": "Cầu thang Đông-Nam",
+    "links": [
+      {
+        "floorId": "F1",
+        "nodeId": "F1_N039"
+      },
+      {
+        "floorId": "F2",
+        "nodeId": "F2_N039"
+      },
+      {
+        "floorId": "F3",
+        "nodeId": "F3_N039"
+      },
+      {
+        "floorId": "F4",
+        "nodeId": "F4_N039"
+      },
+      {
+        "floorId": "F5",
+        "nodeId": "F5_N039"
+      },
+      {
+        "floorId": "F6",
+        "nodeId": "F6_N039"
+      },
+      {
+        "floorId": "F7",
+        "nodeId": "F7_N039"
+      },
+      {
+        "floorId": "F8",
+        "nodeId": "F8_N039"
+      },
+      {
+        "floorId": "F9",
+        "nodeId": "F9_N039"
+      }
+    ]
+  },
+  {
+    "id": "ELEV_A",
+    "type": "elevator",
+    "wheelchairOk": true,
+    "restricted": false,
+    "name": "Thang máy A (Cần xác nhận)",
+    "waitTime_s": 30,
+    "links": [
+      {
+        "floorId": "F1",
+        "nodeId": "F1_N036"
+      },
+      {
+        "floorId": "F2",
+        "nodeId": "F2_N036"
+      },
+      {
+        "floorId": "F3",
+        "nodeId": "F3_N036"
+      },
+      {
+        "floorId": "F4",
+        "nodeId": "F4_N036"
+      },
+      {
+        "floorId": "F5",
+        "nodeId": "F5_N036"
+      },
+      {
+        "floorId": "F6",
+        "nodeId": "F6_N036"
+      },
+      {
+        "floorId": "F7",
+        "nodeId": "F7_N036"
+      },
+      {
+        "floorId": "F8",
+        "nodeId": "F8_N036"
+      },
+      {
+        "floorId": "F9",
+        "nodeId": "F9_N036"
+      }
+    ]
+  }
+]

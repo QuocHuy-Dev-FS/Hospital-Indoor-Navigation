@@ -1,0 +1,22 @@
+{
+  "note": "Cần xác nhận: tất cả giá trị bên dưới",
+  "M_PER_PX": 0.02,
+  "IMG_W_PX": 1746,
+  "IMG_H_PX": 2096,
+  "FLOOR_HEIGHT_M": 3.6,
+  "WALL_HEIGHT_M": 3,
+  "WALL_THICKNESS_M": 0.2,
+  "TOTAL_FLOORS": 9,
+  "origin": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "northAngleDeg": 0,
+  "unit": "m",
+  "axisX": "east",
+  "axisZ": "south",
+  "axisY": "up",
+  "building_width_m": 34.92,
+  "building_depth_m": 41.92
+}
